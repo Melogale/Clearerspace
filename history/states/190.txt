@@ -8,7 +8,7 @@ state = {
 		steel = 7
 	}
 	history = {
-		owner = JAP
+		owner = QIN
 		victory_points = { 7125 3 }
 		buildings = {
 			infrastructure = 2

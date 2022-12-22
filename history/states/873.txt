@@ -7,8 +7,8 @@ state = {
 		chromium = 72
 	}
 	history = {
-		owner = BAT
-		add_core_of = BAT
+		owner = QIN
+		add_core_of = QIN
 		victory_points = { 8214 1 }
 		buildings = {
 			infrastructure = 1

@@ -7,8 +7,8 @@ state = {
 		tungsten = 4
 	}
 	history = {
-		owner = NGA
-		add_core_of = NGA
+		owner = QIN
+		add_core_of = QIN
 		victory_points = { 2197 1 }
 		victory_points = { 2211 1 }
 		buildings = {

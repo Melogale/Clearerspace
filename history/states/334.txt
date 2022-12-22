@@ -8,8 +8,8 @@ state = {
 		chromium = 4
 	}
 	history = {
-		owner = AST
-		add_core_of = AST
+		owner = QIN
+		add_core_of = QIN
 		victory_points = { 7798 20 }
 		victory_points = { 12910 15 }
 		buildings = {

@@ -8,7 +8,7 @@ state = {
 		steel = 7
 	}
 	history = {
-		owner = JAP
+		owner = QIN
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

@@ -8,8 +8,8 @@ state = {
 		tungsten = 19
 	}
 	history = {
-		owner = SIA
-		add_core_of = SIA
+		owner = QIN
+		add_core_of = QIN
 		add_core_of = BRM
 		buildings = {
 			infrastructure = 2

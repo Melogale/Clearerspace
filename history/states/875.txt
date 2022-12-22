@@ -4,8 +4,8 @@ state = {
 	manpower = 100100
 	state_category = wasteland
 	history = {
-		owner = BAT
-		add_core_of = BAT
+		owner = QIN
+		add_core_of = QIN
 		buildings = {
 			infrastructure = 2
 		}

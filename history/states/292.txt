@@ -10,8 +10,8 @@ state = {
 		steel = 6
 	}
 	history = {
-		owner = SIA
-		add_core_of = SIA
+		owner = QIN
+		add_core_of = QIN
 		buildings = {
 			infrastructure = 2
 			air_base = 1
