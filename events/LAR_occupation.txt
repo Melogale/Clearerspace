@@ -124,9 +124,7 @@ country_event = {
 				if = {
 					limit = { 
 						var:occupied_country = {
-							#only change ideology if we are not creating a new country and old country is not existing
-							NOT = { original_tag = DNZ } #Danzig should usually always be fascist
-							NOT = { original_tag = SOV } #Soviet Union should always be communist
+
 							OR = {
 								exists = no
 								NOT = { tag = new_occupied_country }

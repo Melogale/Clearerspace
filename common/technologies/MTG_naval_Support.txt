@@ -917,10 +917,7 @@ technologies = {
 				has_war = yes
 				factor = 3
 			}
-			modifier = {
-				tag = JAP #Japan wants torpedoes EXTRA HARD
-				factor = 2
-			}
+
 		}
 
 		categories = {
@@ -1239,10 +1236,7 @@ technologies = {
 				has_war = yes
 				factor = 2
 			}
-			modifier = {
-				tag = JAP
-				factor = 5
-			}
+
 		}
 
 		categories = {
@@ -1284,10 +1278,7 @@ technologies = {
 				has_war = yes
 				factor = 2
 			}
-			modifier = {
-				tag = JAP
-				factor = 5
-			}
+
 		}
 
 		categories = {

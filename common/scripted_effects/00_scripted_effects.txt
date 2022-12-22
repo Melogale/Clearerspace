@@ -871,9 +871,7 @@ on_daily = {
 
 }
 
-#on_daily_USA = {
-#	# you can specify an on daily action for a specific country
-#}
+
 
 ###Game weight variables for faction load balancing.
 ###We store these on germany because ... we have to
