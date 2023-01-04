@@ -5,8 +5,8 @@ state = {
 	state_category = wasteland
 	impassable = yes
 	history = {
-		owner = QIN
-		add_core_of = QIN
+		owner = AST
+		add_core_of = AST
 		buildings = {
 			infrastructure = 1
 		}

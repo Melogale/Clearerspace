@@ -1,1 +1,750 @@
 ﻿l_english:
+ SCD_autocracy:0 "Scandinavian Empire"
+ SCD_autocracy_DEF:0 "the Scandinavian Empire"
+ SCD_fascism:0 "Nordic Empire"
+ SCD_fascism_DEF:0 "the Nordic Empire"
+ SCD_egoism:0 "Scandinavian Trade Districts"
+ SCD_egoism_DEF:0 "the Scandinavian Trade Districts"
+ SCD:0 "Scandinavia"
+ SCD_DEF:0 "Scandinavia"
+ SCD_ADJ:0 "Scandinavian"
+ 
+ TYK_authoritarian_socialism:0 "Germania"
+ TYK_authoritarian_socialism_DEF:0 "Germania"
+ TYK_libertarian_socialism:0 "Germania"
+ TYK_libertarian_socialism_DEF:0 "Germania"
+ TYK:0 "Dominion of Pommern"
+ TYK_DEF:0 "Dominion of Pommern"
+ TYK_ADJ:0 "Pommranian"
+ 
+ QIQ_monolism:0 "Qingqiu Collective"
+ QIQ_monolism_DEF:0 "the Qingqiu Collective"
+ QIQ_authoritarian_socialism:0 "Qingqiu Socialist State"
+ QIQ_authoritarian_socialism_DEF:0 "the Qingqiu Socialist State"
+ QIQ_libertarian_socialism:0 "Qingqiu Social Republic"
+ QIQ_libertarian_socialism_DEF:0 "the Qingqiu Social Republic"
+ QIQ_social_democracy:0 "Qingqiu"
+ QIQ_social_democracy_DEF:0 "Qingqiu"
+ QIQ_liberalism:0 "Qingqiu"
+ QIQ_liberalism_DEF:0 "Qingqiu"
+ QIQ_conservatism:0 "Qingqiu"
+ QIQ_conservatism_DEF:0 "Qingqiu"
+ QIQ_authoritarian_democracy:0 "Qingqiu"
+ QIQ_authoritarian_democracy_DEF:0 "Qingqiu"
+ QIQ_autocracy:0 "Qingqiu"
+ QIQ_autocracy_DEF:0 "Qingqiu"
+ QIQ_fascism:0 "Empire of Qingqiu"
+ QIQ_fascism_DEF:0 "the Empire of Qingqiu"
+ QIQ_egoism:0 "Transpacifica"
+ QIQ_egoism_DEF:0 "Transpacifica"
+ QIQ:0 "Qingqiu"
+ QIQ_DEF:0 "Qingqiu"
+ QIQ_ADJ:0 "Qingqiuese"
+ 
+ TAG_monolism:0 ""
+ TAG_monolism_DEF:0 ""
+ TAG_authoritarian_socialism:0 ""
+ TAG_authoritarian_socialism_DEF:0 ""
+ TAG_libertarian_socialism:0 ""
+ TAG_libertarian_socialism_DEF:0 ""
+ TAG_social_democracy:0 ""
+ TAG_social_democracy_DEF:0 ""
+ TAG_liberalism:0 ""
+ TAG_liberalism_DEF:0 ""
+ TAG_conservatism:0 ""
+ TAG_conservatism_DEF:0 ""
+ TAG_authoritarian_democracy:0 ""
+ TAG_authoritarian_democracy_DEF:0 ""
+ TAG_vanguard_socialism:0 ""
+ TAG_vanguard_socialism_DEF:0 ""
+ TAG_autocracy:0 ""
+ TAG_autocracy_DEF:0 ""
+ TAG_fascism:0 ""
+ TAG_fascism_DEF:0 ""
+ TAG_egoism:0 ""
+ TAG_egoism_DEF:0 ""
+ TAG:0 ""
+ TAG_DEF:0 ""
+ TAG_ADJ:0 ""
+ 
+ XIA_monolism:0 "Zhongguo"
+ XIA_monolism_DEF:0 "Zhongguo"
+ XIA:0 "Great Xiao"
+ XIA_DEF:0 "the Great Xiao"
+ XIA_ADJ:0 "Chinese"
+ 
+ QIN_monolism:0 "Zhongguo"
+ QIN_monolism_DEF:0 "Zhongguo"
+ QIN:0 "Great Qing"
+ QIN_DEF:0 "the Great Qing"
+ QIN_ADJ:0 "Chinese"
+ 
+ CHI_monolism:0 "Zhongguo"
+ CHI_monolism_DEF:0 "Zhongguo"
+ CHI_authoritarian_socialism:0 "Socialist Republic of China"
+ CHI_authoritarian_socialism_DEF:0 "the Socialist Republic of China"
+ CHI_libertarian_socialism:0 "Socialist Republic of China"
+ CHI_libertarian_socialism_DEF:0 "the Socialist Republic of China"
+ CHI_vanguard_socialism:0 "Socialist Republic of China"
+ CHI_vanguard_socialism_DEF:0 "the Socialist Republic of China"
+ 
+ CHI_liberalism:0 "Republic of China"
+ CHI_liberalism_DEF:0 "the Republic of China"
+ CHI_conservatism:0 "Republic of China"
+ CHI_conservatism_DEF:0 "the Republic of China"
+ CHI_social_democracy:0 "Republic of China"
+ CHI_social_democracy_DEF:0 "the Republic of China"
+ CHI_sauthoritarian_democracy:0 "Republic of China"
+ CHI_sauthoritarian_democracy_DEF:0 "the Republic of China"
+ 
+ CHI_autocracy:0 "Chinese State"
+ CHI_autocracy_DEF:0 "the Chinese State"
+ CHI_fascism:0 "Chinese National State"
+ CHI_fascism_DEF:0 "the Chinese National State"
+ CHI_egoism:0 "Eastern Resource Area"
+ CHI_egoism_DEF:0 "Eastern Resource Area"
+ CHI:0 "Republic of China"
+ CHI_DEF:0 "the Republic of China"
+ CHI_ADJ:0 "Chinese"
+ 
+ GCO:0 "Gran Columbia"
+ GCO_DEF:0 "Gran Columbia"
+ GCO_ADJ:0 "Gran Columbian"
+ 
+ BRA:0 "Brazil"
+ BRA_DEF:0 "Brazil"
+ BRA_ADJ:0 "Brazilian"
+ 
+ AMZ:0 "Amazonie"
+ AMZ_DEF:0 "Amazonie"
+ AMZ_ADJ:0 "Amazonian"
+ 
+ INC:0 "Tawantinsuyu"
+ INC_DEF:0 "Tawantinsuyu"
+ INC_ADJ:0 "Incan"
+ 
+ BEO:0 "Beornia"
+ BEO_DEF:0 "Beornia"
+ BEO_ADJ:0 "Beornian"
+
+ ARC:0 "Arcadian Union"
+ ARC_DEF:0 "the Arcadian Union"
+ ARC_ADJ:0 "Arcadian"
+
+ CNU:0 "Ireland"
+ CNU_DEF:0 "Ireland"
+ CNU_ADJ:0 "Irish"
+
+ BUR:0 "Burgundy"
+ BUR_DEF:0 "Burgundy"
+ BUR_ADJ:0 "Burgundian"
+
+ BRN:0 "Brandenburg"
+ BRN_DEF:0 "Brandenburg"
+ BRN_ADJ:0 "Brandenburger"
+
+ PLC:0 "Commonwealth"
+ PLC_DEF:0 "the Commonwealth"
+ PLC_ADJ:0 "Polish"
+
+ UPC:0 "United People's Commonwealth"
+ UPC_DEF:0 "the United People's Commonwealth"
+ UPC_ADJ:0 "United Eastern"
+
+ ITA:0 "Italy"
+ ITA_DEF:0 "Italy"
+ ITA_ADJ:0 "Italian"
+
+ SPA:0 "Spain"
+ SPA_DEF:0 "Spain"
+ SPA_ADJ:0 "Spanish"
+
+ EGY:0 "Khedivate of Egypt"
+ EGY_DEF:0 "Khedivate of Egypt"
+ EGY_ADJ:0 "Egyptian"
+
+ COG:0 "Congo"
+ COG_DEF:0 "the Congo"
+ COG_ADJ:0 "Congolese"
+
+ BAT:0 "Batavia"
+ BAT_DEF:0 "Batavia"
+ BAT_ADJ:0 "Batavian"
+
+ HUN:0 "Hungary"
+ HUN_DEF:0 "Hungary"
+ HUN_ADJ:0 "Hungarian"
+
+ UKR:0 "Grand Principality of Rus"
+ UKR_DEF:0 "Rus"
+ UKR_ADJ:0 "Rus"
+
+ BEL:0 "White Rus"
+ BEL_DEF:0 "Rus"
+ BEL_ADJ:0 "Rus"
+
+ GRE:0 "Greek State"
+ GRE_DEF:0 "Greek State"
+ GRE_ADJ:0 "Greek State"
+
+ SLA:0 "Slavic Union"
+ SLA_DEF:0 "Slavic Union"
+ SLA_ADJ:0 "Slavic Union"
+
+ NOV:0 "Novgorod"
+ NOV_DEF:0 "Novgorod"
+ NOV_ADJ:0 "Novgorod"
+
+ LAT:0 "Latvia"
+ LAT_DEF:0 "Latvia"
+ LAT_ADJ:0 "Latvian"
+
+ OTT:0 "Ottoman Empire"
+ OTT_DEF:0 "Ottoman Empire"
+ OTT_ADJ:0 "Ottoman Empire"
+
+ KUR:0 "Kurdistan"
+ KUR_DEF:0 "Kurdistan"
+ KUR_ADJ:0 "Kurdish"
+
+ CAU:0 "Caucasia"
+ CAU_DEF:0 "Caucasia"
+ CAU_ADJ:0 "Caucasia"
+
+ IRA:0 "Iran"
+ IRA_DEF:0 "Iran"
+ IRA_ADJ:0 "Iranian"
+
+ TUR:0 "Turkey"
+ TUR_DEF:0 "Turkey"
+ TUR_ADJ:0 "Turkish"
+
+ MON:0 "Mongolian Empire"
+ MON_DEF:0 "Mongolian Empire"
+ MON_ADJ:0 "Mongolian"
+
+ NEP:0 "Nepal"
+ NEP_DEF:0 "Nepal"
+ NEP_ADJ:0 "Nepalese"
+
+ IND:0 "India"
+ IND_DEF:0 "India"
+ IND_ADJ:0 "Indian"
+
+ CHI:0 "China"
+ CHI_DEF:0 "China"
+ CHI_ADJ:0 "Chinese"
+
+ JAP:0 "Empire of Japan"
+ JAP_DEF:0 "the Empire of Japan"
+ JAP_ADJ:0 "Japanese"
+
+ ZHO:0 "Zhourao"
+ ZHO_DEF:0 "Zhourao"
+ ZHO_ADJ:0 "Zhourao"
+
+ HAW:0 "Hawaii"
+ HAW_DEF:0 "Hawaii"
+ HAW_ADJ:0 "Hawaiian"
+
+ NUN:0 "Nunagat"
+ NUN_DEF:0 "Nunagat"
+ NUN_ADJ:0 "Nunagatian"
+
+ AZT:0 "Aztlan District"
+ AZT_DEF:0 "Aztlan District"
+ AZT_ADJ:0 "Deserter"
+
+ MEX:0 "Mexica"
+ MEX_DEF:0 "Mexica"
+ MEX_ADJ:0 "Mexican"
+
+ MAY:0 "Maya Autonomy"
+ MAY_DEF:0 "Maya Autonomy"
+ MAY_ADJ:0 "Mayan"
+
+ NAV:0 "Navajo"
+ NAV_DEF:0 "Navajo"
+ NAV_ADJ:0 "Navajo"
+
+ UTH:0 "Deseret"
+ UTH_DEF:0 "Deseret"
+ UTH_ADJ:0 "Deseretian"
+
+ SIX:0 "Sioux"
+ SIX_DEF:0 "Sioux"
+ SIX_ADJ:0 "Sioux"
+
+ LOU:0 "Louisiana"
+ LOU_DEF:0 "Louisiana"
+ LOU_ADJ:0 "Louisianan"
+
+ GTC:0 "Genoa"
+ GTC_DEF:0 "Genoa"
+ GTC_ADJ:0 "Genoese"
+
+ VIN:0 "Vinland"
+ VIN_DEF:0 "Vinland"
+ VIN_ADJ:0 "Vinland"
+
+ VIR:0 "Confederacy of Virginia"
+ VIR_DEF:0 "the Confederacy of Virginia"
+ VIR_ADJ:0 "Virginian"
+
+ JRS:0 "Shiberiya"
+ JRS_DEF:0 "Shiberiya"
+ JRS_ADJ:0 "Siberian"
+
+ FRA:0 "France"
+ FRA_DEF:0 "France"
+ FRA_ADJ:0 "French"
+
+ GEN:0 "Genoa"
+ GEN_DEF:0 "Genoa"
+ GEN_ADJ:0 "Genoa"
+
+ SWI:0 "Switzerland"
+ SWI_DEF:0 "Switzerland"
+ SWI_ADJ:0 "Switzerland"
+
+ BAY:0 "Bavarian Soviet Republic"
+ BAY_DEF:0 "Bavarian Soviet Republic"
+ BAY_ADJ:0 "Bavarian"
+
+ HAN:0 "Westphalia-Hannover"
+ HAN_DEF:0 "Westphalia-Hannover"
+ HAN_ADJ:0 "German"
+
+ AUS:0 "Austria"
+ AUS_DEF:0 "Austria"
+ AUS_ADJ:0 "Austria"
+
+ BOH:0 "Bohemia"
+ BOH_DEF:0 "Bohemia"
+ BOH_ADJ:0 "Bohemia"
+
+ ARA:0 "Aragon"
+ ARA_DEF:0 "Aragon"
+ ARA_ADJ:0 "Aragon"
+
+ ENG:0 "England"
+ ENG_DEF:0 "England"
+ ENG_ADJ:0 "England"
+
+ EST:0 "Dominion of Livonia"
+ EST_DEF:0 "Dominion of Livonia"
+ EST_ADJ:0 "Livonian"
+
+ CRO:0 "Croatia"
+ CRO_DEF:0 "Croatia"
+ CRO_ADJ:0 "Croatia"
+
+ ALB:0 "Albania"
+ ALB_DEF:0 "Albania"
+ ALB_ADJ:0 "Albania"
+
+ WAL:0 "Wallachia"
+ WAL_DEF:0 "Wallachia"
+ WAL_ADJ:0 "Wallachia"
+
+ MOL:0 "Moldavia"
+ MOL_DEF:0 "Moldavia"
+ MOL_ADJ:0 "Moldavia"
+
+ TRA:0 "Transylvania"
+ TRA_DEF:0 "Transylvania"
+ TRA_ADJ:0 "Transylvania"
+
+ SLO:0 "Slovakia"
+ SLO_DEF:0 "Slovakia"
+ SLO_ADJ:0 "Slovakia"
+
+ TIB:0 "Tibet"
+ TIB_DEF:0 "Tibet"
+ TIB_ADJ:0 "Tibet"
+
+ UYG:0 "Urumqi Sultanate"
+ UYG_DEF:0 "the Urumqi Sultanate"
+ UYG_ADJ:0 "Uyghur"
+ 
+ MAN:0 "Manchukuo"
+ MAN_DEF:0 "Manchukuo"
+ MAN_ADJ:0 "Manchurian"
+ 
+ PER_monolism:0 "Iranian Horde"
+ PER_monolism_DEF:0 "the Iranian Horde"
+ PER_authoritarian_socialism:0 "Union of Iranic Socialist Republics"
+ PER_authoritarian_socialism_DEF:0 "the Union of Iranic Socialist Republics"
+ PER_libertarian_socialism:0 "Socialist Republic of Iran"
+ PER_libertarian_socialism_DEF:0 "the Socialist Republic of Iran"
+ PER_social_democracy:0 "Federal Republic of Iran"
+ PER_social_democracy_DEF:0 "the Federal Republic of Iran"
+ PER_liberalism:0 "Federal Republic of Iran"
+ PER_liberalism_DEF:0 "the Federal Republic of Iran"
+ PER_conservatism:0 "Federal Republic of Iran"
+ PER_conservatism_DEF:0 "the Federal Republic of Iran"
+ PER_authoritarian_democracy:0 "Persia"
+ PER_authoritarian_democracy_DEF:0 "Persia"
+ PER_vanguard_socialism:0 "Socialist Republic of Iran"
+ PER_vanguard_socialism_DEF:0 "the Socialist Republic of Iran"
+ PER_autocracy:0 "Persia"
+ PER_autocracy_DEF:0 "Persia"
+ PER_fascism:0 "Persian Empire"
+ PER_fascism_DEF:0 "the Persian Empire"
+ PER_egoism:0 "Corporate State of Iran"
+ PER_egoism_DEF:0 "the Corporate State of Iran"
+ PER:0 "Persia"
+ PER_DEF:0 "Persia"
+ PER_ADJ:0 "Persian"
+
+ STP:0 "Steppe Councils"
+ STP_DEF:0 "Steppe Councils"
+ STP_ADJ:0 "Steppe Councils"
+
+ KAZ:0 "Kazakhstan"
+ KAZ_DEF:0 "Kazakhstan"
+ KAZ_ADJ:0 "Kazakhstan"
+
+ TAJ:0 "Tajikistan"
+ TAJ_DEF:0 "Tajikistan"
+ TAJ_ADJ:0 "Tajikistan"
+
+ TKM:0 "Turkmenistan"
+ TKM_DEF:0 "Turkmenistan"
+ TKM_ADJ:0 "Turkmenistan"
+
+ UZB:0 "Uzbekistan"
+ UZB_DEF:0 "Uzbekistan"
+ UZB_ADJ:0 "Uzbekistan"
+
+ KYR:0 "Kyrgyzstan"
+ KYR_DEF:0 "Kyrgyzstan"
+ KYR_ADJ:0 "Kyrgyzstan
+ 
+ ARL:0 "Aralia"
+ ARL_DEF:0 "Aralia"
+ ARL_ADJ:0 "Aralia"
+
+ RSC:0 "Imperial Authority"
+ RSC_DEF:0 "Imperial Authority"
+ RSC_ADJ:0 "Imperial Authority"
+ 
+ DUR:0 "Durrani Empire"
+ DUR_DEF:0 "the Durrani Empire"
+ DUR_ADJ:0 "Durrani"
+ 
+ KAS:0 "KASratiya Collective"
+ KAS_DEF:0 "the KASratiya Collective"
+ KAS_ADJ:0 "KASratiyan"
+ 
+ SIN:0 "Scandinavian India"
+ SIN_DEF:0 "Scandinavian India"
+ SIN_ADJ:0 "Indian"
+ 
+ SPI:0 "Spanish India"
+ SPI_DEF:0 "Spanish India"
+ SPI_ADJ:0 "Indian"
+ 
+ DEC:0 "Deccan Federation"
+ DEC_DEF:0 "the Deccan Federation"
+ DEC_ADJ:0 "Deccan"
+ 
+ DRA:0 "Dravidian Empire"
+ DRA_DEF:0 "the Dravidian Empire"
+ DRA_ADJ:0 "Dravidian"
+ 
+ UTK:0 "Utkala"
+ UTK_DEF:0 "Utkala"
+ UTK_ADJ:0 "Utkalan"
+ 
+ VND:0 "Vindhya"
+ VND_DEF:0 "Vindhya"
+ VND_ADJ:0 "Vindhyan"
+ 
+ SIN:0 "Balochi Governate"
+ SIN_DEF:0 "the Balochi Governate"
+ SIN_ADJ:0 "Balochi"
+ 
+ CHL:0 "Chola Kingdom"
+ CHl_DEF:0 "the Chola Kingdom"
+ SIN_ADJ:0 "Chola"
+ 
+ ARY:0 "Aryan State"
+ ARY_DEF:0 "the Aryan State"
+ ARY_ADJ:0 "Aryan"
+ 
+ BEN:0 "Bengali Shogunate"
+ BEN_DEF:0 "the Bengali Shogunate"
+ BEN_ADJ:0 "Bengali"
+ 
+ BHU:0 "Bhutan"
+ BHU_DEF:0 "the Bhutan"
+ BHU_ADJ:0 "Bhutanese"
+ 
+ IRP:0 "Indian National Congress"
+ IRP_DEF:0 "the Indian National Congress"
+ IRP_ADJ:0 "Indian"
+ 
+ BRM:0 "Burma"
+ BRM_DEF:0 "Burma"
+ BRM_ADJ:0 "Burmese"
+ 
+ ARB:0 "Arabian Frontier"
+ ARB_DEF:0 "the Arabian Frontier"
+ ARB_ADJ:0 "Arabian"
+ 
+ AST:0 "Australia"
+ AST_DEF:0 "Australia"
+ AST_ADJ:0 "Australian"
+ 
+ BEI:0 "Burgundian Indies"
+ BEI_DEF:0 "the Burgundian Indies"
+ BEI_ADJ:0 "Indonesian"
+ 
+ SEI:0 "Spanish Indies"
+ SEI_DEF:0 "the Spanish Indies"
+ SEI_ADJ:0 "Indonesian"
+ 
+ JEI:0 "Japanese Indies"
+ JEI_DEF:0 "the Japanese Indies"
+ JEI_ADJ:0 "Indonesian"
+ 
+ JPH:0 "Philippines"
+ JPH_DEF:0 "the Philippines"
+ JPH_ADJ:0 "Filipino"
+ 
+ MLC:0 "Malacca"
+ MLC_DEF:0 "Malacca"
+ MLC_ADJ:0 "Malaysian"
+ 
+ HAW:0 "Hawaii"
+ HAW_DEF:0 "Hawaii"
+ HAW_ADJ:0 "Hawaiin"
+ 
+ SIA:0 "Siamese Empire"
+ SIA_DEF:0 "Siamese Empire"
+ SIA_ADJ:0 "Siamese"
+ 
+ NGA:0 "New Galicia"
+ NGA_DEF:0 "New Galicia"
+ NGA_ADJ:0 "New Galician"
+ 
+ RUS:0 "Russian Empire"
+ RUS_DEF:0 "Russian Empire"
+ RUS_ADJ:0 "Russian"
+
+ RST:0 "Russian Technate"
+ RST_DEF:0 "Russian Technate"
+ RST_ADJ:0 "Russian"
+ 
+ NVR:0 "Basque Republic"
+ NVR_DEF:0 "the Basque Republic"
+ NVR_ADJ:0 "Basque"
+ 
+ TRN:0 "Turanic Councils"
+ TRN_DEF:0 "the Turanic Councils"
+ TRN_ADJ:0 "Turkic"
+ 
+ YUG:0 "Yugoslavia"
+ YUG_DEF:0 "Yugoslavia"
+ YUG_ADJ:0 "Yugoslavian"
+ 
+ BOS:0 "Bosnia"
+ BOS_DEF:0 "Bosnia"
+ BOS_ADJ:0 "Bosnian"
+
+ SER:0 "Serbia"
+ SER_DEF:0 "Serbia"
+ SER_ADJ:0 "Serbian"
+
+ BUL:0 "Bulgaria"
+ BUL_DEF:0 "Bulgaria"
+ BUL_ADJ:0 "Bulgarian"
+
+ ARM:0 "Armenia"
+ ARM_DEF:0 "Armenia"
+ ARM_ADJ:0 "Armenian"
+
+ AZR:0 "Azerbaijan"
+ AZR_DEF:0 "Azerbaijan"
+ AZR_ADJ:0 "Azeri"
+
+ GEO:0 "Georgia"
+ GEO_DEF:0 "Georgia"
+ GEO_ADJ:0 "Georgian"
+
+ SYR:0 "Syria"
+ SYR_DEF:0 "Syria"
+ SYR_ADJ:0 "Syrian"
+
+ IRQ:0 "Iraq"
+ IRQ_DEF:0 "Iraq"
+ IRQ_ADJ:0 "Iraqi"
+
+ LIB:0 "Libya"
+ LIB_DEF:0 "Libya"
+ LIB_ADJ:0 "Libyan"
+
+ SIC:0 "Sicily"
+ SIC_DEF:0 "Sicily"
+ SIC_ADJ:0 "Sicilian"
+ 
+ TUN:0 "Tunisia"
+ TUN_DEF:0 "Tunisia"
+ TUN_ADJ:0 "Tunisian"
+
+ MOR:0 "Morocco"
+ MOR_DEF:0 "Morocco"
+ MOR_ADJ:0 "Moroccan"
+
+ ICH:0 "Indochina"
+ ICH_DEF:0 "Indochina"
+ ICH_ADJ:0 "Indochinese"
+
+ KOR:0 "Korea"
+ KOR_DEF:0 "Korea"
+ KOR_ADJ:0 "Korean"
+
+ INS:0 "Indonesia"
+ INS_DEF:0 "Indonesia"
+ SIC_ADJ:0 "Indonesian"
+
+ VIT:0 "Vietnam"
+ VIT_DEF:0 "Vietnam"
+ VIT_ADJ:0 "Vietnamese"
+
+ CAM:0 "Cambodia"
+ CAM_DEF:0 "Cambodia"
+ CAM_ADJ:0 "Cambodian"
+
+ LAO:0 "Laos"
+ LAO_DEF:0 "Laos"
+ LAO_ADJ:0 "Laotion"
+
+ MAL:0 "Malaysia"
+ MAL_DEF:0 "Malaysia"
+ MAL_ADJ:0 "Malaysian"
+
+ PAP:0 "Papua"
+ PAP_DEF:0 "Papua"
+ PAP_ADJ:0 "Papuan"
+
+ WAF:0 "West African Federation"
+ WAF_DEF:0 "West African Federation"
+ WAF_ADJ:0 "West African"
+
+ EAF:0 "East African Federation"
+ EAF_DEF:0 "East African Federation"
+ EAF_ADJ:0 "East African"
+
+ NGR:0 "Nigeria"
+ NGR_DEF:0 "Nigeria"
+ NGR_ADJ:0 "Nigerian"
+
+ MDG:0 "Madagascar"
+ MDG_DEF:0 "Madagascar"
+ MDG_ADJ:0 "Malagasy"
+
+ APC:0 "Apache Hordes"
+ APC_DEF:0 "the Apache Hordes"
+ APC_ADJ:0 "Apache"
+
+ IRO:0 "Iroquois Federation"
+ IRO_DEF:0 "the Iroquois Federation"
+ IRO_ADJ:0 "Iroquois"
+
+ SEM:0 "Seminole Republic"
+ SEM_DEF:0 "the Seminole Republic"
+ SEM_ADJ:0 "Seminole"
+
+ BRT:0 "Brittany"
+ BRT_DEF:0 "Brittany"
+ BRT_ADJ:0 "Bretons"
+
+ DEN:0 "Denmark"
+ DEN_DEF:0 "Denmark"
+ DEN_ADJ:0 "Danish"
+
+ NOR:0 "Norway"
+ NOR_DEF:0 "Norway"
+ NOR_ADJ:0 "Norwegian"
+
+ FIN:0 "Finland"
+ FIN_DEF:0 "Finland"
+ FIN_ADJ:0 "Finnish"
+ 
+ CAT:0 "Catalonia"
+ CAT_DEF:0 "Catalonia"
+ CAT_ADJ:0 "Catalan"
+
+ PRU:0 "Prussia"
+ PRU_DEF:0 "Prussia"
+ PRU_ADJ:0 "Prussian"
+
+ LIT:0 "Lithuania"
+ LIT_DEF:0 "Lithuania"
+ LIT_ADJ:0 "Lithuanian"
+
+ LIV:0 "Courland"
+ LIV_DEF:0 "Courland"
+ LIV_ADJ:0 "Courland"
+
+ CRI:0 "Crimea"
+ CRI_DEF:0 "Crimea"
+ CRI_ADJ:0 "Crimean"
+
+ FRE:0 "Free Territories"
+ FRE_DEF:0 "Free Territories"
+ FRE_ADJ:0 "Free"
+
+ ASH:0 "Ashkenazi State"
+ ASH_DEF:0 "Ashkenazi State"
+ ASH_ADJ:0 "Ashkenazi"
+
+ RRT:0 "Russian Ruthenia"
+ RRT_DEF:0 "Russian Ruthenia"
+ RRT_ADJ:0 "Russian"
+
+ VEN:0 "Venetia-Lombardy"
+ VEN_DEF:0 "Venetia-Lombardy"
+ VEN_ADJ:0 "Italian"
+ 
+ NLO:0 "Great Plains Revolt"
+ NLO_DEF:0 "the Great Plains Revolt
+ NLO_ADJ:0 "Indian"
+
+ KUB:0 "Kuban"
+ KUB_DEF:0 "Kuban"
+ KUB_ADJ:0 "Kubani"
+
+ TER:0 "Terek"
+ TER_DEF:0 "Terek"
+ TER_ADJ:0 "Terekian"
+
+ DAG:0 "Dagestan"
+ DAG_DEF:0 "Dagestan"
+ DAG_ADJ:0 "Dagestani"
+ 
+ JAM:0 "Jamaica"
+ JAM_DEF:0 "Jamaica"
+ JAM_ADJ:0 "Jamaican"
+ 
+ LBR:0 "Liberia"
+ LBR_DEF:0 "Liberia"
+ LBR_ADJ:0 "Liberian"
+
+ RIY:0 "Emirate of Riyadh"
+ RIY_DEF:0 "the Emirate of Riyadh"
+ RIY_ADJ:0 "Arabic"
+ 
+ YEM:0 "Yemen"
+ YEM_DEF:0 "Yemen"
+ YEM_ADJ:0 "Yemeni"
+ 
+ ATH:0 "Athapaska"
+ ATH_DEF:0 "Athapaska"
+ ATH_ADJ:0 "Athapaskan"
+ 
+ SCO:0 "Scottish Administration"
+ SCO_DEF:0 "the Scottish Administration"
+ SCO_ADJ:0 "Scottish"

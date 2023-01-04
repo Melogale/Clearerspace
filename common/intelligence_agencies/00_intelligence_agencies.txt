@@ -79,10 +79,7 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_generic_9
 	names = { "Hammer and Sickle" }
 	
-	available = { 
-		has_government = communism
-	}
-	
+	available = { always = yes }
 	default = { always = yes } 
 }
 

@@ -7,8 +7,8 @@ state = {
 		rubber = 34
 	}
 	history = {
-		owner = QIN
-		add_core_of = QIN
+		owner = SIA
+		add_core_of = SIA
 		victory_points = { 7236 1 }
 		buildings = {
 			infrastructure = 2

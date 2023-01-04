@@ -10,59 +10,6 @@ news_event = {
 	title = country_capitulated.0.t
 	#Good news
 	desc = {
-		text = country_capitulated.0.d_positive_collab_diff_ideology
-		trigger = {
-			NOT = { tag = ROOT }
-			NOT = {
-				OR = {
-					AND = {
-						ROOT = { has_government = fascism }
-						FROM.FROM = { has_government = fascism }
-					}
-					AND = {
-						ROOT = { has_government = democratic }
-						FROM.FROM = { has_government = democratic }
-					}
-					AND = {
-						ROOT = { has_government = communism }
-						FROM.FROM = { has_government = communism }
-					}
-					AND = {
-						ROOT = { has_government = neutrality }
-						FROM.FROM = { has_government = neutrality }
-					}
-				}
-			}
-			FROM.FROM = {
-				has_collaboration = {
-					target = ROOT
-					value > 0.6
-				}
-			}
-		}
-	}
-	desc = {
-		text = country_capitulated.0.d_positive_collab_invaded_same_ideology
-		trigger = {
-			OR = {
-				AND = {
-					ROOT = { has_government = fascism }
-					FROM.FROM = { has_government = fascism }
-				}
-				AND = {
-					ROOT = { has_government = communism }
-					FROM.FROM = { has_government = communism }
-				}
-			}
-			FROM.FROM = {
-				has_collaboration = {
-					target = ROOT
-					value > 0.6
-				}
-			}
-		}
-	}
-	desc = {
 		text = country_capitulated.0.d_positive_both_no_faction
 		trigger = {
 			OR = {
@@ -119,39 +66,7 @@ news_event = {
 			FROM = { FROM = { any_allied_country = { has_war_with = ROOT } } }
 		}
 	}
-	#Bad news
-	desc = {
-		text = country_capitulated.0.d_negative_collab_diff_ideology
-		trigger = {
-			tag = ROOT
-			NOT = {
-				OR = {
-					AND = {
-						ROOT = { has_government = fascism }
-						FROM.FROM = { has_government = fascism }
-					}
-					AND = {
-						ROOT = { has_government = democratic }
-						FROM.FROM = { has_government = democratic }
-					}
-					AND = {
-						ROOT = { has_government = communism }
-						FROM.FROM = { has_government = communism }
-					}
-					AND = {
-						ROOT = { has_government = neutrality }
-						FROM.FROM = { has_government = neutrality }
-					}
-				}
-			}
-			FROM.FROM = {
-				has_collaboration = {
-					target = ROOT
-					value > 0.6
-				}
-			}
-		}
-	}
+
 	desc = {
 		text = country_capitulated.0.d_negative_both_no_faction
 		trigger = {

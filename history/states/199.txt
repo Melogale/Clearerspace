@@ -7,8 +7,8 @@ state = {
 		steel = 16
 	}
 	history = {
-		owner = QIN
-		add_core_of = QIN
+		owner = MAN
+		add_core_of = MAN
 		victory_points = { 11771 3 }
 		buildings = {
 			infrastructure = 2

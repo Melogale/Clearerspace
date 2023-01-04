@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"QIQ"={
 			history = "QIQ_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = liberalism
 			ideas = {
 				
 			}

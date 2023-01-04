@@ -8,8 +8,8 @@ state = {
 		chromium = 10
 	}
 	history = {
-		owner = QIN
-		add_core_of = QIN
+		owner = BAT
+		add_core_of = BAT
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

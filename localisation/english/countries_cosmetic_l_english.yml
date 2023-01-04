@@ -1,0 +1,109 @@
+﻿l_english:
+ GER_vanguard_socialism:0 "German Proletarian National State"
+ GER_authoritarian_socialism:0 "German People's Republic"
+ GER_libertarian_socialism:0 "German Socialist Republic"
+ GER:0 "Germany"
+
+ ARC_arcadia:0 "Arcadia"
+ ARC_arcadia_DEF:0 "Arcadia"
+ ARC_arcadia_ADJ:0 "Arcadian"
+
+ PLC_poland:0 "Poland"
+ PLC_poland_DEF:0 "Poland"
+ PLC_poland_ADJ:0 "Polish"
+
+ LIT_plc:0 "Grand Principality of Lithuania"
+ LIT_plc_DEF:0 "the Grand Principality of Lithuania"
+ LIT_plc_ADJ:0 "Lithuanian"
+
+ PRU_plc:0 "Principality of Prussia"
+ PRU_plc_DEF:0 "the Principality of Prussia"
+ PRU_plc_ADJ:0 "Prussian"
+
+ ASH_plc:0 "Ashkenazi Autonomy"
+ ASH_plc_DEF:0 "the Ashkenazi Autonomy"
+ ASH_plc_ADJ:0 "Ashkenazi"
+
+ PLC_belarus:0 "Belarus"
+ PLC_belarus_DEF:0 "Belarus"
+ PLC_belarus_ADJ:0 "Belarusian"
+
+ LIV_latvia:0 "Latvia"
+ LIV_latvia_DEF:0 "Latvia"
+ LIV_latvia_ADJ:0 "Latvian"
+
+ LIV_livonia:0 "Livonia"
+ LIV_livonia_DEF:0 "Livonia"
+ LIV_livonia_ADJ:0 "Livonian"
+
+ BURP:0 "Dutch Republic"
+ BURP_DEF:0 "the Dutch Republic"
+ BURP_ADJ:0 "Dutch"
+
+ BEIP:0 "Dutch East Indies"
+ 
+ RFR_monolism:0 "French Commune"
+ RFR_monolism_DEF:0 "the French Commune"
+ RFR_authoritarian_socialism:0 "French Commune"
+ RFR_authoritarian_socialism_DEF:0 "the French Commune"
+ RFR_libertarian_socialism:0 "French Commune"
+ RFR_libertarian_socialism_DEF:0 "the French Commune"
+ RFR_vanguard_socialism:0 "French Commune"
+ RFR_vanguard_socialism_DEF:0 "the French Commune"
+ RFR_social_democracy:0 "French Republic"
+ RFR_social_democracy_DEF:0 "the French Republic"
+ RFR_liberalism:0 "French Republic"
+ RFR_liberalism_DEF:0 "the French Republic"
+ RFR_conservatism:0 "French Republic"
+ RFR_conservatism_DEF:0 "the French Republic"
+ RFR_authoritarian_democracy:0 "Revolutionary France"
+ RFR_authoritarian_democracy_DEF:0 "Revolutionary France"
+ RFR_autocracy:0 "French Empire"
+ RFR_autocracy_DEF:0 "the French Empire"
+ RFR_fascism:0 "French Empire"
+ RFR_fascism_DEF:0 "the French Empire"
+ RFR_egoism:0 "French Territory"
+ RFR_egoism_DEF:0 "the French Territory"
+ RFR:0 "Revolutionary France"
+ RFR_DEF:0 "Revolutionary France"
+ RFR_ADJ:0 "French"
+
+ GRE_free:0 "Greece"
+ GRE_free_DEF:0 "Greece"
+ GRE_free_ADJ:0 "Greek"
+
+ TRA_romania:0 "Romania"
+ TRA_romania_DEF:0 "Romania"
+ TRA_romania_ADJ:0 "Romanian"
+ 
+ TUR:0 "Turkey"
+ TUR_DEF:0 "Turkey"
+ TUR_ADJ:0 "Turkish"
+ 
+ HRE:0 "Holy Roman Empire"
+ HRE_DEF:0 "the Holy Roman Empire"
+ HRE_ADJ:0 "Holy German"
+
+ CDR:0 "Confederation of the Germans"
+ CDR_DEF:0 "the Confederation of the Germans"
+ CDR_ADJ:0 "German"
+
+ EGY_free:0 "Sultanate of Egypt"
+ EGY_free_DEF:0 "the Sultanate of Egypt"
+ EGY_free_ADJ:0 "Egyptian"
+
+ SWI_rev:0 "Helvetic Republic"
+ SWI_rev_DEF:0 "the Helvetic Republic"
+ SWI_rev_ADJ:0 "Swiss"
+
+ CNU_union:0 "Celtic Union"
+ CNU_union_DEF:0 "the Celtic Union"
+ CNU_union_ADJ:0 "Celtic"
+
+ ENG_union:0 "United Kingdom"
+ ENG_union_DEF:0 "the United Kingdom"
+ ENG_union_ADJ:0 "British"
+
+ BUR_eu:0 "Union of European Nations"
+ BUR_eu_DEF:0 "the Union of European Nations"
+ BUR_eu_ADJ:0 "European"

@@ -4,8 +4,8 @@ state = {
 	manpower = 1839144
 	state_category = pastoral
 	history = {
-		owner = QIN
-		add_core_of = QIN
+		owner = MAN
+		add_core_of = MAN
 		buildings = {
 			infrastructure = 2
 		}

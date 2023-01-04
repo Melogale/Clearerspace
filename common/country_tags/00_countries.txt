@@ -81,3 +81,104 @@ NEP = "countries/Nepal.txt"
 BHU = "countries/Bhutan.txt"
 CHL = "countries/Chola.txt"
 BRM = "countries/Burma.txt"
+
+# EAST ASIA
+TIB = "countries/Tibet.txt"
+QIN = "countries/Great Qing.txt"
+MON = "countries/Mongolia.txt"
+UYG = "countries/Uyghuristan.txt"
+JAP = "countries/Japan.txt"
+MAN = "countries/Manchuria.txt"
+JRS = "countries/Shiberiya.txt"
+SIA = "countries/Siam.txt"
+MLC = "countries/Malacca.txt"
+JPH = "countries/Philippines.txt"
+BEI = "countries/Burgundian Indies.txt"
+SEI = "countries/Spanish Indies.txt"
+JEI = "countries/Japanese Indies.txt"
+
+# OCEANIA
+AST = "countries/Australia.txt"
+NGA = "countries/New Galicia.txt"
+HAW = "countries/Hawaii.txt"
+
+# AFRICA
+LBR = "countries/Liberia.txt"
+EGY = "countries/Egypt.txt"
+BAT = "countries/Batavia.txt"
+
+######################
+## NONSTARTING TAGS ##
+######################
+
+# OTTOMANS
+SER = "countries/Serbia.txt"
+BUL = "countries/Bulgaria.txt"
+BOS = "countries/Bosnia.txt"
+ALB = "countries/Albania.txt"
+LIB = "countries/Libya.txt"
+SIC = "countries/Sicily.txt"
+SYR = "countries/Syria.txt"
+IRQ = "countries/Iraq.txt"
+ARM = "countries/Armenia.txt"
+AZR = "countries/Azerbaijan.txt"
+GEO = "countries/Georgia.txt"
+KUR = "countries/Kurdistan.txt"
+
+# WEST EUROPE
+SLO = "countries/Slovakia.txt"
+CAT = "countries/Catalonia.txt"
+BRT = "countries/Brittany.txt"
+DEN = "countries/Denmark.txt"
+NOR = "countries/Norway.txt"
+FIN = "countries/Finland.txt"
+
+# EASTERN EUROPE
+LIT = "countries/Lithuania.txt"
+LIV = "countries/Livonia.txt"
+PRU = "countries/Prussia.txt"
+CRI = "countries/Crimea.txt"
+FRE = "countries/Free Territories.txt"
+ASH = "countries/Ashkenazi State.txt"
+
+# RUSSIA
+RST = "countries/Soviet Union.txt"
+SIB = "countries/Siberia.txt"
+DAG = "countries/Dagestan.txt"
+TER = "countries/Terek.txt"
+KUB = "countries/Kuban.txt"
+
+# CENTRAL ASIA
+KAZ = "countries/Kazakhstan.txt"
+TAJ = "countries/Tajikistan.txt"
+TKM = "countries/Turkmenistan.txt"
+UZB = "countries/Uzbekistan.txt"
+KYR = "countries/Kyrgyzstan.txt"
+
+# EAST ASIA
+ICH = "countries/Indochina.txt"
+VIT = "countries/Vietnam.txt"
+CAM = "countries/Cambodia.txt"
+LAO = "countries/Laos.txt"
+KOR = "countries/Korea.txt"
+INS = "countries/Indonesia.txt"
+MAL = "countries/Malaysia.txt"
+PAP = "countries/Papua.txt"
+
+# AFRICA
+TUN = "countries/Tunisia.txt"
+MOR = "countries/Morocco.txt"
+NGR = "countries/Nigeria.txt"
+MDG = "countries/Madagascar.txt"
+COG = "countries/Congo.txt"
+
+# AMERICAS
+APC = "countries/Apache.txt"
+IRO = "countries/Iroquois.txt"
+SEM = "countries/Seminole.txt"
+NUN = "countries/Nunagat.txt"
+NLO = "countries/Great Plains.txt"
+
+# CHINA
+CHI = "countries/China.txt"
+XIA = "countries/Great Xiao.txt"

@@ -138,7 +138,6 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 			
 			modifier = {
-				democratic_drift = 0.1
 				stability_factor = 0.1
 			}
 		}
@@ -153,7 +152,6 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				neutrality_drift = 0.1
 				mobilization_speed = 0.15
 			}
 		}
@@ -189,7 +187,6 @@ ideas = {
 			picture = generic_pp_unity_bonus
 
 			modifier = {
-				democratic_drift = -0.02
 			}
 		}
 	
@@ -264,13 +261,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
-			allowed_civil_war = {
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
-			}
 			
 			removal_cost = -1
 
@@ -313,10 +303,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
 			
 			removal_cost = -1
 
@@ -332,10 +318,6 @@ ideas = {
 			
 			allowed = {
 				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
 			}
 
 			cancel = {
