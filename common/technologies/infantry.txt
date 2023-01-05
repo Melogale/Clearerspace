@@ -426,12 +426,10 @@ technologies = {
 		
 		categories = {
 			para_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
 			factor = 0.5
-		
 		}
 	}
 	
@@ -456,7 +454,6 @@ technologies = {
 		
 		categories = {
 			para_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -480,12 +477,153 @@ technologies = {
 		
 		categories = {
 			para_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
 			factor = 0.5
+		}
+	}
+
+	jungle_specialists = {
+
+		enable_subunits = {
+			jungle_specialists
+		}
+		
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = jungle_specialists
+			}
+		}
+
+		path = {
+			leads_to_tech = jungle_specialists2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1936 }
+		}
+		
+		categories = {
+			jungle_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
 			
+			modifier = {
+				factor = 3
+				tag = INC
+			}
+			
+			modifier = {
+				factor = 3
+				tag = GCO
+			}
+
+			modifier = {
+				factor = 5
+				tag = AMZ
+			}
+
+			modifier = {
+				factor = 3
+				tag = BRA
+			}
+		}
+	}
+
+	jungle_specialists2 = {
+
+		jungle_specialists = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = jungle_specialists3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1939 }
+		}
+		
+		categories = {
+			jungle_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = INC
+			}
+			
+			modifier = {
+				factor = 3
+				tag = GCO
+			}
+
+			modifier = {
+				factor = 5
+				tag = AMZ
+			}
+
+			modifier = {
+				factor = 3
+				tag = BRA
+			}
+		}
+	}
+
+	jungle_specialists3 = {
+
+		jungle_specialists = {
+			max_organisation = 5
+		}
+
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1943 }
+		}
+		
+		categories = {
+			jungle_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = INC
+			}
+			
+			modifier = {
+				factor = 3
+				tag = GCO
+			}
+
+			modifier = {
+				factor = 5
+				tag = AMZ
+			}
+
+			modifier = {
+				factor = 3
+				tag = BRA
+			}
 		}
 	}
 	
@@ -521,12 +659,10 @@ technologies = {
 		
 		categories = {
 			marine_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
 			factor = 0.7
-			
 		}
 	}
 	
@@ -551,12 +687,10 @@ technologies = {
 		
 		categories = {
 			marine_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
 			factor = 0.7
-			
 		}
 	}
 	
@@ -575,12 +709,10 @@ technologies = {
 		
 		categories = {
 			marine_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
 			factor = 0.7
-			
 		}
 	}	
 	
@@ -617,7 +749,6 @@ technologies = {
 		categories = {
 			infantry_tech
 			mountaineers_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -647,7 +778,6 @@ technologies = {
 		categories = {
 			infantry_tech
 			mountaineers_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -670,7 +800,6 @@ technologies = {
 		categories = {
 			infantry_tech
 			mountaineers_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -705,7 +834,6 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -742,7 +870,6 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -774,7 +901,6 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -809,7 +935,6 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -843,7 +968,6 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -873,7 +997,6 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
-			cat_special_forces_generic
 		}
 		
 		ai_will_do = {

@@ -1,0 +1,1853 @@
+﻿
+focus_tree = {
+	id = bavarian_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			tag = BAY
+			add = 10
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 50 y = 4000 }
+
+	focus = {
+		id = BAY_towards_autarky
+		icon = GFX_goal_generic_construct_civilian
+		x = 10
+		y = 0
+		cost = 3
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				BAY_torwards_autarky
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_pleas_to_the_swiss
+		icon = GFX_focus_generic_concessions
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_towards_autarky }
+		relative_position_id = BAY_towards_autarky
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SWI = {
+				country_event = {
+					id = bay.1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_genoese_companies
+		icon = GFX_focus_SOV_organize_wreckers
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_pleas_to_the_swiss }
+		relative_position_id = BAY_pleas_to_the_swiss
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GTC = {
+				country_event = {
+					id = bay.3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_pangerman_nationalism
+		icon = GFX_focus_ger_reichskommisariats
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_towards_autarky }
+		relative_position_id = BAY_towards_autarky
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BAY_state_sponsored_nationalism
+				remove_idea = BAY_nationalist_fatigue
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_unify_the_volker_werke
+		icon = GFX_focus_SOV_merge_plants
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_towards_autarky }
+		relative_position_id = BAY_towards_autarky
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_unify_the_volker_werke_tt
+		}
+	}
+
+	focus = {
+		id = BAY_the_autobahn_project
+		icon = GFX_focus_SOV_the_road_of_life
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_unify_the_volker_werke }
+		relative_position_id = BAY_unify_the_volker_werke
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_the_autobahn_project_tt
+		}
+	}
+
+	focus = {
+		id = BAY_increase_famine_relief
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_unify_the_volker_werke }
+		relative_position_id = BAY_unify_the_volker_werke
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BAY_moderate_poverty
+				remove_idea = BAY_rampant_poverty
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_revolutionary_brothers
+		icon = GFX_focus_generic_join_comintern
+		x = -3
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_increase_famine_relief }
+		prerequisite = { focus = BAY_the_autobahn_project }
+		prerequisite = { focus = BAY_genoese_companies }
+		relative_position_id = BAY_increase_famine_relief
+
+		available = {
+			FRA = {
+				has_global_flag = FRA_viva_la_revolution
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				add_ideas = BAY_influence_effects_6
+			}
+			if = {
+				limit = {
+					has_idea = BAY_international_embargo_1
+				}
+				remove_ideas = BAY_international_embargo_1
+			}
+			if = {
+				limit = {
+					has_idea = BAY_international_embargo_2
+				}
+				remove_ideas = BAY_international_embargo_2
+			}
+			if = {
+				limit = {
+					has_idea = BAY_international_embargo_3
+				}
+				remove_ideas = BAY_international_embargo_3
+			}
+			if = {
+				limit = {
+					has_idea = BAY_international_embargo_4
+				}
+				remove_ideas = BAY_international_embargo_4
+			}
+			if = {
+				limit = {
+					has_idea = BAY_international_embargo_5
+				}
+				remove_ideas = BAY_international_embargo_5
+			}
+			if = {
+				limit = {
+					has_idea = BAY_international_embargo_6
+				}
+				remove_ideas = BAY_international_embargo_6
+			}
+			custom_effect_tooltip = BAY_turn_on_influence_mechanic
+		}
+	}
+
+	focus = {
+		id = BAY_franco_german_collaboration
+		icon = GFX_focus_chi_reach_out_to_france
+		x = -2
+		y = 1
+		cost = 3
+		mutually_exclusive = { focus = BAY_an_independent_economy }
+		prerequisite = { focus = BAY_revolutionary_brothers }
+		relative_position_id = BAY_revolutionary_brothers
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_high_influence_increase = yes
+		}
+	}
+
+	focus = {
+		id = BAY_an_independent_economy
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		x = 2
+		y = 1
+		cost = 3
+		mutually_exclusive = { focus = BAY_franco_german_collaboration }
+		prerequisite = { focus = BAY_revolutionary_brothers }
+		relative_position_id = BAY_revolutionary_brothers
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_high_influence_decrease = yes
+		}
+	}
+
+	focus = {
+		id = BAY_treading_the_narrow_path
+		icon = GFX_focus_prc_agrarian_socialism
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_an_independent_economy focus = BAY_franco_german_collaboration }
+		relative_position_id = BAY_an_independent_economy
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_treading_the_narrow_path_tt
+		}
+	}
+
+	focus = {
+		id = BAY_employ_french_officials
+		icon = GFX_focus_generic_military_academy
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_franco_german_collaboration }
+		relative_position_id = BAY_franco_german_collaboration
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_high_influence_increase = yes
+			custom_effect_tooltip = BAY_employ_french_officials_tt
+		}
+	}
+
+	focus = {
+		id = BAY_request_french_investments
+		icon = GFX_focus_mex_privatisation
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_franco_german_collaboration }
+		relative_position_id = BAY_franco_german_collaboration
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_request_french_investments_tt
+		}
+	}
+
+	focus = {
+		id = BAY_grobe_kopfe_europas
+		icon = GFX_focus_generic_socialist_science
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_request_french_investments }
+		prerequisite = { focus = BAY_employ_french_officials }
+		relative_position_id = BAY_request_french_investments
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_moderate_influence_increase = yes
+			custom_effect_tooltip = BAY_grobe_kopfe_europas_tt
+		}
+	}
+
+	focus = {
+		id = BAY_import_essential_industries
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = { focus = BAY_request_french_investments }
+		relative_position_id = BAY_request_french_investments
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_high_influence_increase = yes
+			add_ideas = BAY_transplanted_industry
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_massive_military_buildup
+		icon = GFX_focus_SOV_mobilization_plan
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = { focus = BAY_employ_french_officials }
+		relative_position_id = BAY_employ_french_officials
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_moderate_influence_increase = yes
+			add_ideas = BAY_military_buildup
+		}
+	}
+
+	focus = {
+		id = BAY_a_stable_economy
+		icon = GFX_goal_generic_production2
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_massive_military_buildup }
+		prerequisite = { focus = BAY_import_essential_industries }
+		relative_position_id = BAY_massive_military_buildup
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BAY_healthy_economic_growth
+				remove_idea = BAY_transplanted_industry
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_urbanisation_efforts
+		icon = GFX_focus_generic_industry_3
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_treading_the_narrow_path }
+		relative_position_id = BAY_treading_the_narrow_path
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAY_franco_german_collaboration
+					}
+					NOT = {
+						has_completed_focus = BAY_an_independent_economy
+					}
+				}
+				custom_effect_tooltip = BAY_no_path_selected_yet_tt
+			}
+			if = {
+				limit = {
+					has_completed_focus = BAY_franco_german_collaboration
+				}
+				BAY_high_influence_decrease = yes
+				623 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				555 = {
+					add_extra_state_shared_building_slots = 2
+				}
+				622 = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = BAY_an_independent_economy
+				}
+				BAY_high_influence_increase = yes
+				624 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				621 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				555 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				622 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				623 = {
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_stoke_nationalist_sentiments
+		icon = GFX_goal_generic_propaganda
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_treading_the_narrow_path }
+		relative_position_id = BAY_treading_the_narrow_path
+
+		available = {
+			has_completed_focus = BAY_pangerman_nationalism
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAY_franco_german_collaboration
+					}
+					NOT = {
+						has_completed_focus = BAY_an_independent_economy
+					}
+				}
+				custom_effect_tooltip = BAY_no_path_selected_yet_tt
+			}
+			if = {
+				limit = {
+					has_completed_focus = BAY_franco_german_collaboration
+				}
+				BAY_moderate_influence_decrease = yes
+				swap_ideas = {
+					add_idea = BAY_reinvigorated_nationalism
+					remove_idea = BAY_state_sponsored_nationalism
+				}
+				FRA = {
+					add_war_support = 0.1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = BAY_an_independent_economy
+				}
+				BAY_moderate_influence_increase = yes
+				swap_ideas = {
+					add_idea = BAY_reinvigorated_nationalism
+					remove_idea = BAY_state_sponsored_nationalism
+				}
+				add_war_support = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_modern_military_discipline
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_stoke_nationalist_sentiments }
+		prerequisite = { focus = BAY_urbanisation_efforts }
+		relative_position_id = BAY_stoke_nationalist_sentiments
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAY_franco_german_collaboration
+					}
+					NOT = {
+						has_completed_focus = BAY_an_independent_economy
+					}
+				}
+				custom_effect_tooltip = BAY_no_path_selected_yet_tt
+			}
+			if = {
+				limit = {
+					has_completed_focus = BAY_franco_german_collaboration
+				}
+				BAY_high_influence_decrease = yes
+				army_experience = 50
+				FRA = {
+					army_experience = 50
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = BAY_an_independent_economy
+				}
+				BAY_high_influence_increase = yes
+				army_experience = 100
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_expand_the_volker_werke
+		icon = GFX_goal_generic_soviet_construction
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_an_independent_economy }
+		relative_position_id = BAY_an_independent_economy
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_expand_the_volker_werke_tt
+		}
+	}
+
+	focus = {
+		id = BAY_all_german_staffing
+		icon = GFX_focus_generic_military_mission
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_an_independent_economy }
+		relative_position_id = BAY_an_independent_economy
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_high_influence_decrease = yes
+			custom_effect_tooltip = BAY_all_german_staffing_tt
+		}
+	}
+
+	focus = {
+		id = BAY_grobe_kopfe_deutschlands
+		icon = GFX_focus_research
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_all_german_staffing }
+		prerequisite = { focus = BAY_expand_the_volker_werke }
+		relative_position_id = BAY_all_german_staffing
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_moderate_influence_decrease = yes
+			add_ideas = BAY_grobe_kopfe_deutschlands
+		}
+	}
+
+	focus = {
+		id = BAY_increase_volker_werke_ambitions
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = { focus = BAY_expand_the_volker_werke }
+		relative_position_id = BAY_expand_the_volker_werke
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_high_influence_decrease = yes
+			add_ideas = BAY_essential_state_industry
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_every_german_a_soldier
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = { focus = BAY_all_german_staffing }
+		relative_position_id = BAY_all_german_staffing
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BAY_moderate_influence_decrease = yes
+			add_ideas = BAY_mass_conscription
+		}
+	}
+
+	focus = {
+		id = BAY_military_industrial_complex
+		icon = GFX_focus_generic_tank_production
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_every_german_a_soldier }
+		prerequisite = { focus = BAY_increase_volker_werke_ambitions }
+		relative_position_id = BAY_every_german_a_soldier
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAY_essential_state_industry
+				add_idea = BAY_military_industrial_complex
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_a_shallow_victory
+		icon = GFX_focus_SOV_the_last_purge
+		x = 25
+		y = 0
+		cost = 3
+
+		available = {
+			has_global_flag = BUR_empire_dismantled_FLG
+		}
+
+		bypass = {
+			has_global_flag = BUR_empire_dismantled_FLG
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_a_shallow_victory_tt
+		}
+	}
+
+	focus = {
+		id = BAY_confederation_du_rhin
+		icon = GFX_focus_fra_le_deluge
+		x = -7
+		y = 1
+		cost = 3
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAY_confederation_du_rhin_bypass_tt
+				OR = {
+					check_variable = {
+						var = BAY_influence
+						value = 80
+						compare = greater_than_or_equals
+					}
+					has_country_flag = BAY_tensions_in_alsace
+				}
+			}
+		}
+
+		prerequisite = { focus = BAY_a_shallow_victory }
+		relative_position_id = BAY_a_shallow_victory
+		mutually_exclusive = { focus = BAY_tensions_in_alsace focus = BAY_the_rhenish_germans_freed }
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = BAY_confederation_du_rhin_bypass_tt
+				OR = {
+					check_variable = {
+						var = BAY_influence
+						value = 80
+						compare = greater_than_or_equals
+					}
+					has_country_flag = BAY_tensions_in_alsace
+				}
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_confederation_du_rhin_tt
+		}
+	}
+
+	focus = {
+		id = BAY_the_rhenish_germans_freed
+		icon = GFX_goal_support_communism
+		x = 0
+		y = 1
+		cost = 3
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAY_the_rhenish_germans_freed_bypass_tt
+				has_country_flag = BAY_rhineland_reclaimed
+			}
+		}
+
+		prerequisite = { focus = BAY_a_shallow_victory }
+		relative_position_id = BAY_a_shallow_victory
+		mutually_exclusive = { focus = BAY_tensions_in_alsace focus = BAY_confederation_du_rhin }
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = BAY_the_rhenish_germans_freed_bypass_tt
+				has_country_flag = BAY_rhineland_reclaimed
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_the_rhenish_germans_freed_tt
+		}
+	}
+
+	focus = {
+		id = BAY_tensions_in_alsace
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 7
+		y = 1
+		cost = 3
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAY_tensions_in_alsace_bypass_tt
+				OR = {
+					has_country_flag = BAY_tensions_in_alsace
+					check_variable = {
+						var = BAY_influence
+						value = 20
+						compare = less_than_or_equals
+					}
+				}
+			}
+		}
+
+		prerequisite = { focus = BAY_a_shallow_victory }
+		relative_position_id = BAY_a_shallow_victory
+		mutually_exclusive = { focus = BAY_the_rhenish_germans_freed focus = BAY_confederation_du_rhin }
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = BAY_tensions_in_alsace_bypass_tt
+				OR = {
+					has_country_flag = BAY_tensions_in_alsace
+					check_variable = {
+						var = BAY_influence
+						value = 20
+						compare = less_than_or_equals
+					}
+				}
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_tensions_in_alsace_tt
+		}
+	}
+
+	#Rhenish Germans Freed
+
+	focus = {
+		id = BAY_talks_with_rhenish_revolutionaries
+		icon = GFX_goal_generic_improve_relations
+		x = -3
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_rhenish_germans_freed }
+		relative_position_id = BAY_the_rhenish_germans_freed
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_talks_with_rhenish_revolutionaries_tt
+			hidden_effect = {
+				country_event = {
+					id = bay.5
+					days = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_bolster_public_support
+		icon = GFX_goal_generic_propaganda
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_rhenish_germans_freed }
+		relative_position_id = BAY_the_rhenish_germans_freed
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_bolster_public_support_tt
+			hidden_effect = {
+				#compliance gain in rhenish states, add once states are finalized :)
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_merging_the_revolutions
+		icon = GFX_focus_por_workers_of_iberia
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_bolster_public_support }
+		prerequisite = { focus = BAY_talks_with_rhenish_revolutionaries }
+		relative_position_id = BAY_talks_with_rhenish_revolutionaries
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_merging_the_revolutions_tt
+			#unlocks decisions to core the rhineland if compliance is high enough
+		}
+	}
+
+	focus = {
+		id = BAY_restructuring_the_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_the_global_connection }
+		prerequisite = { focus = BAY_merging_the_revolutions }
+		relative_position_id = BAY_the_global_connection
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#some very cool and epic economic integration of the rhineland. probably add once states are finalized :)
+		}
+	}
+
+	focus = {
+		id = BAY_volker_werke_expansion
+		icon = GFX_focus_SOV_merge_plants
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_restructuring_the_railways }
+		relative_position_id = BAY_restructuring_the_railways
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_volker_werke_expansion_tt
+		}
+	}
+
+	focus = {
+		id = BAY_reorganize_the_military
+		icon = GFX_focus_SOV_military_purge
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_restructuring_the_railways }
+		relative_position_id = BAY_restructuring_the_railways
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_reorganize_the_military_tt
+		}
+	}
+
+	focus = {
+		id = BAY_the_global_connection
+		icon = GFX_focus_fra_le_deluge
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_rhenish_germans_freed }
+		relative_position_id = BAY_the_rhenish_germans_freed
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAY_moderate_poverty
+				add_idea = BAY_low_poverty
+			}
+			add_ideas = BAY_french_lifeline
+		}
+	}
+
+	focus = {
+		id = BAY_preparing_the_german_revolutions
+		icon = GFX_goal_generic_position_armies
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_global_connection }
+		relative_position_id = BAY_the_global_connection
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_preparing_the_german_revolutions_tt
+		}
+	}
+
+	#Tensions in Alsace
+
+	focus = {
+		id = BAY_prepare_for_total_mobilization
+		icon = GFX_focus_generic_aircraft_production
+		x = -3
+		y = 1
+		cost = 2
+
+		prerequisite = { focus = BAY_tensions_in_alsace }
+		relative_position_id = BAY_tensions_in_alsace
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_fully_integrate_women_into_factories
+		icon = GFX_focus_generic_women_in_military
+		x = 1
+		y = 1
+		cost = 2
+
+		prerequisite = { focus = BAY_prepare_for_total_mobilization }
+		prerequisite = { focus = BAY_all_for_the_effort }
+		relative_position_id = BAY_prepare_for_total_mobilization
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_fully_embargo_france
+		icon = GFX_goal_generic_trade
+		x = 0
+		y = 2
+		cost = 2
+
+		prerequisite = { focus = BAY_tensions_in_alsace }
+		relative_position_id = BAY_tensions_in_alsace
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_declare_martial_law
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 1
+		cost = 2
+
+		prerequisite = { focus = BAY_tensions_in_alsace }
+		relative_position_id = BAY_tensions_in_alsace
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_introduce_compulsory_labour
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 0
+		y = 1
+		cost = 2
+
+		prerequisite = { focus = BAY_declare_martial_law }
+		relative_position_id = BAY_declare_martial_law
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_all_for_the_effort
+		icon = GFX_focus_prc_agrarian_socialism
+		x = -1
+		y = 1
+		cost = 2
+
+		prerequisite = { focus = BAY_tensions_in_alsace }
+		relative_position_id = BAY_tensions_in_alsace
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_total_mobilization
+		icon = GFX_focus_bay_total_mobilisation
+		x = 0
+		y = 1
+		cost = 2
+
+		prerequisite = { focus = BAY_fully_integrate_women_into_factories }
+		prerequisite = { focus = BAY_fully_embargo_france }
+		prerequisite = { focus = BAY_introduce_compulsory_labour }
+		relative_position_id = BAY_fully_embargo_france
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_war_with_france
+		icon = GFX_focus_bay_war_with_france
+		x = 0
+		y = 1
+		cost = 2
+
+		prerequisite = { focus = BAY_total_mobilization }
+		relative_position_id = BAY_total_mobilization
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Confederation Du Rhin
+
+	focus = {
+		id = BAY_a_more_moderate_nationalism
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_confederation_du_rhin }
+		relative_position_id = BAY_confederation_du_rhin
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_what_we_can_with_what_we_have
+		icon = GFX_focus_generic_support_the_left_right
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_a_more_moderate_nationalism }
+		relative_position_id = BAY_a_more_moderate_nationalism
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_focus_on_resource_exploitation
+		icon = GFX_focus_generic_steel
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_what_we_can_with_what_we_have }
+		relative_position_id = BAY_what_we_can_with_what_we_have
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_trial_of_the_radicals
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 0
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_confederation_du_rhin }
+		prerequisite = { focus = BAY_a_more_moderate_nationalism }
+		relative_position_id = BAY_confederation_du_rhin
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_reliance_on_the_french
+		icon = GFX_focus_CZE_german_puppet
+		x = 2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_confederation_du_rhin }
+		relative_position_id = BAY_confederation_du_rhin
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_invite_french_political_advisors
+		icon = GFX_focus_generic_military_academy
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_reliance_on_the_french }
+		relative_position_id = BAY_reliance_on_the_french
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_crush_dissenters
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = -1
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_reliance_on_the_french }
+		prerequisite = { focus = BAY_trial_of_the_radicals }
+		relative_position_id = BAY_reliance_on_the_french
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_plan_for_the_confederation
+		icon = GFX_focus_fra_french_union
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_crush_dissenters }
+		relative_position_id = BAY_crush_dissenters
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+
+
+	#a red dawn!!!
+
+	focus = {
+		id = BAY_a_red_dawn
+		icon = GFX_focus_ger_great_red_menace
+		x = 24
+		y = 7
+		cost = 3
+
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = BAY_a_red_dawn_available_1_tt
+					AND = {
+						has_completed_focus = BAY_preparing_the_german_revolutions
+						has_completed_focus = BAY_merging_the_revolutions
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = BAY_a_red_dawn_available_2_tt
+					AND = {
+						has_completed_focus = BAY_war_with_france
+						OR = {
+							has_country_flag = BAY_lost_franco_german_war_FLG
+							has_country_flag = BAY_won_franco_german_war_FLG
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = BAY_a_red_dawn_available_3_tt
+					has_completed_focus = BAY_plan_for_the_confederation
+				}
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BAY_a_red_dawn_tt
+		}
+	}
+
+	focus = {
+		id = BAY_the_nationale_volksarmee
+		icon = GFX_focus_generic_combined_arms
+		x = 8
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_a_red_dawn }
+		relative_position_id = BAY_a_red_dawn
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_volksmarine
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = 4
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_nationale_volksarmee }
+		relative_position_id = BAY_the_nationale_volksarmee
+
+		available = {
+			controls_state = 559
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_prepare_a_high_seas_fleet
+		icon = GFX_goal_generic_navy_battleship
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_volksmarine }
+		relative_position_id = BAY_volksmarine
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_prioritize_the_screen_fleet
+		icon = GFX_focus_generic_destroyer
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_prepare_a_high_seas_fleet }
+		relative_position_id = BAY_prepare_a_high_seas_fleet
+		mutually_exclusive = { focus = BAY_prioritize_the_raiding_fleet focus = BAY_prioritize_the_escort_fleet }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_prioritize_the_raiding_fleet
+		icon = GFX_goal_generic_navy_submarine
+		x = 2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_prepare_a_high_seas_fleet }
+		relative_position_id = BAY_prepare_a_high_seas_fleet
+		mutually_exclusive = { focus = BAY_prioritize_the_screen_fleet focus = BAY_prioritize_the_escort_fleet }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_join_the_carrier_race
+		icon = GFX_goal_generic_navy_carrier
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_volksmarine }
+		prerequisite = { focus = BAY_luftstreitkrafte }
+		relative_position_id = BAY_volksmarine
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_prioritize_the_escort_fleet
+		icon = GFX_goal_generic_navy_cruiser
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_join_the_carrier_race }
+		relative_position_id = BAY_join_the_carrier_race
+		mutually_exclusive = { focus = BAY_prioritize_the_screen_fleet focus = BAY_prioritize_the_raiding_fleet }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_prepare_new_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_prioritize_the_escort_fleet focus = BAY_prioritize_the_screen_fleet focus = BAY_prioritize_the_raiding_fleet }
+		relative_position_id = BAY_prioritize_the_escort_fleet
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_confirm_the_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 3
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_prioritize_the_escort_fleet focus = BAY_prioritize_the_screen_fleet focus = BAY_prioritize_the_raiding_fleet }
+		relative_position_id = BAY_prioritize_the_escort_fleet
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_found_the_marines
+		icon = GFX_goal_generic_amphibious_assault
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_confirm_the_naval_doctrine }
+		relative_position_id = BAY_confirm_the_naval_doctrine
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_naval_aviation
+		icon = GFX_goal_generic_air_production
+		x = -2
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_join_the_carrier_race }
+		prerequisite = { focus = BAY_devestation_from_the_skies }
+		relative_position_id = BAY_join_the_carrier_race
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_luftstreitkrafte
+		icon = GFX_goal_generic_air_fighter
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_nationale_volksarmee }
+		relative_position_id = BAY_the_nationale_volksarmee
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_death_from_above
+		icon = GFX_goal_generic_air_bomber
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_luftstreitkrafte }
+		relative_position_id = BAY_luftstreitkrafte
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_push_fighter_development
+		icon = GFX_goal_generic_air_fighter2
+		x = 0
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_death_from_above }
+		relative_position_id = BAY_death_from_above
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_invest_into_RADAR
+		icon = GFX_goal_generic_radar
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_push_fighter_development focus = BAY_naval_aviation }
+		relative_position_id = BAY_push_fighter_development
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_develop_the_blitzkrieg
+		icon = GFX_focus_generic_army_tanks2
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_death_from_above }
+		prerequisite = { focus = BAY_gamble_on_the_tanks }
+		relative_position_id = BAY_death_from_above
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_countering_the_air_war
+		icon = GFX_focus_generic_air_defense
+		x = 0
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_luftstreitkrafte }
+		relative_position_id = BAY_luftstreitkrafte
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_devestation_from_the_skies
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_luftstreitkrafte }
+		relative_position_id = BAY_luftstreitkrafte
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_landstreikrafte
+		icon = GFX_goal_generic_army_tanks
+		x = -4
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_nationale_volksarmee }
+		relative_position_id = BAY_the_nationale_volksarmee
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_modernize_the_artillery
+		icon = GFX_goal_generic_army_artillery2
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_landstreikrafte }
+		relative_position_id = BAY_landstreikrafte
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_pursue_superior_firepower
+		icon = GFX_goal_generic_build_tank
+		x = 0
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_modernize_the_artillery }
+		relative_position_id = BAY_modernize_the_artillery
+		mutually_exclusive = { focus = BAY_pursue_mobile_warfare }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_expand_the_special_forces
+		icon = GFX_goal_generic_CAS
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_pursue_superior_firepower }
+		relative_position_id = BAY_pursue_superior_firepower
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_modernize_the_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_pursue_superior_firepower focus = BAY_pursue_mobile_warfare }
+		relative_position_id = BAY_pursue_superior_firepower
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_bane_of_armor
+		icon = GFX_goal_generic_army_artillery
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_modernize_the_artillery focus = BAY_gamble_on_the_tanks }
+		relative_position_id = BAY_modernize_the_artillery
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_gamble_on_the_tanks
+		icon = GFX_focus_generic_tank_production
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_landstreikrafte }
+		relative_position_id = BAY_landstreikrafte
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_pursue_mobile_warfare
+		icon = GFX_goal_generic_army_motorized
+		x = 0
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_gamble_on_the_tanks }
+		relative_position_id = BAY_gamble_on_the_tanks
+		mutually_exclusive = { focus = BAY_pursue_superior_firepower }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_mechanize_the_infantry
+		icon = GFX_goal_generic_production2
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_pursue_mobile_warfare }
+		relative_position_id = BAY_pursue_mobile_warfare
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_growing_industrial_budget
+		icon = GFX_goal_generic_production
+		x = -5
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_a_red_dawn }
+		relative_position_id = BAY_a_red_dawn
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_the_first_industrial_escalation
+		icon = GFX_focus_generic_industry_1
+		x = -3
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_growing_industrial_budget }
+		relative_position_id = BAY_growing_industrial_budget
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_subsume_the_rheinwerke
+		icon = GFX_focus_SOV_merge_plants
+		x = -1
+		y = 1
+		cost = 3
+
+		mutually_exclusive = { focus = BAY_pursue_deep_resource_extraction }
+		prerequisite = { focus = BAY_the_first_industrial_escalation }
+		relative_position_id = BAY_the_first_industrial_escalation
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_pursue_deep_resource_extraction
+		icon = GFX_goal_generic_construction2
+		x = 1
+		y = 1
+		cost = 3
+
+		mutually_exclusive = { focus = BAY_subsume_the_rheinwerke }
+		prerequisite = { focus = BAY_the_first_industrial_escalation }
+		relative_position_id = BAY_the_first_industrial_escalation
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_central_expansion
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_growing_industrial_budget }
+		relative_position_id = BAY_growing_industrial_budget
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_eastern_expansion
+		icon = GFX_goal_generic_position_armies
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_growing_industrial_budget }
+		relative_position_id = BAY_growing_industrial_budget
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+}

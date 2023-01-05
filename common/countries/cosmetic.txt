@@ -1,0 +1,76 @@
+GER = {
+    color = rgb { 160 20 20 }
+    color_ui = rgb { 125 13 24 }
+}
+BURP = {
+    color = rgb { 203 138 74 }
+    color_ui = rgb { 203 138 74 }
+}
+BEIP = {
+    color = rgb { 203 138 74 }
+    color_ui = rgb { 203 138 74 }
+}
+ARC_arcadia = {
+    color = rgb { 102 204 204 }
+    color_ui = rgb { 102 204 204 }
+}
+PLC_poland = {
+    color = rgb { 191 64 149 }
+    color_ui = rgb { 191 64 149 }
+}
+PLC_ukraine = {
+    color = rgb { 29 115 201 }
+    color_ui = rgb { 29 115 201 }
+}
+PLC_belarus = {
+    color = rgb { 64 191 64 }
+    color_ui = rgb { 64 191 64 }
+}
+LIV_latvia = {  
+    color = rgb { 128 0 0 }
+    color_ui = rgb { 128 0 0 }
+}
+LIV_livonia = {
+    color = rgb { 128 128 128 }
+    color_ui = rgb { 128 128 128 }
+}
+RFR = {
+    color = rgb { 100 100 190 }
+    color_ui = rgb { 100 100 190 }
+}
+UPC = {
+    color = rgb { 168 36 89 }
+    color_ui = rgb { 168 36 89 }
+}
+GRE_free = {
+    color = rgb { 0 153 204 }
+    color_ui = rgb { 0 153 204 }
+}
+TRA_romania = {
+    color = rgb { 236 182 19 }
+    color_ui = rgb { 236 182 19 }
+}
+TUR = {
+    color = rgb { 80 170 120 }
+    color_ui = rgb { 236 182 19 }
+}
+HRE = {
+    color = rgb { 120 120 120 }
+    color_ui = rgb { 236 182 19 }
+}
+CDR = {
+    color = rgb { 53 167 184 }
+    color_ui = rgb { 53 167 184 }
+}
+LIT_plc = {
+    color = rgb { 185 70 70 }
+    color_ui = rgb { 185 70 70 }
+}
+PRU_plc = {
+    color = rgb { 185 70 70 }
+    color_ui = rgb { 185 70 70 }
+}
+ASH_plc = {
+    color = rgb { 185 70 70 }
+    color_ui = rgb { 185 70 70 }
+}

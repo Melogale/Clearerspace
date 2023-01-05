@@ -1,0 +1,858 @@
+add_namespace = commonwealth
+
+country_event = {
+	id = commonwealth.1
+	title = commonwealth.1.t
+	desc = commonwealth.1.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.1.a
+	}
+}
+
+country_event = {
+	id = commonwealth.2
+	title = commonwealth.2.t
+	desc = commonwealth.2.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.2.a
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_liberal_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_liberal
+				}
+				add_to_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_liberal
+					}
+				}
+				set_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+		}
+
+	}
+	option = {
+		name = commonwealth.2.b
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_conser_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_conservatism
+				}
+				add_to_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_conservatism
+					}
+				}
+				set_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = commonwealth.3
+	title = commonwealth.3.t
+	desc = commonwealth.3.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.3.a
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_liberal_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_liberal
+				}
+				add_to_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_liberal
+					}
+				}
+				set_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = commonwealth.3.b
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_conser_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_conservatism
+				}
+				add_to_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_conservatism
+					}
+				}
+				set_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = commonwealth.4
+	title = commonwealth.4.t
+	desc = commonwealth.4.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.4.a
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_liberal_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_liberal
+				}
+				add_to_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_liberal
+					}
+				}
+				set_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = commonwealth.4.b
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_conser_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_conservatism
+				}
+				add_to_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_conservatism
+					}
+				}
+				set_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = commonwealth.5
+	title = commonwealth.5.t
+	desc = commonwealth.5.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.5.a
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_liberal_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_liberal
+				}
+				add_to_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_liberal
+					}
+				}
+				set_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = commonwealth.5.b
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_conser_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_conservatism
+				}
+				add_to_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_conservatism
+					}
+				}
+				set_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = commonwealth.6
+	title = commonwealth.6.t
+	desc = commonwealth.6.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.6.a
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_liberal_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_liberal
+				}
+				add_to_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_liberal
+					}
+				}
+				set_variable = {
+					var = PLC_variable_liberal
+					value = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = commonwealth.6.b
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.025
+		}
+		custom_effect_tooltip = tt_plc_conser_push
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = PLC_variable_conservatism
+				}
+				add_to_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = PLC_variable_conservatism
+					}
+				}
+				set_variable = {
+					var = PLC_variable_conservatism
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = commonwealth.7
+	title = commonwealth.7.t
+	desc = commonwealth.7.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			check_variable = {
+				PLC_variable_liberal > 2
+			}
+		}
+		name = commonwealth.7.a
+		set_country_flag = PLC_liberal_path_FLG
+		country_event = {
+			id = commonwealth.14
+			days = 3
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				PLC_variable_conservatism > 2
+			}
+		}
+		name = commonwealth.7.b
+		set_country_flag = PLC_conservative_path_FLG
+		country_event = {
+			id = commonwealth.13
+			days = 3
+		}
+	}
+}
+
+####### The Act Passes
+
+country_event = {
+	id = commonwealth.13
+	title = commonwealth.13.t
+	desc = commonwealth.13.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.13.a
+		add_ideas = {
+			PLC_nationwide_strikes
+			PLC_disloyal_army
+			PLC_dead_economy
+		}
+		remove_ideas = {
+			PLC_backwater_economy
+		}
+		country_lock_all_division_template = yes
+		country_event = {
+			id = commonwealth.15
+			days = 3
+		}
+	}
+}
+
+######## The Act Fails
+
+country_event = {
+	id = commonwealth.14
+	title = commonwealth.14.t
+	desc = commonwealth.14.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.14.a
+		add_ideas = {
+			PLC_defunct_government
+			PLC_disloyal_generals
+			PLC_dead_economy
+		}
+		remove_ideas = {
+			PLC_backwater_economy
+		}
+		country_lock_all_division_template = yes
+		country_event = {
+			id = commonwealth.15
+			days = 3
+		}
+	}
+}
+
+######### Anarchist revolt event
+
+country_event = {
+	id = commonwealth.15
+	title = commonwealth.15.t
+	desc = commonwealth.15.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			FRE = {
+				add_state_core = 468
+				add_state_core = 469
+				add_state_core = 471
+				add_state_core = 473
+				add_state_core = 474
+				add_state_core = 476
+				add_state_core = 713
+				add_state_core = 712
+				add_state_core = 706
+				add_state_core = 707
+				add_state_core = 708
+				add_state_core = 709
+				add_state_core = 710
+				add_state_core = 711
+				transfer_state = 713
+				transfer_state = 469
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				load_oob = "FRE_rebellion"
+			}
+			set_country_flag = PLC_anarchist_uprising_FLG
+		}
+	}
+
+	option = {
+		name = commonwealth.15.a
+		CRI = {
+			add_state_core = 467
+		}
+		release = CRI
+	}
+}
+
+######### Forced surrender to the anarchists :(
+
+country_event = {
+	id = commonwealth.19
+	title = commonwealth.19.t
+	desc = commonwealth.19.d
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = PLC
+		is_subject = no
+		PLC = { has_war_with = FRE }
+		FRE = {
+			AND = {
+				controls_province = 11683
+				controls_province = 721
+				controls_province = 6474
+				controls_province = 9461
+				controls_province = 418
+				controls_province = 11504
+			}
+		}
+		has_country_flag = PLC_anarchist_uprising_FLG
+	}
+	
+	immediate = {
+		PLC = {
+			white_peace = {
+				tag = FRE
+				message = tt_PLC_surrender_to_anarchists
+			}
+		}
+	}
+
+	option = {
+		name = commonwealth.19.a
+		PLC = {
+			country_event = {
+				id = commonwealth.20
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = commonwealth.20
+	title = commonwealth.20.t
+	desc = commonwealth.20.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.20.a
+		FRE = {
+			transfer_state = 471
+			transfer_state = 473
+			transfer_state = 468
+			transfer_state = 712
+		}
+		PLC = {
+			country_event = {
+				id = commonwealth.21
+				days = 3
+			}
+		}
+	}
+}
+
+news_event = {
+	id = commonwealth.21
+	title = commonwealth.21.t
+	desc = commonwealth.21.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = commonwealth.21.a
+	}
+}
+
+#commonwealth collapse events
+
+country_event = {
+	id = commonwealth.8
+	title = commonwealth.8.t
+	desc = commonwealth.8.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			RRT = {
+				transfer_state = 478
+				transfer_state = 477
+				transfer_state = 476
+				transfer_state = 474
+				add_state_core = 478
+				add_state_core = 477
+				add_state_core = 476
+				add_state_core = 474
+			}
+			end_puppet = UKR
+			UKR = {
+				transfer_state = 718
+				add_state_core = 718
+				country_event = {
+					id = commonwealth.11
+					days = 10
+				}
+				set_cosmetic_tag = PLC_ukraine
+			}
+			end_puppet = BEL
+			BEL = {
+				transfer_state = 689
+				transfer_state = 688
+				transfer_state = 717
+				add_state_core = 689
+				add_state_core = 688
+				add_state_core = 717
+				set_cosmetic_tag = PLC_belarus
+			}
+			country_event = {
+				id = commonwealth.9
+				days = 5
+			}
+		}
+	}
+
+	option = {
+		name = commonwealth.8.a
+	}
+	option = {
+		name = commonwealth.8.b
+		UKR = {
+			change_tag_from = PLC
+		}
+	}
+	option = {
+		name = commonwealth.8.c
+		BEL = {
+			change_tag_from = PLC
+		}
+	}
+}
+
+country_event = {
+	id = commonwealth.9
+	title = commonwealth.9.t
+	desc = commonwealth.9.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			PRU = {
+				add_state_core = 680
+				add_state_core = 679
+				add_state_core = 674
+				add_state_core = 698
+			}
+			release = PRU
+			LIT = {
+				add_state_core = 1020
+				add_state_core = 693
+				add_state_core = 694
+				add_state_core = 676
+				add_state_core = 699
+			}
+			release = LIT
+			LIV = {
+				add_state_core = 695
+			}
+			release = LIV
+			set_cosmetic_tag = PLC_poland
+			set_capital = {
+				state = 675
+			}
+			country_event = {
+				id = commonwealth.10
+				days = 5
+			}
+			news_event = {
+				id = commonwealth.12
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = commonwealth.9.a
+	}
+	option = {
+		name = commonwealth.9.b
+		PRU = {
+			change_tag_from = PLC
+		}
+	}
+	option = {
+		name = commonwealth.9.c
+		LIT = {
+			change_tag_from = PLC
+		}
+	}
+	option = {
+		name = commonwealth.9.e
+		LIV = {
+			change_tag_from = PLC
+		}
+	}
+}
+
+country_event = {
+	id = commonwealth.10
+	title = commonwealth.10.t
+	desc = commonwealth.10.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ASH = {
+				add_state_core = 714
+				add_state_core = 683
+				add_state_core = 685
+				add_state_core = 687
+			}
+			release = ASH
+		}
+	}
+
+	option = {
+		name = commonwealth.10.a
+	}
+	option = {
+		name = commonwealth.10.b
+		ASH = {
+			change_tag_from = PLC
+		}
+	}
+
+}
+
+country_event = {
+	id = commonwealth.11
+	title = commonwealth.11.t
+	desc = commonwealth.11.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			FRE = {
+				add_state_core = 468
+				add_state_core = 469
+				add_state_core = 471
+				add_state_core = 473
+				add_state_core = 713
+				add_state_core = 712
+				add_state_core = 709
+				add_state_core = 710
+				add_state_core = 711
+			}
+			release = FRE
+			CRI = {
+				add_state_core = 467
+			}
+			release = CRI
+		}
+	}
+
+	option = {
+		name = commonwealth.11.a
+	}
+	option = {
+		name = commonwealth.11.b
+		FRE = {
+			change_tag_from = UKR
+		}
+	}
+	option = {
+		name = commonwealth.11.c
+		CRI = {
+			change_tag_from = UKR
+		}
+	}
+}
+
+news_event = {
+	id = commonwealth.12
+	title = commonwealth.12.t
+	desc = commonwealth.12.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = commonwealth.12.a
+	}
+}
+
+country_event = {
+	id = commonwealth.16
+	title = commonwealth.16.t
+	desc = commonwealth.16.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.16.a
+	}
+}
+
+country_event = {
+	id = commonwealth.17
+	title = commonwealth.17.t
+	desc = commonwealth.17.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.17.a
+	}
+}
+
+country_event = {
+	id = commonwealth.18
+	title = commonwealth.18.t
+	desc = commonwealth.18.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.18.a
+	}
+}
+
+## up to 19 events atm

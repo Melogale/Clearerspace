@@ -1,0 +1,50 @@
+add_namespace = russia
+
+country_event = {
+	id = russia.1
+	title = russia.1.t
+	desc = russia.1.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		RUS = {
+			set_country_flag = RUS_the_inevitable_war_FLG
+		}
+	}
+	
+	option = {
+		name = russia.1.a
+		set_country_flag = RUS_imperial_coalition_FLG
+		hidden_effect = {
+			set_country_flag = RUS_moscow_hq_FLG
+			390 = {
+				set_state_flag = RUS_revolution_mark_FLG
+			}
+			390 = {
+				add_core_of = RST
+			}
+			set_country_flag = RUS_tsaritsyn_hq_2_FLG
+			389 = {
+				set_state_flag = RUS_revolution_mark_FLG
+			}
+			389 = {
+				add_core_of = RST
+			}
+			384 = {
+				set_state_flag = RUS_martial_law_FLG
+			}
+			382 = {
+				set_state_flag = RUS_martial_law_FLG
+			}
+		}
+	}
+
+	option = {
+		name = russia.1.b
+		set_country_flag = RUS_popular_revolution_FLG
+	}
+}

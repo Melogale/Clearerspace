@@ -1,0 +1,402 @@
+﻿
+focus_tree = {
+	id = qingqiu_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = QIQ
+		}
+	}
+	
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	default = no
+	reset_on_civilwar = no
+
+	#internal diplo
+
+	focus = {
+		id = QIQ_weathering_the_storm
+		icon = GFX_focus_generic_coastal_fort
+		x = 6
+		y = 0
+		cost = 5
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = qingqiu.1
+			}
+		}
+	}
+
+	focus = {
+		id = QIQ_the_stagnant_parliment
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_weathering_the_storm }
+		relative_position_id = QIQ_weathering_the_storm
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = qingqiu.2
+			}
+		}
+	}
+
+	focus = {
+		id = QIQ_the_new_administration
+		icon = GFX_focus_hol_war_on_pacifism
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_the_stagnant_parliment }
+		relative_position_id = QIQ_the_stagnant_parliment
+		
+		available_if_capitulated = yes
+
+		available = {
+			OR = {
+				has_country_flag = QIQ_socdem_FLG
+				has_country_flag = QIQ_liberal_FLG
+			}
+		}
+
+		completion_reward = {
+			remove_ideas = QIQ_stagnant_parliment
+		}
+	}
+
+	focus = {
+		id = QIQ_the_ring_of_fire
+		icon = GFX_focus_usa_focus_on_asia
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_the_new_administration }
+		relative_position_id = QIQ_the_new_administration
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = QIQ_the_ring_of_fire_tt
+		}
+	}
+
+	focus = {
+		id = QIQ_condemn_the_japanese_menace
+		icon = GFX_focus_jap_strike_south
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_the_ring_of_fire }
+		relative_position_id = QIQ_the_ring_of_fire
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = qingqiu.?
+			}
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = QIQ_the_great_pacific_game
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_condemn_the_japanese_menace }
+		relative_position_id = QIQ_condemn_the_japanese_menace
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = QIQ_the_great_pacific_game_tt
+		}
+	}
+
+	focus = {
+		id = QIQ_the_new_naval_culture
+		icon = GFX_focus_qiq_oceangoing
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_the_ring_of_fire }
+		relative_position_id = QIQ_the_ring_of_fire
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_purchase_outdated_capital_ships
+		icon = GFX_focus_generic_navy_battleship2
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_the_new_naval_culture }
+		relative_position_id = QIQ_the_new_naval_culture
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_purchase_a_modern_surface_fleet
+		icon = GFX_focus_generic_destroyer
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_the_new_naval_culture }
+		relative_position_id = QIQ_the_new_naval_culture
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_modernize_the_naval_infrastructure
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_purchase_a_modern_surface_fleet }
+		prerequisite = { focus = QIQ_purchase_outdated_capital_ships }
+		relative_position_id = QIQ_purchase_a_modern_surface_fleet
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_economic_restructuring
+		icon = GFX_focus_generic_industry_1
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_the_new_administration }
+		relative_position_id = QIQ_the_new_administration
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_investing_in_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_economic_restructuring }
+		relative_position_id = QIQ_economic_restructuring
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_expanding_the_civilian_sector
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_investing_in_infrastructure }
+		relative_position_id = QIQ_investing_in_infrastructure
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_improve_the_quality_of_life
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_expanding_the_civilian_sector }
+		relative_position_id = QIQ_expanding_the_civilian_sector
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_the_qingqiurin_dream
+		icon = GFX_focus_generic_industry_3
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_improve_the_quality_of_life }
+		relative_position_id = QIQ_improve_the_quality_of_life
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_begin_heavy_industrial_expansion
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_expanding_the_civilian_sector }
+		relative_position_id = QIQ_expanding_the_civilian_sector
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_begin_wartime_mobilization
+		icon = GFX_focus_generic_aircraft_production
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = QIQ_begin_heavy_industrial_expansion }
+		prerequisite = { focus = QIQ_nationalize_key_resource_companies }
+		relative_position_id = QIQ_begin_heavy_industrial_expansion
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_natural_resource_extraction
+		icon = GFX_goal_generic_construction2
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_investing_in_infrastructure }
+		relative_position_id = QIQ_investing_in_infrastructure
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_nationalize_key_resource_companies
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = QIQ_natural_resource_extraction }
+		relative_position_id = QIQ_natural_resource_extraction
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_anti_corporate_legislation
+		icon = GFX_goal_generic_propaganda
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_economic_restructuring }
+		relative_position_id = QIQ_economic_restructuring
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_fixing_the_humanitarian_crisis
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_anti_corporate_legislation }
+		relative_position_id = QIQ_anti_corporate_legislation
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_bridging_the_pacific
+		icon = GFX_focus_chi_one_china_policy
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_fixing_the_humanitarian_crisis }
+		prerequisite = { focus = QIQ_the_great_pacific_game }
+		relative_position_id = QIQ_fixing_the_humanitarian_crisis
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = QIQ_the_boiling_point
+		icon = GFX_focus_attack_japan
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = QIQ_bridging_the_pacific }
+		relative_position_id = QIQ_bridging_the_pacific
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+}

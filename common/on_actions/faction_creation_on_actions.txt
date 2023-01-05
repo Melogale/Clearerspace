@@ -1,0 +1,58 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			AUS = {
+				create_faction = "Holy League"
+				add_to_faction = HUN
+				add_to_faction = CRO
+				add_to_faction = VEN
+				puppet = VEN
+			}
+			VIN = {
+				create_faction = "Nordic League"
+				add_to_faction = SCD
+				add_to_faction = TYK
+				add_to_faction = EST
+				add_to_faction = MLC
+			}
+			SCD = {
+				puppet = TYK
+				puppet = EST
+				puppet = MLC
+			}
+			JAP = {
+				create_faction = "Co-Prosperity Sphere"
+				add_to_faction = MAN
+				add_to_faction = JRS
+				add_to_faction = MON
+				add_to_faction = JPH
+				add_to_faction = JEI
+				puppet = MAN
+				puppet = JRS
+				puppet = JPH
+				puppet = JEI
+			}
+			GCO = {
+				puppet = MEX
+				puppet = AZT
+				puppet = MAY
+			}
+			OTT = {
+				create_faction = "The Caliphate"
+				add_to_faction = EGY
+				add_to_faction = GRE
+				add_to_faction = RIY
+				add_to_faction = YEM
+				add_to_faction = WAL
+				add_to_faction = MOL
+				add_to_faction = TRA
+				puppet = GRE
+				puppet = RIY
+				puppet = YEM
+				puppet = WAL
+				puppet = MOL
+				puppet = TRA
+			}
+		}
+	}
+}

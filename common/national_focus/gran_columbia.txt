@@ -1,0 +1,134 @@
+focus_tree = {
+	id = gran_columbia_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			tag = GCO
+			add = 10
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	focus = {
+		id = GCO_southern_wariness
+		icon = GFX_focus_unknown
+		x = 5
+		y = 0
+		cost = 15
+		
+		available_if_capitulated = yes
+	
+		available = {
+			INC {
+				has_completed_focus = INC_the_trials
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GCO_byzantine_structure_folds
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		cost = 15
+		
+		available_if_capitulated = yes
+		prerequisite = { focus = GCO_southern_wariness}
+		relative_position_id = GCO_southern_wariness
+	
+		available = {
+			INC {
+				has_completed_focus = INC_the_trials
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GCO_mid_collapse_in_war
+		icon = GFX_focus_unknown
+		x = 15
+		y = 0
+		cost = 5
+		
+		available_if_capitulated = yes
+	
+		
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GCO_post_war_rump_state
+		icon = GFX_focus_unknown
+		x = 15
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = yes
+	
+		
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GCO_post_war_victory
+		icon = GFX_focus_unknown
+		x = 17
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = yes
+	
+		
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GCO_industry_mil_etc
+		icon = GFX_focus_unknown
+		x = 10
+		y = 5
+		cost = 5
+		
+		available_if_capitulated = yes
+	
+		
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+}

@@ -1,0 +1,1020 @@
+﻿focus_tree = {
+	id = french_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			tag = FRA
+			add = 10
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 50 y = 2000 }
+	
+	focus = {
+		id = FRA_the_estates
+		icon = GFX_goal_tripartite_pact
+		x = 3
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_dam_the_deluge
+		icon = GFX_focus_rom_parties_end
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = { focus = FRA_the_estates }
+		relative_position_id = FRA_the_estates
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_surround_paris
+		icon = GFX_focus_generic_combined_arms
+		x = -1
+		y = 1
+		cost = 2
+		prerequisite = { focus = FRA_dam_the_deluge }
+		relative_position_id = FRA_dam_the_deluge
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_nationwide_martial_law
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = { focus = FRA_surround_paris }
+		relative_position_id = FRA_surround_paris
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_ensure_noble_loyalty
+		icon = GFX_focus_generic_monarchy_2
+		x = 1
+		y = 1
+		cost = 2
+		prerequisite = { focus = FRA_dam_the_deluge }
+		relative_position_id = FRA_dam_the_deluge
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_relocate_royal_assets
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = { focus = FRA_ensure_noble_loyalty }
+		relative_position_id = FRA_ensure_noble_loyalty
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = FRA_not_enough_time
+		icon = GFX_goal_generic_war_with_comintern
+		x = -1
+		y = 1
+		cost = 2
+		prerequisite = { focus = FRA_nationwide_martial_law }
+		prerequisite = { focus = FRA_relocate_royal_assets }
+		relative_position_id = FRA_relocate_royal_assets
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = RFR
+
+		}
+	}
+	
+	focus = {
+		id = FRA_revolutionary_committee_for_progress
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 30
+		y = 0
+		cost = 5
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_modernizing_the_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -3
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		relative_position_id = FRA_revolutionary_committee_for_progress
+		prerequisite = { focus = FRA_revolutionary_committee_for_progress }
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_french_national_highway_initiative
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		relative_position_id = FRA_modernizing_the_infrastructure
+		prerequisite = { focus = FRA_modernizing_the_infrastructure }
+		prerequisite = { focus = FRA_a_necesssary_bureaucracy focus = FRA_deference_to_the_councils }
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	
+	focus = {
+		id = FRA_a_necesssary_bureaucracy
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 2
+		y = 1
+		cost = 5
+		mutually_exclusive = { focus = FRA_deference_to_the_councils }
+		available_if_capitulated = yes
+		relative_position_id = FRA_revolutionary_committee_for_progress
+		prerequisite = { focus = FRA_revolutionary_committee_for_progress }
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_first_five_year_plan
+		icon = GFX_focus_generic_industry_3
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		relative_position_id = FRA_a_necesssary_bureaucracy
+		prerequisite = { focus = FRA_a_necesssary_bureaucracy }
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_deference_to_the_councils
+		icon = GFX_focus_generic_self_management
+		x = 5
+		y = 1
+		cost = 5
+		
+		mutually_exclusive = { focus = FRA_a_necesssary_bureaucracy }
+		available_if_capitulated = yes
+		relative_position_id = FRA_revolutionary_committee_for_progress
+		prerequisite = { focus = FRA_revolutionary_committee_for_progress }
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_pacify_the_countryside
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 12
+		y = 0
+		cost = 2
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	
+	
+	focus = {
+		id = FRA_legitimize_the_assembly
+		icon = GFX_focus_rom_abdicate
+		x = 2
+		y = 0
+		cost = 2
+		
+		
+		relative_position_id = FRA_pacify_the_countryside
+
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_curb_the_emigres
+		icon = GFX_focus_prc_infiltration
+		x = 4
+		y = 0
+		cost = 2
+		
+		
+		relative_position_id = FRA_pacify_the_countryside
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_revolutionary_congress
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_legitimize_the_assembly
+		prerequisite = { focus = FRA_legitimize_the_assembly }
+		prerequisite = { focus = FRA_curb_the_emigres }
+		prerequisite = { focus = FRA_pacify_the_countryside }
+	
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_the_declaration_of_the_rights_of_man
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_revolutionary_congress
+		prerequisite = { focus = FRA_revolutionary_congress }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_a_new_system_of_measurement
+		icon = GFX_focus_generic_treaty
+		x = -2
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_the_declaration_of_the_rights_of_man
+		prerequisite = { focus = FRA_the_declaration_of_the_rights_of_man }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_the_status_of_education
+		icon = GFX_focus_generic_socialist_science
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_the_declaration_of_the_rights_of_man
+		prerequisite = { focus = FRA_the_declaration_of_the_rights_of_man }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_the_clergy_reform
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 2
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_the_declaration_of_the_rights_of_man
+		prerequisite = { focus = FRA_the_declaration_of_the_rights_of_man }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_liberals_victory
+		icon = GFX_focus_por_workers_of_iberia
+		x = -4
+		y = 1
+		cost = 2
+		
+		mutually_exclusive = { focus = FRA_deadlocks_end focus = FRA_jacobins_supremacy }
+		relative_position_id = FRA_the_status_of_education
+		prerequisite = { focus = FRA_the_status_of_education }
+		prerequisite = { focus = FRA_a_new_system_of_measurement }
+		prerequisite = { focus = FRA_the_clergy_reform }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_rework_the_departments
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_liberals_victory
+		prerequisite = { focus = FRA_liberals_victory }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_wealth_redistribution
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_rework_the_departments
+		prerequisite = { focus = FRA_rework_the_departments }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_expand_the_peoples_freedoms
+		icon = GFX_goal_support_democracy
+		x = -2
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_rework_the_departments
+		prerequisite = { focus = FRA_rework_the_departments }
+		prerequisite = { focus = FRA_decentralize_the_government }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_decentralize_the_government
+		icon = GFX_goal_generic_neutrality_focus
+		x = -4
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_liberals_victory
+		prerequisite = { focus = FRA_liberals_victory }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_ban_the_jacobin_party
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_decentralize_the_government
+		prerequisite = { focus = FRA_decentralize_the_government }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_liberte_egalite_fraternite_ou_la_mort
+		icon = GFX_focus_fra_french_union
+		x = 1
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_expand_the_peoples_freedoms
+		prerequisite = { focus = FRA_ban_the_jacobin_party }
+		prerequisite = { focus = FRA_expand_the_peoples_freedoms }
+		prerequisite = { focus = FRA_wealth_redistribution }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_deadlocks_end
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_the_status_of_education
+		mutually_exclusive = { focus = FRA_liberals_victory focus = FRA_jacobins_supremacy }
+		prerequisite = { focus = FRA_the_status_of_education }
+		prerequisite = { focus = FRA_a_new_system_of_measurement }
+		prerequisite = { focus = FRA_the_clergy_reform }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_reassess_the_constitution
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = -1	
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_deadlocks_end
+		prerequisite = { focus = FRA_deadlocks_end }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_concordat_with_the_church
+		icon = GFX_focus_por_concordat
+		x = -1
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_reassess_the_constitution
+		prerequisite = { focus = FRA_reassess_the_constitution }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_promises_of_stability
+		icon = GFX_goal_generic_consumer_goods
+		x = 2	
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_deadlocks_end
+		prerequisite = { focus = FRA_deadlocks_end }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_a_rational_civil_code
+		icon = GFX_goal_generic_improve_relations
+		x = 1
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_reassess_the_constitution
+		prerequisite = { focus = FRA_reassess_the_constitution }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_appeals_to_the_radicals
+		icon = GFX_focus_generic_concessions
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_promises_of_stability
+		prerequisite = { focus = FRA_promises_of_stability }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_the_french_empire
+		icon = GFX_focus_focus_fra_third_empire
+		x = -2
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_appeals_to_the_radicals
+		prerequisite = { focus = FRA_appeals_to_the_radicals }
+		prerequisite = { focus = FRA_a_rational_civil_code }
+		prerequisite = { focus = FRA_concordat_with_the_church }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FRA_jacobins_supremacy
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 4
+		y = 1
+		cost = 2
+		
+		mutually_exclusive = { focus = FRA_liberals_victory focus = FRA_deadlocks_end }
+		relative_position_id = FRA_the_status_of_education
+		prerequisite = { focus = FRA_the_status_of_education }
+		prerequisite = { focus = FRA_a_new_system_of_measurement }
+		prerequisite = { focus = FRA_the_clergy_reform }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_open_the_tribunals
+		icon = GFX_focus_CZE_german_puppet
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_jacobins_supremacy
+		prerequisite = { focus = FRA_jacobins_supremacy }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_levee_en_masse
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		x = 3
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_jacobins_supremacy
+		prerequisite = { focus = FRA_jacobins_supremacy }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_the_gears_of_progress
+		icon = GFX_focus_SOV_merge_plants
+		x = 1
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_levee_en_masse
+		prerequisite = { focus = FRA_levee_en_masse }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_the_national_guard
+		icon = GFX_focus_generic_soviet_politics
+		x = -1
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_levee_en_masse
+		prerequisite = { focus = FRA_levee_en_masse }
+		prerequisite = { focus = FRA_open_the_tribunals }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_quieting_the_opposition
+		icon = GFX_goal_anti_comintern_pact
+		x = 0
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_open_the_tribunals
+		prerequisite = { focus = FRA_open_the_tribunals }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_the_order_of_the_day
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 1
+		y = 1
+		cost = 2
+		
+		
+		relative_position_id = FRA_quieting_the_opposition
+		prerequisite = { focus = FRA_quieting_the_opposition }
+		prerequisite = { focus = FRA_the_national_guard }
+		prerequisite = { focus = FRA_the_gears_of_progress }
+		
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_dismantling_the_amalgam
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 9
+		cost = 2
+
+		bypass = {
+			has_global_flag = BUR_empire_dismantled_FLG
+		}
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_integrating_the_new_departments
+		icon = GFX_goal_generic_position_armies
+		x = -1
+		y = 1
+		cost = 2
+
+		relative_position_id = FRA_dismantling_the_amalgam
+		prerequisite = { focus = FRA_dismantling_the_amalgam }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_prepare_infrastructural_incorporation
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		cost = 2
+
+		relative_position_id = FRA_integrating_the_new_departments
+		prerequisite = { focus = FRA_integrating_the_new_departments }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_embolden_french_nationalism
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 1
+		y = 1
+		cost = 2
+
+		relative_position_id = FRA_dismantling_the_amalgam
+		prerequisite = { focus = FRA_dismantling_the_amalgam }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_end_burgundian_culture
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 0
+		y = 1
+		cost = 2
+
+		relative_position_id = FRA_embolden_french_nationalism
+		prerequisite = { focus = FRA_embolden_french_nationalism }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FRA_the_first_victory_of_many
+		icon = GFX_focus_ger_great_red_menace
+		x = -1
+		y = 1
+		cost = 2
+
+		relative_position_id = FRA_end_burgundian_culture
+		prerequisite = { focus = FRA_end_burgundian_culture }
+		prerequisite = { focus = FRA_prepare_infrastructural_incorporation }
+
+		completion_reward = {
+
+		}
+	}
+}

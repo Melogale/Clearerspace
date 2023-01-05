@@ -1,0 +1,416 @@
+
+focus_tree = {
+	id = burgundy_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BUR
+		}
+	}
+
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	###All is Well :)
+
+	focus = {
+		id = BUR_the_heart_of_europe
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 10
+		y = 0
+		cost = 5
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.3
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_foundations_of_sand
+		icon = GFX_focus_rom_abdicate
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_the_heart_of_europe }
+		relative_position_id = BUR_the_heart_of_europe
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.4
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_castle_of_cards
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_foundations_of_sand }
+		relative_position_id = BUR_foundations_of_sand
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.5
+				days = 0
+			}
+		}
+	}
+
+	###shit
+
+	focus = {
+		id = BUR_wildfire
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_castle_of_cards }
+		relative_position_id = BUR_castle_of_cards
+
+		bypass = {
+			NOT = {
+				has_country_flag = BUR_all_is_well_FLG
+			}
+		}
+
+		available = {
+			always = no
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	###let's do a little realpolitik :)
+
+	focus = {
+		id = BUR_containment_theory
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = -3
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_wildfire }
+		relative_position_id = BUR_wildfire
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.7
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_rekindle_english_ties
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_containment_theory }
+		relative_position_id = BUR_containment_theory
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.8
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_request_spanish_support
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_rekindle_english_ties }
+		relative_position_id = BUR_rekindle_english_ties
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.11
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_ensure_genoese_cooperation
+		icon = GFX_goal_generic_improve_relations
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_containment_theory }
+		relative_position_id = BUR_containment_theory
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.14
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_fund_anti_catalan_groups
+		icon = GFX_focus_secret_rearmament
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_ensure_genoese_cooperation }
+		relative_position_id = BUR_ensure_genoese_cooperation
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.15
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_talks_with_the_swiss
+		icon = GFX_goal_generic_intelligence_exchange
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_fund_anti_catalan_groups }
+		relative_position_id = BUR_fund_anti_catalan_groups
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.17
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_basque_concessions
+		icon = GFX_focus_generic_concessions
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_fund_anti_catalan_groups }
+		relative_position_id = BUR_fund_anti_catalan_groups
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.18
+				days = 0
+			}	
+		}
+	}
+
+	focus = {
+		id = BUR_dousing_the_flames
+		icon = GFX_goal_anti_comintern_pact
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_wildfire }
+		relative_position_id = BUR_wildfire
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.22
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_supress_independence_movements
+		icon = GFX_goal_generic_demand_territory
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_dousing_the_flames }
+		relative_position_id = BUR_dousing_the_flames
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.23
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_host_french_refugees
+		icon = GFX_focus_CZE_german_puppet
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_supress_independence_movements }
+		relative_position_id = BUR_supress_independence_movements
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = BUR_french_refugees
+		}
+	}
+
+	focus = {
+		id = BUR_anti_french_rhetoric
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_host_french_refugees }
+		relative_position_id = BUR_host_french_refugees
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = BUR_anti_french_rhetoric
+			hidden_effect = {
+				country_event = {
+					id = bur.21
+					days = 7
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_support_german_regional_nationalism
+		icon = GFX_focus_usa_focus_on_europe
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_supress_independence_movements }
+		relative_position_id = BUR_supress_independence_movements
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = bur.26
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_end_the_ruhr_riots
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_support_german_regional_nationalism }
+		relative_position_id = BUR_support_german_regional_nationalism
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BUR_suppressed_ruhr_riots
+				remove_idea = BUR_the_ruhr_riots
+			}
+			hidden_effect = {
+				country_event = {
+					id = bur.25
+					days = 7
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_empower_the_burgundian_spirit
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_dousing_the_flames }
+		relative_position_id = BUR_dousing_the_flames
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = BUR_burgundian_spirit
+		}
+	}
+
+	focus = {
+		id = BUR_three_people_one_nation
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_empower_the_burgundian_spirit }
+		relative_position_id = BUR_empower_the_burgundian_spirit
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BUR_three_peoples_one_nation
+				remove_idea = BUR_burgundian_spirit
+			}
+		}
+	}
+
+	focus = {
+		id = BUR_union_in_division
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = BUR_three_people_one_nation }
+		relative_position_id = BUR_three_people_one_nation
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BUR_unity_in_division
+				remove_idea = BUR_three_peoples_one_nation
+			}
+			hidden_effect = {
+				country_event = {
+					id = bur.24
+					days = 7
+				}
+			}
+		}
+	}
+	
+}

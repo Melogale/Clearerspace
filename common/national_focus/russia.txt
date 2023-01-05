@@ -1,0 +1,358 @@
+
+focus_tree = {
+	id = russia_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			tag = RUS
+			add = 10
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+
+	initial_show_position = {
+		x = 33
+		y = 0
+		offset = {
+			x = -16
+			y = 0
+			trigger = {
+				has_global_flag = russian_civil_war
+				has_completed_focus = RUS_imperial_coalition
+			}
+		}
+		offset = {
+			x = -18
+			y = 0
+			trigger = {
+				has_global_flag = russian_civil_war
+				has_completed_focus = RUS_popular_revolution
+			}
+		}
+	}
+
+	#######  #   #  ####   #####  ####   #######   ###   #		  	#######  #######   ###   #		  #######  #######  #######  #######  #     #
+	   # 	 ## ##  #   #  #	  #   #     #  	  #   #  #		  	#		 #     #  #   #  #			 #		  #		   #	 #	   #  ###   #
+	   #	 # # #  ####   ###	  ####		#	  #####  #		  	#		 #	   #  #####  #			 #		  #		   #	 #     #  #  #  #
+	   #	 #   #  #	   #	  #   #		#	  #   #  #		  	#		 #     #  #   #  #			 #		  #		   #	 #     #  #   ###
+	#######  #	 #  #	   #####  #   #	 #######  #   #  #######  	#######  #######  #   #  #######  #######	  #		#######  #######  #     #
+
+	focus = {
+		id = RUS_imperial_coalition
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 33
+		y = 0
+		cost = 5
+		mutually_exclusive = { focus = RUS_popular_revolution }
+
+		available = {
+			always = no
+		}
+
+		bypass = {
+			has_country_flag = RUS_imperial_coalition_FLG
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_imperial_coalition_focus
+		}
+	}
+
+	focus = {
+		id = RUS_convene_the_national_emergency_council
+		icon = GFX_goal_generic_dangerous_deal
+		x = -4
+		y = 1
+		cost = 5
+		prerequisite = { focus = RUS_imperial_coalition }
+		relative_position_id = RUS_imperial_coalition
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_convene_the_nec
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = -21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_ensure_siberian_loyalty
+		icon = GFX_goal_demand_sudetenland
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = RUS_convene_the_national_emergency_council }
+		relative_position_id = RUS_convene_the_national_emergency_council
+		mutually_exclusive = { focus = RUS_ensure_southern_loyalty }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_ensure_siberian_loyalty
+			set_country_flag = RUS_siberian_loyalty_FLG
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = -21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_ensure_southern_loyalty
+		icon = GFX_goal_generic_attack_allies
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = RUS_convene_the_national_emergency_council }
+		relative_position_id = RUS_convene_the_national_emergency_council
+		mutually_exclusive = { focus = RUS_ensure_siberian_loyalty }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_ensure_southern_loyalty
+			set_country_flag = RUS_southern_loyalty_FLG
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = -21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_arm_loyal_militias
+		icon = GFX_focus_generic_combined_arms
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = RUS_ensure_southern_loyalty focus = RUS_ensure_siberian_loyalty }
+		relative_position_id = RUS_ensure_southern_loyalty
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_arm_loyal_militias
+			set_country_flag = RUS_arm_loyal_militias_FLG
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = -21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_appeal_to_fellow_monarchies
+		icon = GFX_focus_generic_concessions
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = RUS_arm_loyal_militias }
+		relative_position_id = RUS_arm_loyal_militias
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_appeal_to_fellow_monarchies
+			set_country_flag = RUS_appeal_to_monarchies_FLG
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = -21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_intensified_crackdown
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = RUS_appeal_to_fellow_monarchies }
+		relative_position_id = RUS_appeal_to_fellow_monarchies
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_intensified_crackdown
+			add_to_variable = {
+				var = var_RUS_crackdown_days
+				value = -15
+			}
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = -21
+			}
+		}
+	}
+
+	####   #######  ####   #	 #  #		  ###   ####      ####   #####  #   #  #######  #	   #	#  #######  #######  ######  # 	   #
+	#   #  #	 #  #   #  #	 #  #		 #	 #  #   #     #   #  #	    #   #  #	 #  #	   #	#	  #		   #	 #    #  ###   #
+	####   #	 #  ####   #	 #  #		 #####  ####      ####   ###    #   #  #	 #  #	   #	#	  #		   #	 #    #  #  #  #
+	#	   #	 #  #	   #	 #  #		 #	 #  #   #     #   #  #	     # #   #	 #  #	   #	#	  #		   #	 #    #  #   ###
+	#	   #######	#	   #######  #######  #	 #  #   #     #   #  #####    #	   #######  #####  ######	  #		#######  ######  #	   #
+
+	focus = {
+		id = RUS_popular_revolution
+		icon = GFX_goal_support_communism
+		x = 35
+		y = 0
+		cost = 5
+		mutually_exclusive = { focus = RUS_imperial_coalition }
+
+		available = {
+			always = no
+		}
+
+		bypass = {
+			has_country_flag = RUS_popular_revolution_FLG
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_popular_revolution
+			set_country_flag = RUS_popular_revolution_FLG
+		}
+	}
+
+	focus = {
+		id = RUS_bolster_public_support
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 4
+		y = 1
+		cost = 9
+		prerequisite = { focus = RUS_popular_revolution }
+		relative_position_id = RUS_popular_revolution
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_bolster_public_support
+			hidden_effect = {
+				add_ideas = RUS_bolster_public_support
+			}
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = 21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_unite_the_revolutionaries
+		icon = GFX_focus_por_workers_of_iberia
+		x = 0
+		y = 1
+		cost = 9
+		prerequisite = { focus = RUS_bolster_public_support }
+		relative_position_id = RUS_bolster_public_support
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_unite_the_revolutionaries
+			set_country_flag = RUS_unite_the_revolutionaries_FLG
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = 21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_the_red_army
+		icon = GFX_focus_generic_military_mission
+		x = -1
+		y = 1
+		cost = 9
+		prerequisite = { focus = RUS_unite_the_revolutionaries }
+		relative_position_id = RUS_unite_the_revolutionaries
+		mutually_exclusive = { focus = RUS_the_red_militias }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_the_red_army
+			set_country_flag = RUS_the_red_army_FLG
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = 21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_the_red_militias
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 1
+		y = 1
+		cost = 9
+		prerequisite = { focus = RUS_unite_the_revolutionaries }
+		relative_position_id = RUS_unite_the_revolutionaries
+		mutually_exclusive = { focus = RUS_the_red_army }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_the_red_militias
+			set_country_flag = RUS_the_red_militias_FLG
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = 21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_acquire_international_aid
+		icon = GFX_focus_generic_join_comintern
+		x = -1
+		y = 1
+		cost = 9
+		prerequisite = { focus = RUS_the_red_militias focus = RUS_the_red_army }
+		relative_position_id = RUS_the_red_militias	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_acquire_international_aid
+			set_global_flag = RST_international_aid_FLG
+			add_days_mission_timeout = {
+				mission = the_inevitable_war
+				days = 21
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_military_sympathies
+		icon = GFX_focus_rus_civil_war_left
+		x = 0
+		y = 1
+		cost = 9
+		prerequisite = { focus = RUS_acquire_international_aid }
+		relative_position_id = RUS_acquire_international_aid
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tt_RUS_military_sympathies
+			set_country_flag = RUS_military_sympathies
+			custom_effect_tooltip = tt_RUS_start_the_war
+			hidden_effect = {
+				add_days_mission_timeout = {
+					mission = the_inevitable_war
+					days = -365
+				}
+			}
+		}
+	}
+}

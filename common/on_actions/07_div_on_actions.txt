@@ -1,0 +1,595 @@
+on_actions = {
+	on_daily_BAY = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = BAY_influence
+						value = 90
+						compare = greater_than_or_equals
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_9
+					BAY_influence_effects_8
+				}
+				add_ideas = {
+					BAY_influence_effects_10
+				}
+			} 
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = BAY_influence
+							value = 80
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = BAY_influence
+							value = 90
+							compare = less_than
+						}
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_10
+					BAY_influence_effects_8
+					BAY_influence_effects_7
+				}
+				add_ideas = {
+					BAY_influence_effects_9
+				}
+			} 
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = BAY_influence
+							value = 70
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = BAY_influence
+							value = 80
+							compare = less_than
+						}
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_10
+					BAY_influence_effects_9
+					BAY_influence_effects_7
+					BAY_influence_effects_6
+				}
+				add_ideas = {
+					BAY_influence_effects_8
+				}
+			} 
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = BAY_influence
+							value = 60
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = BAY_influence
+							value = 70
+							compare = less_than
+						}
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_9
+					BAY_influence_effects_8
+					BAY_influence_effects_6
+					BAY_influence_effects_5
+				}
+				add_ideas = {
+					BAY_influence_effects_7
+				}
+			} 
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = BAY_influence
+							value = 50
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = BAY_influence
+							value = 60
+							compare = less_than
+						}
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_8
+					BAY_influence_effects_7
+					BAY_influence_effects_5
+					BAY_influence_effects_4
+				}
+				add_ideas = {
+					BAY_influence_effects_6
+				}
+			} 
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = BAY_influence
+							value = 40
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = BAY_influence
+							value = 50
+							compare = less_than
+						}
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_7
+					BAY_influence_effects_6
+					BAY_influence_effects_4
+					BAY_influence_effects_3
+				}
+				add_ideas = {
+					BAY_influence_effects_5
+				}
+			} 
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = BAY_influence
+							value = 30
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = BAY_influence
+							value = 40
+							compare = less_than
+						}
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_6
+					BAY_influence_effects_5
+					BAY_influence_effects_3
+					BAY_influence_effects_2
+				}
+				add_ideas = {
+					BAY_influence_effects_4
+				}
+			} 
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = BAY_influence
+							value = 20
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = BAY_influence
+							value = 30
+							compare = less_than
+						}
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_5
+					BAY_influence_effects_4
+					BAY_influence_effects_2
+					BAY_influence_effects_1
+				}
+				add_ideas = {
+					BAY_influence_effects_3
+				}
+			} 
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = BAY_influence
+							value = 10
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = BAY_influence
+							value = 20
+							compare = less_than
+						}
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_4
+					BAY_influence_effects_3
+					BAY_influence_effects_1
+				}
+				add_ideas = {
+					BAY_influence_effects_2
+				}
+			} 
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = BAY_influence
+							value = 0
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = BAY_influence
+							value = 10
+							compare = less_than
+						}
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_3
+					BAY_influence_effects_2
+				}
+				add_ideas = {
+					BAY_influence_effects_1
+				}
+			}
+		}
+	}
+	on_daily_OTT = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_balkan_resistance
+						value = 1
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_balkan_2_resistance
+						OTT_balkan_3_resistance
+						OTT_balkan_4_resistance
+						OTT_balkan_5_resistance
+						OTT_balkan_6_resistance
+						OTT_balkan_7_resistance
+						OTT_balkan_8_resistance
+					}
+					add_ideas = {
+						OTT_balkan_1_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_balkan_resistance
+						value = 2
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_balkan_1_resistance
+						OTT_balkan_3_resistance
+						OTT_balkan_4_resistance
+						OTT_balkan_5_resistance
+						OTT_balkan_6_resistance
+						OTT_balkan_7_resistance
+						OTT_balkan_8_resistance
+					}
+					add_ideas = {
+						OTT_balkan_2_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_balkan_resistance
+						value = 3
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_balkan_1_resistance
+						OTT_balkan_2_resistance
+						OTT_balkan_4_resistance
+						OTT_balkan_5_resistance
+						OTT_balkan_6_resistance
+						OTT_balkan_7_resistance
+						OTT_balkan_8_resistance
+					}
+					add_ideas = {
+						OTT_balkan_3_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_balkan_resistance
+						value = 4
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_balkan_1_resistance
+						OTT_balkan_2_resistance
+						OTT_balkan_3_resistance
+						OTT_balkan_5_resistance
+						OTT_balkan_6_resistance
+						OTT_balkan_7_resistance
+						OTT_balkan_8_resistance
+					}
+					add_ideas = {
+						OTT_balkan_4_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_balkan_resistance
+						value = 5
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_balkan_1_resistance
+						OTT_balkan_2_resistance
+						OTT_balkan_3_resistance
+						OTT_balkan_4_resistance
+						OTT_balkan_6_resistance
+						OTT_balkan_7_resistance
+						OTT_balkan_8_resistance
+					}
+					add_ideas = {
+						OTT_balkan_5_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_balkan_resistance
+						value = 6
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_balkan_1_resistance
+						OTT_balkan_2_resistance
+						OTT_balkan_3_resistance
+						OTT_balkan_4_resistance
+						OTT_balkan_5_resistance
+						OTT_balkan_7_resistance
+						OTT_balkan_8_resistance
+					}
+					add_ideas = {
+						OTT_balkan_6_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_balkan_resistance
+						value = 7
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_balkan_1_resistance
+						OTT_balkan_2_resistance
+						OTT_balkan_3_resistance
+						OTT_balkan_4_resistance
+						OTT_balkan_5_resistance
+						OTT_balkan_6_resistance
+						OTT_balkan_8_resistance
+					}
+					add_ideas = {
+						OTT_balkan_7_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_balkan_resistance
+						value = 8
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_balkan_1_resistance
+						OTT_balkan_2_resistance
+						OTT_balkan_3_resistance
+						OTT_balkan_4_resistance
+						OTT_balkan_5_resistance
+						OTT_balkan_6_resistance
+						OTT_balkan_7_resistance
+					}
+					add_ideas = {
+						OTT_balkan_8_resistance
+					}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_arabic_resistance
+						value = 1
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_arabic_2_resistance
+						OTT_arabic_3_resistance
+						OTT_arabic_4_resistance
+						OTT_arabic_5_resistance
+						OTT_arabic_6_resistance
+						OTT_arabic_7_resistance
+						OTT_arabic_8_resistance
+					}
+					add_ideas = {
+						OTT_arabic_1_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_arabic_resistance
+						value = 2
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_arabic_1_resistance
+						OTT_arabic_3_resistance
+						OTT_arabic_4_resistance
+						OTT_arabic_5_resistance
+						OTT_arabic_6_resistance
+						OTT_arabic_7_resistance
+						OTT_arabic_8_resistance
+					}
+					add_ideas = {
+						OTT_arabic_2_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_arabic_resistance
+						value = 3
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_arabic_1_resistance
+						OTT_arabic_2_resistance
+						OTT_arabic_4_resistance
+						OTT_arabic_5_resistance
+						OTT_arabic_6_resistance
+						OTT_arabic_7_resistance
+						OTT_arabic_8_resistance
+					}
+					add_ideas = {
+						OTT_arabic_3_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_arabic_resistance
+						value = 4
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_arabic_1_resistance
+						OTT_arabic_2_resistance
+						OTT_arabic_3_resistance
+						OTT_arabic_5_resistance
+						OTT_arabic_6_resistance
+						OTT_arabic_7_resistance
+						OTT_arabic_8_resistance
+					}
+					add_ideas = {
+						OTT_arabic_4_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_arabic_resistance
+						value = 5
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_arabic_1_resistance
+						OTT_arabic_2_resistance
+						OTT_arabic_3_resistance
+						OTT_arabic_4_resistance
+						OTT_arabic_6_resistance
+						OTT_arabic_7_resistance
+						OTT_arabic_8_resistance
+					}
+					add_ideas = {
+						OTT_arabic_5_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_arabic_resistance
+						value = 6
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_arabic_1_resistance
+						OTT_arabic_2_resistance
+						OTT_arabic_3_resistance
+						OTT_arabic_4_resistance
+						OTT_arabic_5_resistance
+						OTT_arabic_7_resistance
+						OTT_arabic_8_resistance
+					}
+					add_ideas = {
+						OTT_arabic_6_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_arabic_resistance
+						value = 7
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_arabic_1_resistance
+						OTT_arabic_2_resistance
+						OTT_arabic_3_resistance
+						OTT_arabic_4_resistance
+						OTT_arabic_5_resistance
+						OTT_arabic_6_resistance
+						OTT_arabic_8_resistance
+					}
+					add_ideas = {
+						OTT_arabic_7_resistance
+					}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = var_OTT_arabic_resistance
+						value = 8
+						compare = equals
+					}
+				}
+					remove_ideas = {
+						OTT_arabic_1_resistance
+						OTT_arabic_2_resistance
+						OTT_arabic_3_resistance
+						OTT_arabic_4_resistance
+						OTT_arabic_5_resistance
+						OTT_arabic_6_resistance
+						OTT_arabic_7_resistance
+					}
+					add_ideas = {
+						OTT_arabic_8_resistance
+					}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			OTT = {
+				country_event = {
+					id = ottoman.5
+					days = 90
+				}
+			}
+		}
+	}
+}

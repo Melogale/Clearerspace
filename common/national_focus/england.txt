@@ -1,0 +1,1444 @@
+﻿
+focus_tree = {
+	id = england_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	
+	reset_on_civilwar = no
+
+	###WW2 SETUP
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	
+	focus = {
+		id = ENG_mosley
+		icon = GFX_focus_eng_organise_the_blackshirts
+		x = 7
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_his_majesty
+		icon = GFX_focus_eng_god_save_the_king
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_mosley }
+		relative_position_id = ENG_mosley
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_the_mandate
+		icon = GFX_goal_support_democracy
+		x = -5
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_his_majesty }
+		relative_position_id = ENG_his_majesty
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+
+	focus = {
+		id = ENG_fund_the_sciences
+		icon = GFX_focus_research2
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_mandate }
+		relative_position_id = ENG_the_mandate
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 2
+			add_ideas = ENG_heavy_research_funding
+		}
+	}
+
+	focus = {
+		id = ENG_work_programs_all
+		icon = GFX_goal_generic_construction
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_mandate }
+		relative_position_id = ENG_the_mandate
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = ENG_work_programs
+		}
+	}
+	
+	focus = {
+		id = ENG_bail_out_the_mining_industry
+		icon = GFX_focus_generic_steel
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_work_programs_all }
+		relative_position_id = ENG_work_programs_all
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = ENG_bailed_out_miners
+		}
+	}
+
+	focus = {
+		id = ENG_tax_foreign_imports
+		icon = GFX_goal_support_democracy
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_bail_out_the_mining_industry }
+		relative_position_id = ENG_bail_out_the_mining_industry
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_tax_foreign_imports
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_bail_out_the_mining_industry }
+		relative_position_id = ENG_bail_out_the_mining_industry
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_banking_regulation_act
+		icon = GFX_goal_generic_forceful_treaty
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_tax_foreign_imports }
+		prerequisite = { focus = ENG_abolish_the_slums }
+		relative_position_id = ENG_tax_foreign_imports
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_abolish_the_house_of_lords
+		icon = GFX_goal_generic_dangerous_deal
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_banking_regulation_act }
+		relative_position_id = ENG_banking_regulation_act
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_begin_governmental_reorganization
+		icon = GFX_goal_generic_dangerous_deal
+		x = -3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_abolish_the_house_of_lords }
+		relative_position_id = ENG_abolish_the_house_of_lords
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_establish_the_second_chamber
+		icon = GFX_goal_generic_dangerous_deal
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_begin_governmental_reorganization }
+		relative_position_id = ENG_begin_governmental_reorganization
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_rationalize_the_economy
+		icon = GFX_goal_generic_dangerous_deal
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_begin_governmental_reorganization }
+		relative_position_id = ENG_begin_governmental_reorganization
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_outlaw_strikes
+		icon = GFX_goal_generic_dangerous_deal
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_rationalize_the_economy }
+		relative_position_id = ENG_rationalize_the_economy
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_a_truthful_press
+		icon = GFX_goal_generic_dangerous_deal
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_outlaw_strikes }
+		relative_position_id = ENG_outlaw_strikes
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_establish_the_second_chamber
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_begin_governmental_reorganization }
+		relative_position_id = ENG_begin_governmental_reorganization
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_a_true_house_of_commons
+		icon = GFX_goal_generic_dangerous_deal
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = { focus = ENG_rationalize_the_economy }
+		
+		prerequisite = { focus = ENG_establish_the_second_chamber }
+		relative_position_id = ENG_establish_the_second_chamber
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_mass_deportations
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_establish_the_second_chamber }
+		relative_position_id = ENG_establish_the_second_chamber
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_looking_outwards
+		icon = GFX_goal_generic_dangerous_deal
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_abolish_the_house_of_lords }
+		prerequisite = { focus = ENG_the_empire }
+
+		relative_position_id = ENG_abolish_the_house_of_lords
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = ENG_subsidize_small_business
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_fund_the_sciences }
+		relative_position_id = ENG_fund_the_sciences
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_abolish_the_slums
+		icon = GFX_goal_generic_fortify_city
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_subsidize_small_business }
+		relative_position_id = ENG_subsidize_small_business
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.05
+			
+		}
+	}
+
+
+	focus = {
+		id = ENG_begin_the_first_three_year_plan
+		icon = GFX_unknown
+		x = -5
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_mandate }
+		relative_position_id = ENG_the_mandate
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = ENG_work_programs
+		icon = GFX_unknown
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_begin_the_first_three_year_plan }
+		relative_position_id = ENG_begin_the_first_three_year_plan
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_begin_industry_rationalization
+		icon = GFX_unknown
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_begin_the_first_three_year_plan }
+		relative_position_id = ENG_begin_the_first_three_year_plan
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = ENG_begin_the_second_three_year_plan
+		icon = GFX_unknown
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_begin_industry_rationalization }
+		prerequisite = { focus = ENG_work_programs }
+		relative_position_id = ENG_work_programs
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_begin_the_third_three_year_plan
+		icon = GFX_unknown
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_begin_the_second_three_year_plan }
+		relative_position_id = ENG_begin_the_second_three_year_plan
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_the_empire
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 5
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_his_majesty }
+		relative_position_id = ENG_his_majesty
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_the_fields
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_empire }
+		relative_position_id = ENG_the_empire
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_modernize_tactics
+		icon = GFX_goal_generic_army_doctrines
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_fields }
+		relative_position_id = ENG_the_fields
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_encourage_conscription
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_modernize_tactics }
+		relative_position_id = ENG_modernize_tactics
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_train_special_forces
+		icon = GFX_goal_generic_special_forces
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_encourage_conscription }
+		relative_position_id = ENG_encourage_conscription
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_revitalize_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_fields }
+		relative_position_id = ENG_the_fields
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_all_terrain_tanks
+		icon = GFX_focus_generic_army_tanks2
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_revitalize_arms_industry }
+		relative_position_id = ENG_revitalize_arms_industry
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_technological_superiority
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_all_terrain_tanks }
+		relative_position_id = ENG_all_terrain_tanks
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_royal_army
+		icon = GFX_goal_generic_army_tanks
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_technological_superiority }
+		prerequisite = { focus = ENG_train_special_forces }
+		relative_position_id = ENG_technological_superiority
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_the_seas
+		icon = GFX_goal_generic_navy_battleship
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_empire }
+		relative_position_id = ENG_the_empire
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	
+	focus = {
+		id = ENG_reinforce_islands
+		icon = GFX_goal_generic_army_doctrines
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_seas }
+		relative_position_id = ENG_the_seas
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_nationalize_vessels
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_reinforce_islands }
+		relative_position_id = ENG_reinforce_islands
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_fortress_island
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_nationalize_vessels }
+		relative_position_id = ENG_nationalize_vessels
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_revitalize_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_seas }
+		relative_position_id = ENG_the_seas
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_navy_tech
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_revitalize_dockyards }
+		relative_position_id = ENG_revitalize_dockyards
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_doctrine_buff
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_navy_tech }
+		relative_position_id = ENG_navy_tech
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_royal_navy
+		icon = GFX_focus_generic_cruiser2
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_doctrine_buff }
+		prerequisite = { focus = ENG_fortress_island }
+		relative_position_id = ENG_doctrine_buff
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = ENG_the_air
+		icon = GFX_goal_generic_air_fighter
+		x = 4
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_empire }
+		relative_position_id = ENG_the_empire
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_the_air
+		icon = GFX_goal_generic_air_fighter
+		x = 4
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_empire }
+		relative_position_id = ENG_the_empire
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_the_air
+		icon = GFX_goal_generic_air_fighter
+		x = 4
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_empire }
+		relative_position_id = ENG_the_empire
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_air_stuff
+		icon = GFX_goal_generic_air_fighter
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_air }
+		relative_position_id = ENG_the_air
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_air_stuff_2
+		icon = GFX_goal_generic_air_fighter
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_air_stuff }
+		relative_position_id = ENG_air_stuff
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_air_stuff_3
+		icon = GFX_goal_generic_air_fighter
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_air_stuff_2 }
+		relative_position_id = ENG_air_stuff_2
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_air_stuff_4
+		icon = GFX_goal_generic_air_fighter
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_the_air }
+		relative_position_id = ENG_the_air
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_air_stuff_5
+		icon = GFX_goal_generic_air_fighter
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_air_stuff_4 }
+		relative_position_id = ENG_air_stuff_4
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_air_stuff_6
+		icon = GFX_goal_generic_air_fighter
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_air_stuff_5 }
+		relative_position_id = ENG_air_stuff_5
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_royal_airforce
+		icon = GFX_goal_generic_air_fighter
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_air_stuff_3 }
+		prerequisite = { focus = ENG_air_stuff_6 }
+		relative_position_id = ENG_air_stuff_6
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_guarantee_hannover
+		icon = GFX_goal_unknown
+		x = 1
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			FRA = {
+				has_completed_focus = FRA_partition_burgundy
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			give_guarantee = HAN
+			HAN = {
+				give_guarantee = ENG
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_spanish_alliance
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = ENG_guarantee_hannover }
+		relative_position_id = ENG_guarantee_hannover
+		
+		available_if_capitulated = yes
+
+		available = {
+			has_war_with = FRA
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			SPA = {
+				add_to_war = {
+					targeted_alliance = ENG
+					enemy = FRA
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_integrate_scotland
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = ENG_guarantee_hannover }
+		relative_position_id = ENG_guarantee_hannover
+		
+		available_if_capitulated = yes
+
+		available = {
+			controls_state = 659
+			controls_state = 657
+			controls_state = 662
+			controls_state = 656
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			add_state_core = 659
+			add_state_core = 657
+			add_state_core = 662
+			add_state_core = 656
+		}
+	}
+
+}

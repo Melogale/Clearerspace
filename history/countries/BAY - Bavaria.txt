@@ -1,4 +1,19 @@
-capital = 540
+capital = 605 
+
+add_ideas = {
+	BAY_rampant_poverty
+	BAY_international_embargo_1
+	BAY_nationalist_fatigue
+}
+
+set_variable = {
+	var = BAY_influence
+	value = 50
+}
+set_variable = {
+	var = BAY_influence_meter_value
+	value = 11
+}
 
 set_technology = {
 	infantry_weapons = 1

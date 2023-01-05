@@ -1,0 +1,87 @@
+scripted_gui = {
+  super_event_war_of_liberation = {
+    window_name = "super_event_war_of_liberation"
+    context_type = player_context
+
+    visible = {
+        has_country_flag = DIV_war_of_liberation
+    }
+
+    effects = {
+        super_close_click = {
+            clr_country_flag = DIV_war_of_liberation
+        }
+    }
+
+    triggers = {
+    }
+
+    dynamic_lists = {
+    }
+
+    properties = {
+    }
+
+    ai_enabled = {
+        always = no
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+    ai_test_variance = 0.5
+
+    ai_check = {
+    }
+
+    ai_check_scope = {
+    }
+
+    ai_weights = {
+    }
+  }
+}
+
+scripted_gui = {
+    OTT_resistance_window = {
+        window_name = "OTT_resistance_window"
+        context_type = decision_category
+
+        visible = {
+            original_tag = OTT
+        }
+
+        ai_enabled = {
+            always = no
+        }
+
+        properties = {
+            balkan_resistance_icon = {
+                frame = var_OTT_balkan_resistance
+            }
+
+            arabic_resistance_icon = {
+                frame = var_OTT_arabic_resistance
+            }
+        }
+    }
+}
+
+scripted_gui = {
+    BAY_influence_window = {
+        window_name = "BAY_influence_window"
+        context_type = decision_category
+
+        visible = {
+            original_tag = BAY
+        }
+
+        ai_enabled = {
+            always = no
+        }
+
+        properties = {
+            bavaria_influence_meter_ticker_icon = {
+                frame = BAY_influence_meter_value
+            }
+        }
+    }
+}

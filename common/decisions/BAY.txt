@@ -1,0 +1,574 @@
+volker_werke = {
+	merge_daimler_and_benz = {
+		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = BAY_merging_companies
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_unify_the_volker_werke
+		}
+		days_remove = 30
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BAY_merging_companies
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_merging_companies
+		}
+	}
+
+	unify_bayerische_motoren_werke = {
+		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = BAY_merging_companies
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_unify_the_volker_werke
+		}
+		days_remove = 30
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BAY_merging_companies
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_merging_companies
+		}
+	}
+
+	subsume_industries_into_seimens = {
+		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = BAY_merging_companies
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_unify_the_volker_werke
+		}
+		days_remove = 30
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BAY_merging_companies
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_merging_companies
+		}
+	}
+
+	the_rest_to_volkerwerke = {
+		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = BAY_merging_companies
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_unify_the_volker_werke
+		}
+		days_remove = 30
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BAY_merging_companies
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_merging_companies
+		}
+	}
+
+	expand_nuremburg_munich_rails = {
+		cost = 25
+		available = {
+			NOT = {
+				has_country_flag = BAY_expanding_autobahn
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_the_autobahn_project
+		}
+		days_remove = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BAY_expanding_autobahn
+		}
+		remove_effect = {
+			build_railway = {
+				start_province = 692
+				target_province = 11544
+				level = 5
+			}
+			555 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			622 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_expanding_autobahn
+		}
+	}
+
+	expand_nuremburg_stuttgart_rails = {
+		cost = 25
+		available = {
+			NOT = {
+				has_country_flag = BAY_expanding_autobahn
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_the_autobahn_project
+		}
+		days_remove = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BAY_expanding_autobahn
+		}
+		remove_effect = {
+			build_railway = {
+				start_province = 9517
+				target_province = 11544
+				level = 5
+			}
+			555 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			623 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_expanding_autobahn
+		}
+	}
+
+	expand_munich_stuttgart_rails = {
+		cost = 25
+		available = {
+			NOT = {
+				has_country_flag = BAY_expanding_autobahn
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_the_autobahn_project
+		}
+		days_remove = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BAY_expanding_autobahn
+		}
+		remove_effect = {
+			build_railway = {
+				start_province = 9517
+				target_province = 692
+				level = 5
+			}
+			622 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			623 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_expanding_autobahn
+		}
+	}
+
+	close_genoese_companies = {
+		visible = {
+			has_idea = BAY_genoese_companies
+		}
+		fire_only_once = yes
+		complete_effect = {
+			remove_ideas = BAY_genoese_companies
+		}
+	}
+}
+battle_for_influence = {
+	debug_small_increase = {
+		complete_effect = {
+			BAY_low_influence_increase = yes
+		}
+	}
+	debug_medium_increase = {
+		complete_effect = {
+			BAY_moderate_influence_increase = yes
+		}
+	}
+	debug_large_increase = {
+		complete_effect = {
+			BAY_high_influence_increase = yes
+		}
+	}
+	debug_small_decrease = {
+		complete_effect = {
+			BAY_low_influence_decrease = yes
+		}
+	}
+	debug_medium_decrease = {
+		complete_effect = {
+			BAY_moderate_influence_decrease = yes
+		}
+	}
+	debug_large_decrease = {
+		complete_effect = {
+			BAY_high_influence_decrease = yes
+		}
+	}
+	small_french_investment = {
+		cost = 25
+		available = {
+			NOT = {
+				has_country_flag = BAY_requesting_french_investments
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_request_french_investments
+		}
+		modifier = {
+			consumer_goods_factor = -0.03
+		}
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = BAY_requesting_french_investments
+		}
+		remove_effect = {
+			BAY_low_influence_increase = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			clr_country_flag = BAY_requesting_french_investments
+		}
+	}
+	moderate_french_investment = {
+		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = BAY_requesting_french_investments
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_request_french_investments
+		}
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = BAY_requesting_french_investments
+		}
+		remove_effect = {
+			BAY_moderate_influence_increase = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_requesting_french_investments
+		}
+	}
+	large_french_investment = {
+		cost = 60
+		available = {
+			NOT = {
+				has_country_flag = BAY_requesting_french_investments
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_request_french_investments
+		}
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = BAY_requesting_french_investments
+		}
+		remove_effect = {
+			BAY_high_influence_increase = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_requesting_french_investments
+		}
+	}
+	divert_civilian_funding = {
+		cost = 25
+		available = {
+			NOT = {
+				has_country_flag = BAY_volkerwerke_expansion
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_expand_the_volkerwerke
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = 0.1
+		}
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = BAY_volkerwerke_expansion
+		}
+		remove_effect = {
+			BAY_low_influence_decrease = yes
+			clr_country_flag = BAY_volkerwerke_expansion
+		}
+	}
+	balance_out_the_military_expansion = {
+		cost = 60
+		available = {
+			NOT = {
+				has_country_flag = BAY_volkerwerke_expansion
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_expand_the_volkerwerke
+		}
+		modifier = {
+			consumer_goods_factor = -0.03
+		}
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = BAY_volkerwerke_expansion
+		}
+		remove_effect = {
+			BAY_moderate_influence_decrease = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_volkerwerke_expansion
+		}
+	}
+	expand_the_arms_industry_further = {
+		cost = 45
+		available = {
+			NOT = {
+				has_country_flag = BAY_volkerwerke_expansion
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_expand_the_volkerwerke
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		days_remove = 40
+		complete_effect = {
+			set_country_flag = BAY_volkerwerke_expansion
+		}
+		remove_effect = {
+			BAY_high_influence_decrease = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_volkerwerke_expansion
+		}
+	}
+	slow_the_rapid_expansion = {
+		cost = 30
+		available = {
+			NOT = {
+				has_country_flag = BAY_volkerwerke_expansion
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_treading_the_narrow_path
+			has_completed_focus = BAY_an_independent_economy
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+			stability_weekly_factor = 0.002
+			production_speed_buildings_factor = -0.1
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = BAY_volkerwerke_expansion
+		}
+		remove_effect = {
+			BAY_low_influence_increase = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			clr_country_flag = BAY_volkerwerke_expansion
+		}
+	}
+	reconciliation_with_french_industries = {
+		cost = 50
+		available = {
+			NOT = {
+				has_country_flag = BAY_volkerwerke_expansion
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_treading_the_narrow_path
+			has_completed_focus = BAY_an_independent_economy
+		}
+		days_remove = 40
+		complete_effect = {
+			set_country_flag = BAY_volkerwerke_expansion
+		}
+		remove_effect = {
+			BAY_high_influence_increase = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_volkerwerke_expansion
+		}
+	}
+	commit_minor_industrial_fraud = {
+		cost = 40
+		available = {
+			NOT = {
+				has_country_flag = BAY_requesting_french_investments
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_treading_the_narrow_path
+			has_completed_focus = BAY_franco_german_collaboration
+		}
+		days_remove = 40
+		complete_effect = {
+			set_country_flag = BAY_requesting_french_investments
+		}
+		remove_effect = {
+			BAY_moderate_influence_decrease = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = BAY_requesting_french_investments
+		}
+	}
+	favor_german_companies = {
+		cost = 20
+		available = {
+			NOT = {
+				has_country_flag = BAY_requesting_french_investments
+			}
+		}
+		visible = {
+			has_completed_focus = BAY_treading_the_narrow_path
+			has_completed_focus = BAY_franco_german_collaboration
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = 0.1
+		}
+		days_remove = 40
+		complete_effect = {
+			set_country_flag = BAY_requesting_french_investments
+		}
+		remove_effect = {
+			BAY_low_influence_decrease = yes
+			clr_country_flag = BAY_requesting_french_investments
+		}
+	}
+}

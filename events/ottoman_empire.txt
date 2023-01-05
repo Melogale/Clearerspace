@@ -1,0 +1,444 @@
+add_namespace = ottoman
+
+#hegemons of the mideast
+country_event = {
+	id = ottoman.1
+	title = ottoman.1.t
+	desc = ottoman.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.1.a
+	}
+}
+
+#seat of the caliph
+country_event = {
+	id = ottoman.2
+	title = ottoman.2.t
+	desc = ottoman.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.2.a
+	}
+}
+
+#masters of the mediterranean
+country_event = {
+	id = ottoman.3
+	title = ottoman.3.t
+	desc = ottoman.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.3.a
+	}
+}
+
+#frayed seams
+country_event = {
+	id = ottoman.4
+	title = ottoman.4.t
+	desc = ottoman.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.4.a
+	}
+}
+
+#the Ankara Bombing
+country_event = {
+	id = ottoman.5
+	title = ottoman.5.t
+	desc = ottoman.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.5.a
+		set_global_flag = OTT_ankara_bombing_FLG
+	}
+} #we can no longer ignore the growing nationalist sentiments as it is now affecting our very way of life
+
+#emergency elections
+country_event = {
+	id = ottoman.6
+	title = ottoman.6.t
+	desc = ottoman.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.6.a
+		set_country_flag = OTT_liberal_entente_victory_FLG
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = ottoman.6.b
+		set_country_flag = OTT_peoples_party_victory_FLG
+		set_politics = {
+			ruling_party = authoritarian_democracy
+			elections_allowed = no
+		}
+	}
+}
+
+
+#resistance events
+
+
+	#balkan crackdowns backfire
+country_event = {
+	id = ottoman.7
+	title = ottoman.7.t
+	desc = ottoman.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.7.a
+		OTT_balkan_resistance_increase = yes
+	}
+}
+
+	#mideast crackdowns backfire
+country_event = {
+	id = ottoman.8
+	title = ottoman.8.t
+	desc = ottoman.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.8.a
+		OTT_balkan_resistance_increase = yes
+	}
+}
+
+	#mideast revolutionaries entrenched
+country_event = {
+	id = ottoman.9
+	title = ottoman.9.t
+	desc = ottoman.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.9.a
+		OTT_mideast_resistance_increase = yes
+	}
+}
+
+	#balkan revolutionaries entrenched
+country_event = {
+	id = ottoman.10
+	title = ottoman.10.t
+	desc = ottoman.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.10.a
+		OTT_mideast_resistance_increase = yes
+	}
+}
+
+	#reforms exasperate issues
+country_event = {
+	id = ottoman.11
+	title = ottoman.11.t
+	desc = ottoman.11.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.11.a
+		OTT_resistance_increase = yes
+	}
+}
+
+	#reforms prove successful
+country_event = {
+	id = ottoman.12
+	title = ottoman.12.t
+	desc = ottoman.12.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.12.a
+		OTT_balkan_resistance_decrease = yes
+	}
+}
+
+	#reforms prove successful
+country_event = {
+	id = ottoman.13
+	title = ottoman.13.t
+	desc = ottoman.13.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.11.a
+		OTT_mideast_resistance_decrease = yes
+	}
+}
+
+	#Tensions temporarily calm
+country_event = {
+	id = ottoman.14
+	title = ottoman.14.t
+	desc = ottoman.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.14.a
+		OTT_resistance_decrease = yes
+	}
+}
+
+	#THE GREAT REVOLT BEGINS
+country_event = {
+	id = ottoman.15
+	title = ottoman.15.t
+	desc = ottoman.15.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.15.a
+		hidden_effect = {
+			news_event = {
+				id = ottoman.16
+				days = 5
+			}
+			AUS = {
+				country_event = {
+					id = ottoman.17
+					days = 2
+				}
+			}
+			EGY = {
+				country_event = {
+					id = ottoman.19
+					days = 1
+				}
+			}
+			PER = {
+				country_event = {
+					id = ottoman.20
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+	#Great revolt news event!
+news_event = {
+	id = ottoman.16
+	title = ottoman.16.t
+	desc = ottoman.16.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ottoman.16.a
+
+	}
+}
+
+	#the austrian's gambit
+country_event = {
+	id = ottoman.17
+	title = ottoman.17.t
+	desc = ottoman.17.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.17.a
+		declare_war_on = {
+			target = OTT
+			type = annex_everything
+		}
+		VEN = {
+			declare_war_on = {
+				target = OTT
+				type = annex_everything
+			}
+		}
+		HUN = {
+			country_event = {
+				id = ottoman.18
+			}
+		}
+		CRO = {
+			country_event = {
+				id = ottoman.18
+			}
+		}
+	}
+}
+
+	#Our Austrian allies rally us to their aid! To arms!
+country_event = {
+	id = ottoman.18
+	title = ottoman.18.t
+	desc = ottoman.18.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.18.a
+		declare_war_on = {
+			target = OTT
+			type = annex_everything
+		}
+	}
+}
+
+	#Egypt shall be free from the ottoman yolk! in both name and spirit!
+country_event = {
+	id = ottoman.19
+	title = ottoman.19.t
+	desc = ottoman.19.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.19.a
+		set_cosmetic_tag = EGY_free
+		declare_war_on = {
+			target = OTT
+			type = annex_everything
+		}
+	}
+}
+
+	#The ottomans have held us under their thumb for long enough! Persia shall rule mesopotamia once more!
+country_event = {
+	id = ottoman.20
+	title = ottoman.20.t
+	desc = ottoman.20.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.20.a
+		declare_war_on = {
+			target = OTT
+			type = annex_everything
+		}
+	}
+}
+
+	#The time has come! arabia shall be free!
+country_event = {
+	id = ottoman.21
+	title = ottoman.21.t
+	desc = ottoman.21.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.21.a
+		declare_war_on = {
+			target = OTT
+			type = take_core_state
+			generator = { 882 875 883 874 879 870 878 871 868 }
+		}
+		declare_war_on = {
+			target = RIY
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = YEM
+			type = annex_everything
+		}
+	}
+}
+
+	#the people rally! arabia will be free!
+country_event = {
+	id = ottoman.22
+	title = ottoman.22.t
+	desc = ottoman.22.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.22.a
+		declare_war_on = {
+			target = OTT
+			type = take_core_state
+			generator = { 882 875 883 874 879 870 878 871 868 }
+		}
+		declare_war_on = {
+			target = RIY
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = YEM
+			type = annex_everything
+		}
+	}
+}
+
+	#the puppet state joins our glorious revolt!
+country_event = {
+	id = ottoman.23
+	title = ottoman.23.t
+	desc = ottoman.23.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.23.a
+		declare_war_on = {
+			target = OTT
+			type = take_core_state
+			generator = { 882 875 883 874 879 870 878 871 868 }
+		}
+		declare_war_on = {
+			target = RIY
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = YEM
+			type = annex_everything
+		}
+		hidden_effect = {
+			OTT = {
+				country_event = {
+					id = ottoman.24
+				}
+			}
+		}
+	}
+}
+
+	#our arabian puppet has rebeleld :(
+country_event = {
+	id = ottoman.24
+	title = ottoman.24.t
+	desc = ottoman.24.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.24.a
+	}
+}

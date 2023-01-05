@@ -1,0 +1,420 @@
+
+focus_tree = {
+	id = livonia_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LIV
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	focus = {
+		id = LIV_freedom_at_last
+		icon = GFX_focus_liv_freedom_at_last
+		x = 12
+		y = 0
+		cost = 5
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = livonia.1
+			}
+		}
+	}
+
+	focus = {
+		id = LIV_foreign_recognition
+		icon = GFX_goal_tripartite_pact
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_freedom_at_last }
+		relative_position_id = LIV_freedom_at_last
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = LIV_no_recognition
+		}
+	}
+
+	focus = {
+		id = LIV_the_tallinn_conference
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_foreign_recognition }
+		relative_position_id = LIV_foreign_recognition
+
+		available_if_capitulated = yes
+		select_effect = {
+			SCD = {
+				country_event = {
+					id = livonia.2
+					days = 20
+				}
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = tt_LIV_tallinn_conference
+		}
+	}
+
+	focus = {
+		id = LIV_a_peaceful_soverign_latvia
+		icon = GFX_focus_liv_a_peaceful_soverign_latvia
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = LIV_the_tallinn_conference }
+		relative_position_id = LIV_the_tallinn_conference
+
+		available = {
+			has_country_flag = flg_LIV_latvia_formed
+		}
+		
+		available_if_capitulated = yes
+		select_effect = {
+			set_country_flag = flg_LIV_utter_filler
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = livonia.10
+					days = 0
+				}
+				clr_country_flag = flg_LIV_utter_filler
+			}
+			custom_effect_tooltip = tt_LIV_peaceful_soverign_latvia
+		}
+	}
+
+	focus = {
+		id = LIV_fallout_of_the_coup
+		icon = GFX_goal_generic_secret_weapon
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_a_peaceful_soverign_latvia }
+		relative_position_id = LIV_a_peaceful_soverign_latvia
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = LIV_baltic_german_pressure
+		}
+	}
+
+	focus = {
+		id = LIV_the_riga_conference
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_fallout_of_the_coup }
+		relative_position_id = LIV_fallout_of_the_coup
+		
+		available_if_capitulated = yes
+		select_effect = {
+			SCD = {
+				country_event = {
+					id = livonia.11
+					days = 20
+				}
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = tt_LIV_riga_conference
+		}
+	}
+
+	focus = {
+		id = LIV_restructuring_our_industry
+		icon = GFX_focus_generic_industry_2
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_the_riga_conference }
+		relative_position_id = LIV_the_riga_conference
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_expand_oil_shale_extraction
+		icon = GFX_goal_generic_oil_refinery
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_restructuring_our_industry }
+		relative_position_id = LIV_restructuring_our_industry
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_foreign_investments
+		icon = GFX_goal_generic_trade
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_expand_oil_shale_extraction }
+		relative_position_id = LIV_expand_oil_shale_extraction
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_expand_cement_production
+		icon = GFX_goal_generic_construction
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_foreign_investments }
+		relative_position_id = LIV_foreign_investments
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_chemical_industry_boom
+		icon = GFX_focus_generic_rubber
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_foreign_investments }
+		relative_position_id = LIV_foreign_investments
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_oil_shale_fired_power_plants
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_chemical_industry_boom }
+		prerequisite = { focus = LIV_expand_cement_production }
+		relative_position_id = LIV_chemical_industry_boom
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_extraction_technology_investments
+		icon = GFX_goal_generic_construction2
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_expand_oil_shale_extraction }
+		relative_position_id = LIV_expand_oil_shale_extraction
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_deeper_extraction
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_extraction_technology_investments }
+		relative_position_id = LIV_extraction_technology_investments
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_agricultural_export_profits
+		icon = GFX_focus_mex_privatisation
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_restructuring_our_industry }
+		relative_position_id = LIV_restructuring_our_industry
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_heavy_industrial_investments
+		icon = GFX_focus_generic_industry_3
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_agricultural_export_profits }
+		relative_position_id = LIV_agricultural_export_profits
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_scandinavian_industrial_investments
+		icon = GFX_goal_generic_production2
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_heavy_industrial_investments }
+		relative_position_id = LIV_heavy_industrial_investments
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_subsidise_urban_migration
+		icon = GFX_focus_generic_concessions
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_agricultural_export_profits }
+		relative_position_id = LIV_agricultural_export_profits
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_encourage_german_and_nordic_immigration
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_subsidise_urban_migration }
+		relative_position_id = LIV_subsidise_urban_migration
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_create_non_german_autonomies
+		icon = GFX_goal_generic_position_armies
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_encourage_german_and_nordic_immigration }
+		prerequisite = { focus = LIV_scandinavian_industrial_investments }
+		relative_position_id = LIV_scandinavian_industrial_investments
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_reorganising_the_army
+		icon = GFX_focus_generic_military_academy
+		x = -4
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_the_riga_conference }
+		relative_position_id = LIV_the_riga_conference
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_professional_livonian_army
+		icon = GFX_focus_generic_military_academy
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_reorganising_the_army }
+		relative_position_id = LIV_reorganising_the_army
+		mutually_exclusive = { focus = LIV_large_baltic_army }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = LIV_large_baltic_army
+		icon = GFX_focus_generic_military_academy
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIV_reorganising_the_army }
+		relative_position_id = LIV_reorganising_the_army
+		mutually_exclusive = { focus = LIV_professional_livonian_army }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+}

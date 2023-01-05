@@ -1,0 +1,17 @@
+modded_debug_crap = {
+	icon = generic_civil_support
+	allowed = {
+
+	}
+}
+
+form_arcadian_union = {
+	icon = generic_democracy
+	allowed = {
+		OR = {
+			original_tag = VIN
+			original_tag = VIR
+			original_tag = LOU
+		}
+	}
+}

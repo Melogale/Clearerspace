@@ -1,0 +1,138 @@
+ideas = {
+
+	country = {
+		OTT_skyrocketing_debt = {
+			picture = FRA_motorized_focus
+			modifier = {
+				stability_weekly = -0.01
+				consumer_goods_factor = 0.3
+			}
+		}
+		OTT_economic_desparation = {
+			picture = FRA_motorized_focus
+			modifier = {
+				consumer_goods_factor = 0.45
+			}
+		}
+		OTT_international_bankruptcy = {
+			picture = FRA_motorized_focus
+			modifier = {
+				consumer_goods_factor = 1
+				stability_factor = -0.1
+			}
+		}
+		OTT_public_funding_cut = {
+			picture = FRA_motorized_focus
+			modifier = {
+				stability_weekly = -0.02
+				consumer_goods_factor = 0.2
+			}
+		}
+		OTT_national_austerity_measures = {
+			picture = FRA_motorized_focus
+			modifier = {
+				stability_weekly = -0.03
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+
+	hidden_ideas = {
+		OTT_balkan_1_resistance = {
+			modifier = {
+				stability_factor = -0.01
+			}
+			name = balkan_resistance
+		}
+		OTT_balkan_2_resistance = {
+			modifier = {
+				stability_factor = -0.02
+			}
+			name = balkan_resistance
+		}
+		OTT_balkan_3_resistance = {
+			modifier = {
+				stability_factor = -0.03
+			}
+			name = balkan_resistance
+		}
+		OTT_balkan_4_resistance = {
+			modifier = {
+				stability_factor = -0.04
+			}
+			name = balkan_resistance
+		}
+		OTT_balkan_5_resistance = {
+			modifier = {
+				stability_factor = -0.05
+			}
+			name = balkan_resistance
+		}
+		OTT_balkan_6_resistance = {
+			modifier = {
+				stability_factor = -0.06
+			}
+			name = balkan_resistance
+		}
+		OTT_balkan_7_resistance = {
+			modifier = {
+				stability_factor = -0.07
+			}
+			name = balkan_resistance
+		}
+		OTT_balkan_8_resistance = {
+			modifier = {
+				stability_factor = -0.08
+			}
+			name = balkan_resistance
+		}
+		OTT_arabic_1_resistance = {
+			modifier = {
+				stability_factor = -0.01
+			}
+			name = arabic_resistance
+		}
+		OTT_arabic_2_resistance = {
+			modifier = {
+				stability_factor = -0.02
+			}
+			name = arabic_resistance
+		}
+		OTT_arabic_3_resistance = {
+			modifier = {
+				stability_factor = -0.03
+			}
+			name = arabic_resistance
+		}
+		OTT_arabic_4_resistance = {
+			modifier = {
+				stability_factor = -0.04
+			}
+			name = arabic_resistance
+		}
+		OTT_arabic_5_resistance = {
+			modifier = {
+				stability_factor = -0.05
+			}
+			name = arabic_resistance
+		}
+		OTT_arabic_6_resistance = {
+			modifier = {
+				stability_factor = -0.06
+			}
+			name = arabic_resistance
+		}
+		OTT_arabic_7_resistance = {
+			modifier = {
+				stability_factor = -0.07
+			}
+			name = arabic_resistance
+		}
+		OTT_arabic_8_resistance = {
+			modifier = {
+				stability_factor = -0.08
+			}
+			name = arabic_resistance
+		}
+	}
+}

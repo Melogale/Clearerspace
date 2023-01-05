@@ -1,0 +1,324 @@
+ideas = {
+
+	country = {
+		PLC_nationwide_strikes = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+				
+			}
+		}
+	}
+
+	country = {
+		PLC_disloyal_army = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+				custom_modifier_tooltip = tt_PLC_no_army_training_loser
+			}
+		}
+	}
+
+	country = {
+		PLC_defunct_government = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+				
+			}
+		}
+	}
+
+	country = {
+		PLC_disloyal_generals = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+				custom_modifier_tooltip = tt_PLC_no_army_training_loser
+			}
+		}
+	}
+
+	country = {
+		PLC_dead_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPA_recovering_from_the_civil_war
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				industrial_capacity_dockyard = -0.7
+				industrial_capacity_factory = -0.7
+				production_speed_buildings_factor = -0.5
+				production_factory_max_efficiency_factor = -0.25
+			}
+		}
+	}
+
+	country = {
+		PLC_backwater_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = usa_great_depression_3
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_dockyard = -0.55
+				industrial_capacity_factory = -0.55
+				production_speed_buildings_factor = -0.35
+				production_factory_max_efficiency_factor = -0.20
+			}
+		}
+	}
+
+	country = {
+		PLC_backwards_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = usa_great_depression_2
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_dockyard = -0.35
+				industrial_capacity_factory = -0.35
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
+	}
+
+	country = {
+		PLC_modernizing_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		PLC_modern_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+		PLC_economic_miracle = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+
+	country = {
+		PLC_emergency_economic_relief = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+
+	country = {
+		PLC_the_dual_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+	}
+
+	country = {
+		PLC_profit_reinvestment = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				global_building_slots_factor = 0.1
+			}
+		}
+	}
+
+	country = {
+		PLC_near_autarky = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_oil_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.2
+			}
+		}
+	}
+
+}
