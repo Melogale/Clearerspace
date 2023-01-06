@@ -1,5 +1,4 @@
 default = {
-
 	operative = {
 		male = {
 			"GFX_portrait_operative_unknown"
@@ -39,10 +38,82 @@ continent = {
 	}
 	
 	political = {
-		male = { 
-			"GFX_Portrait_Europe_Generic_1"
-			"GFX_Portrait_Europe_Generic_2"
-			"GFX_Portrait_Europe_Generic_3" 
+		monolism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		vanguard_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		authoritarian_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		libertarian_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		social_democracy = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		conservatism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		authoritarian_democracy = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		autocracy = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		fascism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		egoism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
 		}
 	}
 
@@ -68,12 +139,84 @@ continent = {
 			"GFX_Portrait_Europe_Generic_navy_3"
 		}
 	}
-
+	
 	political = {
-		male = { 
-			"GFX_Portrait_Europe_Generic_1"
-			"GFX_Portrait_Europe_Generic_2"
-			"GFX_Portrait_Europe_Generic_3" 
+		monolism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		vanguard_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		authoritarian_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		libertarian_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		social_democracy = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		conservatism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		authoritarian_democracy = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		autocracy = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		fascism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		egoism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
 		}
 	}
 
@@ -98,14 +241,88 @@ continent = {
 			"GFX_Portrait_South_America_Generic_navy_3"
 		}
 	}
-
+	
 	political = {
-		male = { 
-			"GFX_Portrait_South_America_Generic_1"
-			"GFX_Portrait_South_America_Generic_2"
-			"GFX_Portrait_South_America_Generic_3" 
+		monolism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		vanguard_socialism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		authoritarian_socialism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		libertarian_socialism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		social_democracy = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		conservatism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		authoritarian_democracy = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		autocracy = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		fascism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
+		}
+		egoism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1"
+				"GFX_Portrait_South_America_Generic_2"
+				"GFX_Portrait_South_America_Generic_3"
+			}
 		}
 	}
+
+
 
 
 }
@@ -132,10 +349,82 @@ continent = {
 	}
 	
 	political = {
-		male = { 
-			"GFX_Portrait_Europe_Generic_1"
-			"GFX_Portrait_Europe_Generic_2"
-			"GFX_Portrait_Europe_Generic_3" 
+		monolism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		vanguard_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		authoritarian_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		libertarian_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		social_democracy = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		conservatism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		authoritarian_democracy = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		autocracy = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		fascism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		egoism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_1"
+				"GFX_Portrait_Europe_Generic_2"
+				"GFX_Portrait_Europe_Generic_3" 
+			}
 		}
 	}
 
@@ -162,14 +451,126 @@ continent = {
 	}
 
 	political = {
-		male = { 
-			"GFX_Portrait_Africa_Generic_1"	
-			"GFX_Portrait_Africa_Generic_2" 
-			"GFX_Portrait_Africa_Generic_3"
-			"GFX_Portrait_South_Africa_Political_Leader_Generic"
-			"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
-			"GFX_Portrait_South_Africa_Army_Generic"
-			"GFX_Portrait_South_Africa_Army_Generic_2"
+		monolism = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		vanguard_socialism = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		authoritarian_socialism = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		libertarian_socialism = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		social_democracy = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		conservatism = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		authoritarian_democracy = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		autocracy = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		fascism = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		egoism = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_1"	
+				"GFX_Portrait_Africa_Generic_2" 
+				"GFX_Portrait_Africa_Generic_3"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+				"GFX_Portrait_South_Africa_Army_Generic"
+				"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
 		}
 	}
 
@@ -197,10 +598,82 @@ continent = {
 	}
 
 	political = {
-		male = { 
-			"GFX_Portrait_Asia_Generic_1"
-			"GFX_Portrait_Asia_Generic_2"
-			"GFX_Portrait_Asia_Generic_3" 
+		monolism = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		vanguard_socialism = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		authoritarian_socialism = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		libertarian_socialism = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		social_democracy = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		conservatism = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		authoritarian_democracy = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		autocracy = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		fascism = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		egoism = {
+			male = { 
+				"GFX_Portrait_Asia_Generic_1"
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_Portrait_Asia_Generic_3" 
+			}
 		}
 	}
 
@@ -225,10 +698,82 @@ continent = {
 	}
 
 	political = {
-		male = { 
-			"GFX_Portrait_Arabia_Generic_1"
-			"GFX_Portrait_Arabia_Generic_2"
-			"GFX_Portrait_Arabia_Generic_3" 
+		monolism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		vanguard_socialism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		authoritarian_socialism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		libertarian_socialism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		social_democracy = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		conservatism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		authoritarian_democracy = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		autocracy = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		fascism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		egoism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3" 
+			}
 		}
 	}
 
