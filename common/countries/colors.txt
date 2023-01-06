@@ -285,6 +285,10 @@ BRM = {
 	color = rgb { 70 82 99 }
 	color_ui = rgb { 70 82 99 }
 }
+BOM = {
+	color = rgb { 120 50 50 }
+	color_ui = rgb { 120 50 50 }
+}
 
 # EAST ASIA
 TIB = {

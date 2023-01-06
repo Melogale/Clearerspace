@@ -81,6 +81,7 @@ NEP = "countries/Nepal.txt"
 BHU = "countries/Bhutan.txt"
 CHL = "countries/Chola.txt"
 BRM = "countries/Burma.txt"
+BOM = "countries/Bombay.txt"
 
 # EAST ASIA
 TIB = "countries/Tibet.txt"

@@ -71,6 +71,7 @@ on_actions = {
 			}
 			ENG = {
 				puppet = AST
+				puppet = BOM
 			}
 			QIQ = {
 				give_guarantee = NAV

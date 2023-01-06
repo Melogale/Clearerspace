@@ -314,6 +314,10 @@
  BRM_DEF:0 "Burma"
  BRM_ADJ:0 "Burmese"
  
+ BOM:0 "English Bombay"
+ BOM_DEF:0 "English Bombay"
+ BOM_ADJ:0 "Bombayite"
+ 
  # EAST ASIA
  
  TIB:0 "Tibet"
