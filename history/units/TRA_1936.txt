@@ -1,0 +1,71 @@
+oob = "TRA_1936"
+
+division_template = {
+    name = "Divizia de Infanterie"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+division_template = {
+    name = "Divizia de Cavalerie"
+    regiments = {
+        cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+        cavalry = { x = 1 y = 0 }
+        cavalry = { x = 1 y = 1 }
+        cavalry = { x = 1 y = 2 }
+    }
+}
+division_template = {
+    name = "Alpinistii"
+
+    regiments = {
+        mountaineers = { x = 0 y = 0 }
+        mountaineers = { x = 0 y = 1 }
+        mountaineers = { x = 1 y = 0 }
+        mountaineers = { x = 1 y = 1 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+
+units = {
+    division= { 
+        name = "1. Divizia de Infanterie"
+        location = 690
+        division_template = "Divizia de Infanterie"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+    division= { 
+        name = "2. Divizia de Infanterie"
+        location = 9606
+        division_template = "Divizia de Infanterie"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+    division= { 
+        name = "3. Divizia de Infanterie"
+        location = 6697
+        division_template = "Divizia de Infanterie"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+    division= { 
+        name = "1. Alpinistii"
+        location = 6711
+        division_template = "Alpinistii"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+}

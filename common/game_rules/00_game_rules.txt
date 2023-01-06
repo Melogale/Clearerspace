@@ -21,6 +21,22 @@
 #	}
 # }
 
+faction_button_options = {
+	name = "RULE_FACTION_BUTTON_OPTIONS"
+	group = "RULE_GROUP_DIVERGENCES_RULES"
+	icon = "GFX_take_over_faction_leadership"
+	default = {
+		name = "NO_BUTTON"
+		text = "RULE_OPTION_NO_BUTTON"
+		desc = "RULE_OPTION_NO_BUTTON_DESC"
+	}
+	option = {
+		name = "BUTTON_PRESENT"
+		text = "RULE_OPTION_BUTTON_PRESENT"
+		desc = "RULE_OPTION_BUTTON_PRESENT_DESC"
+	}
+}
+
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
