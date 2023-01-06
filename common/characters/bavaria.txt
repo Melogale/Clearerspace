@@ -1,0 +1,56 @@
+characters = {
+    BAY_karl_liebknecht = {
+        name = BAY_karl_liebknecht
+        country_leader = {
+            ideology = democratic_socialism
+            traits = { lawmaker }
+        }
+    }
+    BAY_kurt_eisner = {
+        name = BAY_kurt_eisner
+        country_leader = {
+            ideology = democratic_socialism
+            traits = { philosopher journalist }
+        }
+    }
+    BAY_rosa_luxemburg = {
+        name = BAY_rosa_luxemburg
+        country_leader = {
+            ideology = luxemburgism
+            traits = { revolutionary_social_democrat }
+        }
+    }
+    BAY_ernst_thalmann = {
+        name = BAY_ernst_thalmann
+        country_leader = {
+            ideology = revolutionary_socialism
+            traits = { staunch_anti_fascist }
+        }
+    }
+    BAY_leo_jogiches = {
+        name = BAY_leo_jogiches
+        country_leader = {
+            ideology = revolutionary_socialism
+        }
+    }
+    BAY_gregor_strasser = {
+        name = BAY_gregor_strasser
+        country_leader = {
+            ideology = national_socialism
+            traits = { dictator anti_semitic }
+        }
+    }
+    BAY_ernst_toller = {
+        name = BAY_ernst_toller
+        country_leader = {
+            ideology = democratic_socialism
+            traits = { playwright french_collaborationist }
+        }
+    }
+    BAY_heinrich_brandler = {
+        name = BAY_heinrich_brandler
+        country_leader = {
+            ideology = social_democracy_sub
+        }
+    }
+}

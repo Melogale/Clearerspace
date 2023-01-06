@@ -96,7 +96,7 @@ on_actions = {
 					AND = {
 						check_variable = {
 							var = BAY_influence
-							value = 50
+							value = 51
 							compare = greater_than_or_equals
 						}
 						check_variable = {
@@ -116,6 +116,22 @@ on_actions = {
 					BAY_influence_effects_6
 				}
 			} 
+			if = {
+				limit = {
+					check_variable = {
+						var = BAY_influence
+						value = 50
+						compare = equals
+					}
+				}
+				remove_ideas = {
+					BAY_influence_effects_8
+					BAY_influence_effects_7
+					BAY_influence_effects_6
+					BAY_influence_effects_5
+					BAY_influence_effects_4
+				}
+			}
 			if = {
 				limit = {
 					AND = {

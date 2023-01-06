@@ -21,25 +21,104 @@ set_technology = {
 	tech_recon = 1
 }
 
+recruit_character = BAY_rosa_luxemburg #KPB-L
+promote_character = BAY_rosa_luxemburg
+recruit_character = BAY_kurt_eisner #SPD
+promote_character = BAY_kurt_eisner
+recruit_character = BAY_gregor_strasser #KPB-R
+promote_character = BAY_gregor_strasser
+recruit_character = BAY_heinrich_brandler #SAPB
+promote_character = BAY_heinrich_brandler
+recruit_character = BAY_karl_liebknecht
+recruit_character = BAY_ernst_thalmann
+recruit_character = BAY_leo_jogiches
+recruit_character = BAY_ernst_toller
+
+set_party_name = {
+	ideology = monolism
+	long_name = "-"
+	name = "-"
+}
+
+set_party_name = {
+	ideology = vanguard_socialism
+	long_name = "(Right) Kommunistische Partei Bayern"
+	name = "R-KPB"
+}
+
+set_party_name = {
+	ideology = authoritarian_socialism
+	long_name = "(Left) Kommunistische Partei Bayern"
+	name = "L-KPB"
+}
+
+set_party_name = {
+	ideology = libertarian_socialism
+	long_name = "Sozialdemokratische Partei Bayern"
+	name = "SPD"
+}
+
+set_party_name = {
+	ideology = social_democracy
+	long_name = "Sozialistische Arbeiterpartei Bayern"
+	name = "SAPB"
+}
+
+set_party_name = {
+	ideology = liberalism
+	long_name = "-"
+	name = "-"
+}
+
+set_party_name = {
+	ideology = conservatism
+	long_name = "-"
+	name = "-"
+}
+
+set_party_name = {
+	ideology = authoritarian_democracy
+	long_name = "-"
+	name = "-"
+}
+
+set_party_name = {
+	ideology = autocracy
+	long_name = "-"
+	name = "-"
+}
+
+set_party_name = {
+	ideology = fascism
+	long_name = "Bayerischer Unabhängigkeitsbund"
+	name = "BU"
+}
+
+set_party_name = {
+	ideology = egoism
+	long_name = "Verein Für Genuesische Interessen"
+	name = "VGI"
+}
+
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = authoritarian_socialism
 	last_election = "1934.6.13"
 	election_frequency = 24
 	elections_allowed = no
 }
 
 set_popularities = {
-	monolism = 5
-	vanguard_socialism = 10
-	authoritarian_socialism = 10
-	libertarian_socialism = 10
-	social_democracy = 10
-	liberalism = 10
-	conservatism = 10
-	authoritarian_democracy = 10
-	autocracy = 10
-	fascism = 10
-	egoism = 5
+	monolism = 0
+	vanguard_socialism = 26
+	authoritarian_socialism = 34
+	libertarian_socialism = 29
+	social_democracy = 6
+	liberalism = 0
+	conservatism = 0
+	authoritarian_democracy = 0
+	autocracy = 0
+	fascism = 5
+	egoism = 0
 }
 
 set_convoys = 5

@@ -1,0 +1,19 @@
+add_namespace = eoo
+
+#GENOA GOES BANKRUPT
+country_event = {	
+    id = eoo.1
+    title = eoo.1.t
+    desc = eoo.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = eoo.1.a
+		BAY = {
+			country_event = {
+				id = eoo.1
+			}
+		}
+	}
+}

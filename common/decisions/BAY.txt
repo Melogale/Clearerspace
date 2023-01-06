@@ -162,16 +162,16 @@ volker_werke = {
 			build_railway = {
 				start_province = 692
 				target_province = 11544
-				level = 5
+				level = 3
 			}
-			555 = {
+			540 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			622 = {
+			605 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -201,16 +201,16 @@ volker_werke = {
 			build_railway = {
 				start_province = 9517
 				target_province = 11544
-				level = 5
+				level = 3
 			}
-			555 = {
+			540 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			623 = {
+			606 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -240,16 +240,16 @@ volker_werke = {
 			build_railway = {
 				start_province = 9517
 				target_province = 692
-				level = 5
+				level = 3
 			}
-			622 = {
+			606 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			623 = {
+			605 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -307,6 +307,9 @@ battle_for_influence = {
 			NOT = {
 				has_country_flag = BAY_requesting_french_investments
 			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
+			}
 		}
 		visible = {
 			has_completed_focus = BAY_request_french_investments
@@ -331,6 +334,9 @@ battle_for_influence = {
 		available = {
 			NOT = {
 				has_country_flag = BAY_requesting_french_investments
+			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
 			}
 		}
 		visible = {
@@ -359,6 +365,9 @@ battle_for_influence = {
 			NOT = {
 				has_country_flag = BAY_requesting_french_investments
 			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
+			}
 		}
 		visible = {
 			has_completed_focus = BAY_request_french_investments
@@ -386,6 +395,9 @@ battle_for_influence = {
 			NOT = {
 				has_country_flag = BAY_volkerwerke_expansion
 			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
+			}
 		}
 		visible = {
 			has_completed_focus = BAY_expand_the_volkerwerke
@@ -408,6 +420,9 @@ battle_for_influence = {
 		available = {
 			NOT = {
 				has_country_flag = BAY_volkerwerke_expansion
+			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
 			}
 		}
 		visible = {
@@ -439,6 +454,9 @@ battle_for_influence = {
 			NOT = {
 				has_country_flag = BAY_volkerwerke_expansion
 			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
+			}
 		}
 		visible = {
 			has_completed_focus = BAY_expand_the_volkerwerke
@@ -469,6 +487,9 @@ battle_for_influence = {
 			NOT = {
 				has_country_flag = BAY_volkerwerke_expansion
 			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
+			}
 		}
 		visible = {
 			has_completed_focus = BAY_treading_the_narrow_path
@@ -496,6 +517,9 @@ battle_for_influence = {
 		available = {
 			NOT = {
 				has_country_flag = BAY_volkerwerke_expansion
+			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
 			}
 		}
 		visible = {
@@ -525,6 +549,9 @@ battle_for_influence = {
 			NOT = {
 				has_country_flag = BAY_requesting_french_investments
 			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
+			}
 		}
 		visible = {
 			has_completed_focus = BAY_treading_the_narrow_path
@@ -553,6 +580,9 @@ battle_for_influence = {
 			NOT = {
 				has_country_flag = BAY_requesting_french_investments
 			}
+			NOT = {
+				has_completed_focus = BAY_a_shallow_victory
+			}
 		}
 		visible = {
 			has_completed_focus = BAY_treading_the_narrow_path
@@ -569,6 +599,22 @@ battle_for_influence = {
 		remove_effect = {
 			BAY_low_influence_decrease = yes
 			clr_country_flag = BAY_requesting_french_investments
+		}
+	}
+}
+integrating_german_lands = {
+	integrate_the_rhineland = {
+		available = {
+			core_compliance = {
+				occupied_country_tag = BUR
+				value > 50
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = BAY_all_for_the_effort
+				has_completed_focus = BAY_merging_the_revolutions
+			}
 		}
 	}
 }

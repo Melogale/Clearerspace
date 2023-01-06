@@ -146,6 +146,10 @@ country_event = {
 			}
 		}
 		add_ideas = BAY_genoese_companies
+		add_popularity = {
+			ideology = egoism
+			popularity = 0.025
+		}
 	}
 }
 
@@ -161,18 +165,30 @@ country_event = {
 	option = {
 		name = bay.5.a
 		set_country_flag = BAY_spd_victory_FLG
+		set_politics = {
+			ruling_party = libertarian_socialism
+			elections_allowed = no
+		}
 	}
 
 	#Left-Communist Party of Bavaria Victory!
 	option = {
 		name = bay.5.b
 		set_country_flag = BAY_lkpb_victory_FLG
+		set_politics = {
+			ruling_party = authoritarian_socialism
+			elections_allowed = no
+		}
 	}
 
 	#Right-Communist Party of Bavaria Victory!
 	option = {
 		name = bay.5.c
 		set_country_flag = BAY_rkpb_victory_FLG
+		set_politics = {
+			ruling_party = vanguard_socialism
+			elections_allowed = no
+		}
 	}
 }
 
@@ -188,6 +204,7 @@ country_event = {
 		trigger = {
 			has_country_flag = BAY_spd_victory_FLG
 		}
+		promote_character = BAY_karl_liebknecht
 		name = bay.6.a
 	}
 
@@ -213,6 +230,7 @@ country_event = {
 			has_country_flag = BAY_lkpb_victory_FLG
 		}
 		name = bay.6.d
+		promote_character = BAY_ernst_thalmann
 	}
 
 	#Leo Jogiches
@@ -221,6 +239,7 @@ country_event = {
 			has_country_flag = BAY_lkpb_victory_FLG
 		}
 		name = bay.6.e
+		promote_character = BAY_leo_jogiches
 	}
 
 	#Gregor Strasser
@@ -229,5 +248,37 @@ country_event = {
 			has_country_flag = BAY_rkpb_victory_FLG
 		}
 		name = bay.6.f
+	}
+}
+
+#trial of radicals
+country_event = {	
+    id = bay.7
+    title = bay.7.t
+    desc = bay.7.d
+
+	is_triggered_only = yes
+
+	#execute the leaders and imprison the rest!
+	option = {
+		name = bay.7.a
+		add_manpower = -10000
+		add_stability = -0.05
+		add_political_power = 100
+	}
+
+	#imprison the worst offenders and pardon the rest
+	option = {
+		name = bay.7.b
+		add_manpower = -500
+		add_political_power = 50
+	}
+
+	#we need every german working towards our future!
+	option = {
+		name = bay.7.c
+		add_stability = -0.05
+		add_war_support = 0.1
+		add_political_power = -25
 	}
 }

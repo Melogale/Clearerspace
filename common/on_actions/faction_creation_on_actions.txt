@@ -9,7 +9,7 @@ on_actions = {
 				puppet = VEN
 			}
 			VIN = {
-				create_faction = "Nordic League"
+				create_faction = "North Atlantic Council"
 				add_to_faction = SCD
 				add_to_faction = TYK
 				add_to_faction = EST
@@ -19,14 +19,16 @@ on_actions = {
 				puppet = TYK
 				puppet = EST
 				puppet = MLC
+				give_guarantee = CNU
 			}
 			JAP = {
-				create_faction = "Co-Prosperity Sphere"
+				create_faction = "Anti-Imperialist Cooperation Pact"
 				add_to_faction = MAN
 				add_to_faction = JRS
 				add_to_faction = MON
 				add_to_faction = JPH
 				add_to_faction = JEI
+				add_to_faction = BEN
 				puppet = MAN
 				puppet = JRS
 				puppet = JPH
@@ -38,7 +40,7 @@ on_actions = {
 				puppet = MAY
 			}
 			OTT = {
-				create_faction = "The Caliphate"
+				create_faction = "Domain of the Caliph"
 				add_to_faction = EGY
 				add_to_faction = GRE
 				add_to_faction = RIY
@@ -52,6 +54,28 @@ on_actions = {
 				puppet = WAL
 				puppet = MOL
 				puppet = TRA
+			}
+			CNU = {
+				puppet = SCO
+			}
+			PLC = {
+				puppet = BEL
+				puppet = UKR
+			}
+			BUR = {
+				puppet = BEI
+			}
+			SPA = {
+				puppet = SEI
+				puppet = NGA
+			}
+			ENG = {
+				puppet = AST
+			}
+			QIQ = {
+				give_guarantee = NAV
+				give_guarantee = SIX
+				give_guarantee = ATH
 			}
 		}
 	}

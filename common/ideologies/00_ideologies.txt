@@ -104,6 +104,10 @@ ideologies = {
 			
 			communism = {
 			}
+			luxemburgism = {
+			}
+			revolutionary_socialism = {
+			}
 
 		}
 		

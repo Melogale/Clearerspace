@@ -161,9 +161,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			hidden_effect = {
-				add_ideas = BAY_influence_effects_6
-			}
 			if = {
 				limit = {
 					has_idea = BAY_international_embargo_1
@@ -677,7 +674,7 @@ focus_tree = {
 		icon = GFX_focus_fra_le_deluge
 		x = -7
 		y = 1
-		cost = 3
+		cost = 1
 
 		available = {
 			custom_trigger_tooltip = {
@@ -696,25 +693,22 @@ focus_tree = {
 		prerequisite = { focus = BAY_a_shallow_victory }
 		relative_position_id = BAY_a_shallow_victory
 		mutually_exclusive = { focus = BAY_tensions_in_alsace focus = BAY_the_rhenish_germans_freed }
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = BAY_confederation_du_rhin_bypass_tt
-				OR = {
-					check_variable = {
-						var = BAY_influence
-						value = 80
-						compare = greater_than_or_equals
-					}
-					has_country_flag = BAY_tensions_in_alsace
-				}
-			}
-		}
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			custom_effect_tooltip = BAY_confederation_du_rhin_tt
+			hidden_effect = {
+				set_variable = {
+					var = BAY_influence
+					value = 50
+				}
+			}
+			set_politics = {
+				ruling_party = libertarian_socialism
+				elections_allowed = no
+			}
+			promote_character = BAY_ernst_toller
 		}
 	}
 
@@ -723,7 +717,7 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		x = 0
 		y = 1
-		cost = 3
+		cost = 1
 
 		available = {
 			custom_trigger_tooltip = {
@@ -735,18 +729,17 @@ focus_tree = {
 		prerequisite = { focus = BAY_a_shallow_victory }
 		relative_position_id = BAY_a_shallow_victory
 		mutually_exclusive = { focus = BAY_tensions_in_alsace focus = BAY_confederation_du_rhin }
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = BAY_the_rhenish_germans_freed_bypass_tt
-				has_country_flag = BAY_rhineland_reclaimed
-			}
-		}
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			custom_effect_tooltip = BAY_the_rhenish_germans_freed_tt
+			hidden_effect = {
+				set_variable = {
+					var = BAY_influence
+					value = 50
+				}
+			}
 		}
 	}
 
@@ -755,7 +748,7 @@ focus_tree = {
 		icon = GFX_focus_generic_provoke_border_clashes
 		x = 7
 		y = 1
-		cost = 3
+		cost = 1
 
 		available = {
 			custom_trigger_tooltip = {
@@ -774,25 +767,22 @@ focus_tree = {
 		prerequisite = { focus = BAY_a_shallow_victory }
 		relative_position_id = BAY_a_shallow_victory
 		mutually_exclusive = { focus = BAY_the_rhenish_germans_freed focus = BAY_confederation_du_rhin }
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = BAY_tensions_in_alsace_bypass_tt
-				OR = {
-					has_country_flag = BAY_tensions_in_alsace
-					check_variable = {
-						var = BAY_influence
-						value = 20
-						compare = less_than_or_equals
-					}
-				}
-			}
-		}
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			custom_effect_tooltip = BAY_tensions_in_alsace_tt
+			hidden_effect = {
+				set_variable = {
+					var = BAY_influence
+					value = 50
+				}
+			}
+			set_politics = {
+				ruling_party = vanguard_socialism
+				elections_allowed = no
+			}
+			promote_character = BAY_gregor_strasser
 		}
 	}
 
@@ -834,9 +824,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = BAY_bolster_public_support_tt
-			hidden_effect = {
-				#compliance gain in rhenish states, add once states are finalized :)
+			568 = {
+				add_compliance = 30
+			}
+			569 = {
+				add_compliance = 30
+			}
+			562 = {
+				add_compliance = 30
+			}
+			961 = {
+				add_compliance = 30
 			}
 		}
 	}
@@ -856,7 +854,6 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = BAY_merging_the_revolutions_tt
-			#unlocks decisions to core the rhineland if compliance is high enough
 		}
 	}
 
@@ -874,7 +871,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			#some very cool and epic economic integration of the rhineland. probably add once states are finalized :)
+			build_railway = {
+				path = { 6444 11560 589 3574 6594 11417 }
+				level = 2
+			}
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 589
+			}
 		}
 	}
 
@@ -965,7 +971,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = BAY_preparing_total_mobilisation
 		}
 	}
 
@@ -983,7 +989,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = BAY_women_in_the_workforce
 		}
 	}
 
@@ -1000,7 +1006,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			FRA = {
+				add_ideas = BAY_german_embargo
+			}
+			swap_ideas = {
+				add_idea = BAY_rampant_poverty
+				remove_idea = BAY_moderate_poverty
+			}
+			add_war_support = 0.05
 		}
 	}
 
@@ -1017,7 +1030,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = BAY_martial_law
+			add_political_power = 100
+			add_stability = 0.1
 		}
 	}
 
@@ -1034,7 +1049,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = BAY_compulsory_labour
 		}
 	}
 
@@ -1051,7 +1066,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = BAY_merging_the_revolutions_tt
 		}
 	}
 
@@ -1070,7 +1085,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = tot_economic_mobilisation
+			remove_ideas = BAY_women_in_the_workforce
+			swap_ideas = {
+				remove_idea = BAY_preparing_total_mobilisation
+				add_idea = BAY_total_mobilization
+			}
+			load_oob = BAY_total_mobilization
 		}
 	}
 
@@ -1087,7 +1108,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = BAY_war_with_france_tt
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
 		}
 	}
 
@@ -1106,7 +1131,24 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = BAY_nationalist_fatigue
+				}
+				swap_ideas = {
+					remove_idea = BAY_nationalist_fatigue
+					add_idea = BAY_blunted_nationalism
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAY_state_sponsored_nationalism
+				}
+				swap_ideas = {
+					remove_idea = BAY_state_sponsored_nationalism
+					add_idea = BAY_blunted_nationalism
+				}
+			}
 		}
 	}
 
@@ -1123,7 +1165,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			540 = {
+				set_state_category = large_city
+			}
+			605 = {
+				set_state_category = large_city
+			}
+			swap_ideas = {
+				remove_idea = BAY_moderate_poverty
+				add_idea = BAY_low_poverty
+			}
 		}
 	}
 
@@ -1140,7 +1191,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = BAY_focus_on_resource_exploitation_tt
 		}
 	}
 
@@ -1158,7 +1209,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = bay.7
+			}
 		}
 	}
 
@@ -1175,7 +1228,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = BAY_reliance_on_the_french
 		}
 	}
 
@@ -1192,7 +1245,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = BAY_invite_french_political_advisors_tt
 		}
 	}
 
@@ -1210,7 +1263,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = BAY_crush_dissenters
 		}
 	}
 
@@ -1227,7 +1280,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = BAY_plan_for_the_confederation_tt
 		}
 	}
 

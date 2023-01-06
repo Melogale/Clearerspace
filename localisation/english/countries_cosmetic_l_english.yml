@@ -84,8 +84,8 @@
  HRE_DEF:0 "the Holy Roman Empire"
  HRE_ADJ:0 "Holy German"
 
- CDR:0 "Confederation of the Germans"
- CDR_DEF:0 "the Confederation of the Germans"
+ CDR:0 "German Confederation"
+ CDR_DEF:0 "the German Confederation"
  CDR_ADJ:0 "German"
 
  EGY_free:0 "Sultanate of Egypt"
@@ -107,3 +107,15 @@
  BUR_eu:0 "Union of European Nations"
  BUR_eu_DEF:0 "the Union of European Nations"
  BUR_eu_ADJ:0 "European"
+
+ FRA_GAUL:0 "Gallic Empire"
+ FRA_GAUL_DEF:0 "the Gallic Empire"
+ FRA_GAUL_ADJ:0 "French"
+
+ ITA_ROME:0 "Roman Empire"
+ ITA_ROME_DEF:0 "the Roman Empire"
+ ITA_ROME_ADJ:0 "Roman"
+
+ GTC_CART:0 "Carthage"
+ GTC_CART_DEF:0 "Carthage"
+ GTC_CART_ADJ:0 "Carthaginian"

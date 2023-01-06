@@ -74,3 +74,15 @@ ASH_plc = {
     color = rgb { 185 70 70 }
     color_ui = rgb { 185 70 70 }
 }
+FRA_GAUL = {
+    color = rgb { 46 158 83 }
+    color_ui = rgb { 46 158 83 }
+}
+ITA_ROME = {
+    color = rgb { 188 36 36 }
+    color_ui = rgb { 188 36 36 }
+}
+GTC_CART = {
+    color = rgb { 155 34 195 }
+    color_ui = rgb { 155 34 195 }
+}

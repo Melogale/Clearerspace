@@ -542,6 +542,15 @@ BAY_military_buildup:0 "Military Buildup"
 BAY_mass_conscription:0 "Mass Conscription"
 BAY_essential_state_industry:0 "Essential State Industries"
 BAY_french_lifeline:0 "The French Lifeline"
+BAY_preparing_total_mobilisation:0 "Preparing Total Mobilisation"
+BAY_women_in_the_workforce:0 "Women in the Workforce"
+BAY_german_embargo:0 "Complete German Embargo"
+BAY_martial_law:0 "Martial Law"
+BAY_compulsory_labour:0 "Compulsory Labour"
+BAY_total_mobilization:0 "Total Mobilisation"
+BAY_blunted_nationalism:0 "Blunted Nationalism"
+BAY_reliance_on_the_french:0 "Reliance on the French"
+BAY_crush_dissenters:0 "Crush Dissenters"
 
 #Ottoman Ideas
 

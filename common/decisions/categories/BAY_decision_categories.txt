@@ -14,6 +14,13 @@ battle_for_influence = {
     visible = {
         original_tag = BAY
         has_completed_focus = BAY_revolutionary_brothers
+        NOT = {
+            OR = {
+                has_completed_focus = BAY_confederation_du_rhin
+                has_completed_focus = BAY_the_rhenish_germans_freed
+                has_completed_focus = BAY_tensions_in_alsace
+            }
+        }
     }
     allowed = {
         original_tag = BAY
@@ -21,4 +28,14 @@ battle_for_influence = {
     priority = 10
     visible_when_empty = yes
     scripted_gui = BAY_influence_window
+}
+integrating_german_lands = {
+    visible = {
+        original_tag = BAY
+        has_completed_focus = BAY_a_shallow_victory
+    }
+    allowed = {
+        original_tag = BAY
+    }
+    priority = 9
 }

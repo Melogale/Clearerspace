@@ -202,6 +202,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.05
 				war_support_weekly_factor = -0.005
+				egoism_drift = 0.01
 			}
 		}
 		BAY_transplanted_industry = {
@@ -258,6 +259,74 @@ ideas = {
 			picture = man_five_year_plan_industry
 			modifier = {
 				political_power_factor = 0.1
+			}
+		}
+		BAY_preparing_total_mobilisation = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = 0.2
+				war_support_factor = 0.2
+				stability_factor = -0.1
+			}
+		}
+		BAY_women_in_the_workforce = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		BAY_german_embargo = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_morale_factor = -0.1
+				army_org_factor = -0.1
+			}
+		}
+		BAY_martial_law = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				conscription = -0.005
+				resistance_target = -0.3
+			}
+		}
+		BAY_compulsory_labour = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.25
+				stability_factor = -0.1
+			}
+		}
+		BAY_total_mobilization = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = 0.1
+				war_support_factor = 0.3
+				stability_factor = -0.15
+				conscription = 0.03
+			}
+		}
+		BAY_blunted_nationalism = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		BAY_reliance_on_the_french = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				political_power_factor = -0.1
+				stability_weekly_factor = 0.002
+			}
+		}
+		BAY_crush_dissenters = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				vanguard_socialism_drift = -0.02
+				social_democracy_drift = -0.02
+				fascism_drift = -0.02
+				stability_factor = 0.05
 			}
 		}
 	}
