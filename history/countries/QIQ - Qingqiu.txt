@@ -1,4 +1,11 @@
-capital = 10
+capital = 8
+
+add_ideas = {
+	QIQ_snowballing_corporatism
+	QIQ_extreme_population_boom
+	QIQ_unchecked_immigration
+	QIQ_stagnant_parliment
+}
 
 set_technology = {
 	infantry_weapons = 1
@@ -7,24 +14,24 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = social_democracy
 	last_election = "1934.6.13"
 	election_frequency = 24
 	elections_allowed = no
 }
 
 set_popularities = {
-	monolism = 5
-	vanguard_socialism = 10
-	authoritarian_socialism = 10
-	libertarian_socialism = 10
-	social_democracy = 10
+	monolism = 0
+	vanguard_socialism = 0
+	authoritarian_socialism = 0
+	libertarian_socialism = 0
+	social_democracy = 70
 	liberalism = 10
-	conservatism = 10
-	authoritarian_democracy = 10
-	autocracy = 10
-	fascism = 10
-	egoism = 5
+	conservatism = 20
+	authoritarian_democracy = 0
+	autocracy = 0
+	fascism = 0
+	egoism = 0
 }
 
 set_convoys = 5
