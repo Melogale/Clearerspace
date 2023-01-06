@@ -266,8 +266,8 @@ SPI = {
 	color_ui = rgb { 140 100 10 }
 }
 SIN = {
-	color = rgb { 100 30 160 }
-	color_ui = rgb { 100 30 160 }
+	color = rgb { 50 50 160 }
+	color_ui = rgb { 50 50 160 }
 }
 NEP = {
 	color = rgb { 107 46 46 }
