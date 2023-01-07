@@ -215,23 +215,6 @@ peace_action_modifiers = {
     }
 
 
-    democracy_major_force_gov = {
-        category = ideology
-        peace_action_type = { force_government }
-
-        enable = {
-            ROOT = {
-                has_government = democratic
-                is_major = yes
-            }
-            ROOT.FROM.FROM = {
-                is_major = yes
-            }
-        }
-        cost_multiplier = 0.70
-    }
-
-
     continuous_force_gov = {
         category = continuous_political_action
         peace_action_type = { force_government }

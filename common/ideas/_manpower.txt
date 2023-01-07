@@ -28,16 +28,7 @@ ideas = {
 			level = 6
 
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
+				always = yes
 			}
 
 			ai_will_do = {
@@ -67,8 +58,6 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
 				has_war_support > 0.1
-				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
 				
 			}
 
