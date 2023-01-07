@@ -1,4 +1,3 @@
-oob = "OTT_1936"
 
 if = {
     limit = {

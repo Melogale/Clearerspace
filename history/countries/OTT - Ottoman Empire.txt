@@ -1,6 +1,6 @@
 ﻿OOB = "OTT_1936"
 
-capital = 453
+capital = 442
 
 add_ideas = {
 	OTT_skirmishes_border_wars

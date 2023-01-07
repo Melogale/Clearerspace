@@ -1,6 +1,6 @@
 ﻿OOB = "EGY_1936"
 
-capital = 950
+capital = 907
 
 set_technology = {
 	infantry_weapons = 1

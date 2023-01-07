@@ -22,7 +22,7 @@ focus_tree = {
 		available_if_capitulated = yes
 	
 		available = {
-			INC {
+			INC = {
 				has_completed_focus = INC_the_trials
 			}
 		}
@@ -31,6 +31,7 @@ focus_tree = {
 			
 		}
 	}
+
 
 	focus = {
 		id = GCO_byzantine_structure_folds
@@ -44,7 +45,7 @@ focus_tree = {
 		relative_position_id = GCO_southern_wariness
 	
 		available = {
-			INC {
+			INC = {
 				has_completed_focus = INC_the_trials
 			}
 		}

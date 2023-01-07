@@ -1,4 +1,4 @@
-capital = 540
+capital = 526
 
 OOB = "FRA_1936"
 

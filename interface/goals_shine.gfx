@@ -20981,7 +20981,11 @@ spriteTypes = {
 		}
 
 		animation = {
+<<<<<<< Updated upstream
 			animationmaskfile = "gfx/interface/goals/focus_generic_spread_fascism.dds"
+=======
+			animationmaskfile = "gfx/interface/goals/focus_inc_the_trials.dds"
+>>>>>>> Stashed changes
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -21013,7 +21017,11 @@ spriteTypes = {
 		}
 
 		animation = {
+<<<<<<< Updated upstream
 			animationmaskfile = "gfx/interface/goals/focus_generic_armored_air_support.dds"
+=======
+			animationmaskfile = "gfx/interface/goals/focus_inc_communalism.dds"
+>>>>>>> Stashed changes
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -21045,7 +21053,11 @@ spriteTypes = {
 		}
 
 		animation = {
+<<<<<<< Updated upstream
 			animationmaskfile = "gfx/interface/goals/focus_ITA_devaluate_the_lire.dds"
+=======
+			animationmaskfile = "gfx/interface/goals/focus_inc_a_coup.dds"
+>>>>>>> Stashed changes
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -21077,7 +21089,11 @@ spriteTypes = {
 		}
 
 		animation = {
+<<<<<<< Updated upstream
 			animationmaskfile = "gfx/interface/goals/focus_ITA_ferrea_mole_ferreo_cuore.dds"
+=======
+			animationmaskfile = "gfx/interface/goals/focus_inc_vanguard.dds"
+>>>>>>> Stashed changes
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -21109,7 +21125,11 @@ spriteTypes = {
 		}
 
 		animation = {
+<<<<<<< Updated upstream
 			animationmaskfile = "gfx/interface/goals/focus_ITA_bersaglieri.dds"
+=======
+			animationmaskfile = "gfx/interface/goals/focus_inc_a_tragic_end.dds"
+>>>>>>> Stashed changes
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -21141,7 +21161,11 @@ spriteTypes = {
 		}
 
 		animation = {
+<<<<<<< Updated upstream
 			animationmaskfile = "gfx/interface/goals/focus_ITA_redirect_alfa_romeo_production.dds"
+=======
+			animationmaskfile = "gfx/interface/goals/focus_inc_the_heir.dds"
+>>>>>>> Stashed changes
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

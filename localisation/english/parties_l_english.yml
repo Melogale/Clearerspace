@@ -84,8 +84,6 @@
  egoism_desc:0 "Anarchocapitalist Territory"
  
  corporatism:0 "Corporatism"
- # Corporatocracy
  corporatism_desc:0 "Egoism gets its name from the latin word for "I", or "self," and accordingly, proponents of the ideology pride themselves on its emphasis on the individual.  Through laissez-faire capitalism and as small a state as possible, individuals, typically hindered by little more law than a bare bones non aggression principle, are free to partake in voluntary exchange as they see fit."
  anarchocapitalism:0 "Anarchocapitalism"
- # Free Association
- anarchocapitalism_desc:0 Egoism gets its name from the latin word for "I", or "self," and accordingly, proponents of the ideology pride themselves on its emphasis on the individual.  Through laissez-faire capitalism and as small a state as possible, individuals, typically hindered by little more law than a bare bones non aggression principle, are free to partake in voluntary exchange as they see fit."
+ anarchocapitalism_desc:0 "Egoism gets its name from the latin word for I, or self, and accordingly, proponents of the ideology pride themselves on its emphasis on the individual.  Through laissez-faire capitalism and as small a state as possible, individuals, typically hindered by little more law than a bare bones non aggression principle, are free to partake in voluntary exchange as they see fit."
