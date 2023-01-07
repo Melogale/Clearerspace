@@ -11,14 +11,14 @@ preparing_the_revolution = {
 			fire_only_once = yes
 
 			highlight_states = {
-				state = 384
+				state = 376
 			}
 			complete_effect = {
 				set_country_flag = RUS_saint_petersburg_hq_FLG
-				384 = {
+				376 = {
 					set_state_flag = RUS_revolution_mark_FLG
 				}
-				384 = {
+				376 = {
 					add_core_of = RST
 				}
 			}
@@ -35,15 +35,15 @@ preparing_the_revolution = {
 			fire_only_once = yes
 
 			highlight_states = {
-				state = 390
+				state = 382
 			}
 
 			complete_effect = {
 				set_country_flag = RUS_moscow_hq_FLG
-				390 = {
+				382 = {
 					set_state_flag = RUS_revolution_mark_FLG
 				}
-				390 = {
+				382 = {
 					add_core_of = RST
 				}
 			}
@@ -68,22 +68,22 @@ preparing_the_revolution = {
 			fire_only_once = yes
 
 			highlight_states = {
-				state = 384
+				state = 376
 			}
 
 			complete_effect = {
 				set_country_flag = RUS_saint_petersburg_hq_2_FLG
-				384 = {
+				376 = {
 					set_state_flag = RUS_revolution_mark_FLG
 				}
-				384 = {
+				376 = {
 					add_core_of = RST
 				}
 				hidden_effect = {
-					389 = {
+					381 = {
 						set_state_flag = RUS_martial_law_FLG
 					}
-					382 = {
+					374 = {
 						set_state_flag = RUS_martial_law_FLG
 					}
 				}
@@ -109,23 +109,23 @@ preparing_the_revolution = {
 			fire_only_once = yes
 
 			highlight_states = {
-				state = 390
+				state = 382
 			}
 
 			complete_effect = {
 				set_country_flag = RUS_moscow_hq_2_FLG
-				390 = {
+				382 = {
 					set_state_flag = RUS_revolution_mark_FLG
 				}
-				390 = {
+				382 = {
 					add_core_of = RST
 				}
 				if = {
 					limit = {
-						389 = {
+						381 = {
 							set_state_flag = RUS_martial_law_FLG
 						}
-						382 = {
+						374 = {
 							set_state_flag = RUS_martial_law_FLG
 						}
 					}
@@ -155,15 +155,15 @@ preparing_the_revolution = {
 			fire_only_once = yes
 
 			highlight_states = {
-				state = 389
+				state = 381
 			}
 
 			complete_effect = {
 				set_country_flag = RUS_tsaritsyn_hq_2_FLG
-				389 = {
+				381 = {
 					set_state_flag = RUS_revolution_mark_FLG
 				}
-				389 = {
+				381 = {
 					add_core_of = RST
 				}
 				hidden_effect = {
@@ -171,7 +171,7 @@ preparing_the_revolution = {
 						limit = {
 							has_country_flag = RUS_moscow_hq_FLG
 						}
-						384 = {
+						376 = {
 							set_state_flag = RUS_martial_law_FLG
 						}
 					}
@@ -179,11 +179,11 @@ preparing_the_revolution = {
 						limit = {
 							has_country_flag = RUS_saint_petersburg_hq_FLG
 						}
-						390 = {
+						382 = {
 							set_state_flag = RUS_martial_law_FLG
 						}
 					}
-					382 = {
+					374 = {
 						set_state_flag = RUS_martial_law_FLG
 					}
 				}
@@ -212,15 +212,15 @@ preparing_the_revolution = {
 			fire_only_once = yes
 
 			highlight_states = {
-				state = 382
+				state = 374
 			}
 
 			complete_effect = {
 				set_country_flag = RUS_ekaterinburg_hq_2_FLG
-				382 = {
+				374 = {
 					set_state_flag = RUS_revolution_mark_FLG
 				}
-				382 = {
+				374 = {
 					add_core_of = RST
 				}
 				hidden_effect = {
@@ -228,7 +228,7 @@ preparing_the_revolution = {
 						limit = {
 							has_country_flag = RUS_moscow_hq_FLG
 						}
-						384 = {
+						376 = {
 							set_state_flag = RUS_martial_law_FLG
 						}
 					}
@@ -236,11 +236,11 @@ preparing_the_revolution = {
 						limit = {
 							has_country_flag = RUS_saint_petersburg_hq_FLG
 						}
-						390 = {
+						382 = {
 							set_state_flag = RUS_martial_law_FLG
 						}
 					}
-					389 = {
+					381 = {
 						set_state_flag = RUS_martial_law_FLG
 					}
 				}
@@ -469,6 +469,7 @@ the_russian_civil_war = { 		 ###These decisions include the civil war mission ti
 			activation = {
 				has_country_flag = RUS_the_inevitable_war_FLG
 			}
+			fire_only_once = yes
 			is_good = no
 			days_mission_timeout = 365
 			timeout_effect = {
@@ -477,12 +478,11 @@ the_russian_civil_war = { 		 ###These decisions include the civil war mission ti
 					remove_ideas = RUS_bolster_public_support
 					set_global_flag = RUS_civil_war_FLG
 					TRN = {
-						transfer_state = 447
-						transfer_state = 443
-						transfer_state = 441
-						transfer_state = 1000
-						transfer_state = 449
-						transfer_state = 1005
+						transfer_state = 437
+						transfer_state = 434
+						transfer_state = 432
+						transfer_state = 956
+						transfer_state = 439
 					}
 					if = {
 						limit = {
@@ -491,32 +491,30 @@ the_russian_civil_war = { 		 ###These decisions include the civil war mission ti
 							}
 						}
 						SIB = {
+							transfer_state = 344
+							transfer_state = 359
+							transfer_state = 357
 							transfer_state = 367
+							transfer_state = 356
+							transfer_state = 360
+							transfer_state = 358
+							transfer_state = 361
 							transfer_state = 365
-							transfer_state = 375
-							transfer_state = 378
-							transfer_state = 377
-							transfer_state = 376
-							transfer_state = 374
-							transfer_state = 349
-							transfer_state = 373
 							transfer_state = 366
+							transfer_state = 370
 							transfer_state = 369
-							transfer_state = 368
-							transfer_state = 364
+							add_state_core = 344
+							add_state_core = 359
+							add_state_core = 357
 							add_state_core = 367
+							add_state_core = 356
+							add_state_core = 360
+							add_state_core = 358
+							add_state_core = 361
 							add_state_core = 365
-							add_state_core = 375
-							add_state_core = 378
-							add_state_core = 377
-							add_state_core = 376
-							add_state_core = 374
-							add_state_core = 349
-							add_state_core = 373
 							add_state_core = 366
+							add_state_core = 370
 							add_state_core = 369
-							add_state_core = 368
-							add_state_core = 364
 						}
 					}
 					if = {
@@ -526,17 +524,17 @@ the_russian_civil_war = { 		 ###These decisions include the civil war mission ti
 							}
 						}
 						KUB = {
-							transfer_state = 488
-							transfer_state = 487
-							transfer_state = 489
-							transfer_state = 486
+							transfer_state = 475
+							transfer_state = 476
+							transfer_state = 473
+							transfer_state = 474
 						}
 						TER = {
-							transfer_state = 485
+							transfer_state = 472
 						}
 						DAG = {
-							transfer_state = 491
-							transfer_state = 484
+							transfer_state = 471
+							transfer_state = 478
 						}
 					}
 					division_template = {

@@ -8,6 +8,10 @@ focus_tree = {
 			tag = RUS
 			add = 10
 		}
+		modifier = {
+			tag = RST
+			add = 10
+		}
 	}
 	
 	default = no
@@ -45,7 +49,7 @@ focus_tree = {
 	focus = {
 		id = RUS_imperial_coalition
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 33
+		x = 32
 		y = 0
 		cost = 5
 		mutually_exclusive = { focus = RUS_popular_revolution }
@@ -204,7 +208,7 @@ focus_tree = {
 	focus = {
 		id = RUS_popular_revolution
 		icon = GFX_goal_support_communism
-		x = 35
+		x = 36
 		y = 0
 		cost = 5
 		mutually_exclusive = { focus = RUS_imperial_coalition }
@@ -214,7 +218,13 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_country_flag = RUS_popular_revolution_FLG
+			OR = {
+				has_country_flag = RUS_popular_revolution_FLG
+				AND = {
+					has_country_flag = RUS_imperial_coalition_FLG
+					tag = RST
+				}
+			}
 		}
 		
 		available_if_capitulated = yes
@@ -233,6 +243,13 @@ focus_tree = {
 		cost = 9
 		prerequisite = { focus = RUS_popular_revolution }
 		relative_position_id = RUS_popular_revolution
+
+		bypass = {
+			AND = {
+				has_country_flag = RUS_imperial_coalition_FLG
+				tag = RST
+			}
+		}
 		
 		available_if_capitulated = yes
 
@@ -257,6 +274,13 @@ focus_tree = {
 		prerequisite = { focus = RUS_bolster_public_support }
 		relative_position_id = RUS_bolster_public_support
 		
+		bypass = {
+			AND = {
+				has_country_flag = RUS_imperial_coalition_FLG
+				tag = RST
+			}
+		}
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -278,6 +302,13 @@ focus_tree = {
 		prerequisite = { focus = RUS_unite_the_revolutionaries }
 		relative_position_id = RUS_unite_the_revolutionaries
 		mutually_exclusive = { focus = RUS_the_red_militias }
+
+		bypass = {
+			AND = {
+				has_country_flag = RUS_imperial_coalition_FLG
+				tag = RST
+			}
+		}
 		
 		available_if_capitulated = yes
 
@@ -300,6 +331,13 @@ focus_tree = {
 		prerequisite = { focus = RUS_unite_the_revolutionaries }
 		relative_position_id = RUS_unite_the_revolutionaries
 		mutually_exclusive = { focus = RUS_the_red_army }
+
+		bypass = {
+			AND = {
+				has_country_flag = RUS_imperial_coalition_FLG
+				tag = RST
+			}
+		}
 		
 		available_if_capitulated = yes
 
@@ -321,6 +359,14 @@ focus_tree = {
 		cost = 9
 		prerequisite = { focus = RUS_the_red_militias focus = RUS_the_red_army }
 		relative_position_id = RUS_the_red_militias	
+
+		bypass = {
+			AND = {
+				has_country_flag = RUS_imperial_coalition_FLG
+				tag = RST
+			}
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -341,6 +387,14 @@ focus_tree = {
 		cost = 9
 		prerequisite = { focus = RUS_acquire_international_aid }
 		relative_position_id = RUS_acquire_international_aid
+
+		bypass = {
+			AND = {
+				has_country_flag = RUS_imperial_coalition_FLG
+				tag = RST
+			}
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -355,4 +409,162 @@ focus_tree = {
 			}
 		}
 	}
+
+	#############################################################################################################
+	#																											#
+	#							POST WAR 					POPULAR FRONT										#
+	#																											#
+	#############################################################################################################
+
+	focus = {
+		id = RUS_russian_technocracy
+		icon = GFX_focus_ger_great_red_menace
+		x = -3
+		y = 1
+		cost = 3
+		prerequisite = { focus = RUS_military_sympathies }
+		relative_position_id = RUS_military_sympathies
+
+		mutually_exclusive = { focus = RUS_a_socialist_russia focus = RUS_a_democratic_federation }
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = {
+				country_exists = RUS
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_a_socialist_russia
+		icon = GFX_focus_ITA_il_sol_dell_avvenire
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = RUS_military_sympathies }
+		relative_position_id = RUS_military_sympathies
+
+		mutually_exclusive = { focus = RUS_russian_technocracy focus = RUS_a_democratic_federation }
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = {
+				country_exists = RUS
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_a_democratic_federation
+		icon = GFX_focus_generic_improve_the_administration
+		x = 3
+		y = 1
+		cost = 3
+		prerequisite = { focus = RUS_military_sympathies }
+		relative_position_id = RUS_military_sympathies
+
+		mutually_exclusive = { focus = RUS_russian_technocracy focus = RUS_a_socialist_russia }
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = {
+				country_exists = RUS
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	#############################################################################################################
+	#																											#
+	#							POST WAR 					IMPERIAL COALITION									#
+	#																											#
+	#############################################################################################################
+
+	focus = {
+		id = RUS_russian_hypernationalism
+		icon = GFX_focus_generic_fascist_troops
+		x = 3
+		y = 1
+		cost = 3
+		prerequisite = { focus = RUS_intensified_crackdown }
+		relative_position_id = RUS_intensified_crackdown
+
+		mutually_exclusive = { focus = RUS_the_tsars_iron_rule focus = RUS_empower_the_duma }
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = {
+				country_exists = RST
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_the_tsars_iron_rule
+		icon = GFX_focus_SOV_the_true_tsars
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = RUS_intensified_crackdown }
+		relative_position_id = RUS_intensified_crackdown
+
+		mutually_exclusive = { focus = RUS_russian_hypernationalism focus = RUS_empower_the_duma }
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = {
+				country_exists = RST
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_empower_the_duma
+		icon = GFX_focus_generic_court
+		x = -3
+		y = 1
+		cost = -3
+		prerequisite = { focus = RUS_intensified_crackdown }
+		relative_position_id = RUS_intensified_crackdown
+
+		mutually_exclusive = { focus = RUS_russian_hypernationalism focus = RUS_the_tsars_iron_rule }
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = {
+				country_exists = RST
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
 }
