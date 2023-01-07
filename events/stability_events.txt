@@ -69,10 +69,7 @@ country_event = {
 			factor = 1.5
 			has_idea = civilian_economy
 		}
-		modifier = {
-			factor = 2
-			NOT = { has_government = democratic }
-		}
+
 		modifier = {
 			factor = 0.75
 			OR = {
