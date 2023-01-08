@@ -1,5 +1,3 @@
-oob = "FRE_rebellion"
-
 division_template = {
     name = "Anarchist Militia"
 
