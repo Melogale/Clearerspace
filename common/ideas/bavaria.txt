@@ -298,7 +298,7 @@ ideas = {
 				stability_factor = -0.1
 			}
 		}
-		BAY_total_mobilization = {
+		BAY_totally_mobalized = {
 			picture = man_five_year_plan_industry
 			modifier = {
 				consumer_goods_factor = 0.1
@@ -320,7 +320,7 @@ ideas = {
 				stability_weekly_factor = 0.002
 			}
 		}
-		BAY_crush_dissenters = {
+		BAY_dissenters_crushed = {
 			picture = generic_victors_of_ww1
 			modifier = {
 				vanguard_socialism_drift = -0.02

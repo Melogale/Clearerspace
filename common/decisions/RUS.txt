@@ -120,15 +120,22 @@ preparing_the_revolution = {
 				382 = {
 					add_core_of = RST
 				}
-				if = {
-					limit = {
-						381 = {
-							set_state_flag = RUS_martial_law_FLG
-						}
-						374 = {
-							set_state_flag = RUS_martial_law_FLG
-						}
-					}
+				# I don't know what your intention was here but its broken.
+				#if = {
+				#	limit = {
+				#		381 = {
+				#			set_state_flag = RUS_martial_law_FLG
+				#		}
+				#		374 = {
+				#			set_state_flag = RUS_martial_law_FLG
+				#		}
+				#	}
+				#}
+				381 = {
+					set_state_flag = RUS_martial_law_FLG
+				}
+				374 = {
+					set_state_flag = RUS_martial_law_FLG
 				}
 			}
 		}
@@ -411,50 +418,6 @@ the_inevitable_uprising = {
 			}
 		}
 
-		state_crackdown = {
-			visible = {
-				OR = {
-					has_country_flag = RUS_ekaterinburg_hq_FLG
-					has_country_flag = RUS_tsaritsyn_hq_FLG
-					has_country_flag = RUS_saint_petersburg_hq_FLG
-					has_country_flag = RUS_moscow_hq_FLG
-				}
-			}
-			icon = GFX_decision_oppression
-			on_map_mode = map_only
-			state_target = yes
-			target_array = owned_states
-			target_trigger = {
-				FROM = {
-					has_state_flag = RUS_revolution_crackdown_FLG
-				}
-			}
-			available = {
-				hidden_trigger = { always = no }
-			}
-		}
-		revolution_entrenched = {
-			visible = {
-				OR = {
-					has_country_flag = RUS_ekaterinburg_hq_FLG
-					has_country_flag = RUS_tsaritsyn_hq_FLG
-					has_country_flag = RUS_saint_petersburg_hq_FLG
-					has_country_flag = RUS_moscow_hq_FLG
-				}
-			}
-			icon = GFX_decision_generic_civil_support
-			on_map_mode = map_only
-			state_target = yes
-			target_array = owned_states
-			target_trigger = {
-				FROM = {
-					is_core_of = RST
-				}
-			}
-			available = {
-				hidden_trigger = { always = no }
-			}
-		}
 }
 
 the_russian_civil_war = { 		 ###These decisions include the civil war mission timer, and decisions/unlocks that affect said timer.
@@ -540,7 +503,6 @@ the_russian_civil_war = { 		 ###These decisions include the civil war mission ti
 					division_template = {
 						name = "Imperial Militia"
 						is_locked = yes
-						division_names_group = SOV_INF_01
 						priority = 0
 						template_counter = 0
 						regiments = {
@@ -556,7 +518,6 @@ the_russian_civil_war = { 		 ###These decisions include the civil war mission ti
 						division_template = {
 							name = "Red Militia"
 							is_locked = yes
-							division_names_group = SOV_INF_01
 							priority = 0
 							template_counter = 0
 							regiments = {
@@ -632,7 +593,6 @@ the_russian_civil_war = { 		 ###These decisions include the civil war mission ti
 							division_template = {
 								name = "Red Infantry"
 								is_locked = yes
-								division_names_group = SOV_INF_01
 								priority = 2
 								template_counter = 1
 								regiments = {

@@ -41,18 +41,14 @@ bookmarks = {
 			history = "PLC_GATHERING_STORM_DESC"
 			ideology = social_democracy
 			ideas = {
-				PLC_polonisation
-				PLC_polish_language
-				PLC_polish_army
+
 			}
 			focuses = {
-				PLC_national_census
-				PLC_polish_domination
-				PLC_national_equity
+
 			}
 		}
-		"VIN"={
-			history = "VIN_GATHERING_STORM_DESC"
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
 			ideology = autocracy
 			ideas = {
 				
@@ -85,7 +81,17 @@ bookmarks = {
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-
+		"VIN"={
+			minor = yes
+			history = "VIN_GATHERING_STORM_DESC"
+			ideology = autocracy
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}		
+		}
 		"RUS"={
 			minor = yes
 			history = "RUS_GATHERING_STORM_DESC"
@@ -110,7 +116,7 @@ bookmarks = {
 		}
 		"QIN"={
 			minor = yes
-			history = "XIA_GATHERING_STORM_DESC"
+			history = "QIN_GATHERING_STORM_DESC"
 			ideology = autocracy
 			ideas = {
 				

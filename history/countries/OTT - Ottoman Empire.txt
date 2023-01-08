@@ -3,7 +3,6 @@
 capital = 442
 
 add_ideas = {
-	OTT_skirmishes_border_wars
 	OTT_balkan_1_resistance
 	OTT_arabic_1_resistance
 }

@@ -400,7 +400,7 @@ battle_for_influence = {
 			}
 		}
 		visible = {
-			has_completed_focus = BAY_expand_the_volkerwerke
+			has_completed_focus = BAY_expand_the_volker_werke
 		}
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -426,7 +426,7 @@ battle_for_influence = {
 			}
 		}
 		visible = {
-			has_completed_focus = BAY_expand_the_volkerwerke
+			has_completed_focus = BAY_expand_the_volker_werke
 		}
 		modifier = {
 			consumer_goods_factor = -0.03
@@ -459,7 +459,7 @@ battle_for_influence = {
 			}
 		}
 		visible = {
-			has_completed_focus = BAY_expand_the_volkerwerke
+			has_completed_focus = BAY_expand_the_volker_werke
 		}
 		modifier = {
 			consumer_goods_factor = 0.05

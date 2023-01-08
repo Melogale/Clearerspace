@@ -1,6 +1,6 @@
 ﻿
 focus_tree = {
-	id = celtic_union_focus
+	id = ireland_focus
 	
 	country = {
 		factor = 0
@@ -1275,7 +1275,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = fascist
+				ideology = fascism
 				popularity = 0.2
 			}
 		}
@@ -1353,10 +1353,6 @@ focus_tree = {
 
 		available = {
 			has_government = fascism
-		}
-
-		mutually_exclusive = {
-			focus = CNU_turn_it_left
 		}
 
 		available_if_capitulated = yes

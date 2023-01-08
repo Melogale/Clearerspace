@@ -208,7 +208,7 @@ ideas = {
 	}
 
 	country = {
-		PLC_economic_miracle = {
+		PLC_an_economic_miracle = {
 
 			allowed = {
 				always = no

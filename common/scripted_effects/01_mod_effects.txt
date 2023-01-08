@@ -667,7 +667,7 @@ the_arabic_revolts = {
 			limit = {
 				OTT = {
 					NOT = {
-						has_completed_focus = crush_arab_protests
+						has_completed_focus = OTT_crush_arab_protests
 					}
 				}
 			}
@@ -676,7 +676,7 @@ the_arabic_revolts = {
 		if = {
 			limit = {
 				OTT = {
-					has_completed_focus = crush_arab_protests
+					has_completed_focus = OTT_crush_arab_protests
 				}
 			}
 			weak_arab_revolts = yes
@@ -707,7 +707,7 @@ the_arabic_revolts = {
 			limit = {
 				OTT = {
 					NOT = {
-						has_completed_focus = crush_arab_protests
+						has_completed_focus = OTT_crush_arab_protests
 					}
 				}
 			}
@@ -716,7 +716,7 @@ the_arabic_revolts = {
 		if = {
 			limit = {
 				OTT = {
-					has_completed_focus = crush_arab_protests
+					has_completed_focus = OTT_crush_arab_protests
 				}
 			}
 			weak_arab_revolts = yes
@@ -739,7 +739,7 @@ the_arabic_revolts = {
 			limit = {
 				OTT = {
 					NOT = {
-						has_completed_focus = crush_arab_protests
+						has_completed_focus = OTT_crush_arab_protests
 					}
 				}
 			}
@@ -748,7 +748,7 @@ the_arabic_revolts = {
 		if = {
 			limit = {
 				OTT = {
-					has_completed_focus = crush_arab_protests
+					has_completed_focus = OTT_crush_arab_protests
 				}
 			}
 			weak_arab_revolts = yes

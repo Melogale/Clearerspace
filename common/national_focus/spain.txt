@@ -1213,11 +1213,6 @@ focus_tree = {
 		x = 12
 		y = 6
 		cost = 10
-
-		mutually_exclusive = {
-			focus = SPA_revolutionism
-		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {

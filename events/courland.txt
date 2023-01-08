@@ -99,7 +99,7 @@ country_event = {
 		}
 		set_country_flag = flg_LIV_latvia_formed
 		set_cosmetic_tag = LIV_latvia
-		set_capital = 677
+		set_capital = {state = 677}
 	}
 }
 

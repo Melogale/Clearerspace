@@ -173,7 +173,7 @@ country_event = {
 		BUR = {
 			set_cosmetic_tag = BURP
 		}
-		add_politial_power = -150
+		add_political_power = -150
 		set_global_flag = FRA_cucked_bavaria
 	}
 

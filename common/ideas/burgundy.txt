@@ -132,7 +132,7 @@ ideas = {
 				stability_weekly = -0.05
 				authoritarian_socialism_drift = 0.02
 				libertarian_socialism_drift = 0.01
-				consumer_goods_factory = 0.4
+				consumer_goods_factor = 0.4
 			}
 		}
 	}
