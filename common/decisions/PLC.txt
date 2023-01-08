@@ -11,7 +11,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				691 = {
+				674 = {
 					set_state_category = metropolis
 					add_building_construction = {
 						type = industrial_complex
@@ -34,7 +34,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				675 = {
+				658 = {
 					add_extra_state_shared_building_slots = 2
 				}
 				set_country_flag = PLC_warsaw_industry_FLG
@@ -52,7 +52,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				679 = {
+				662 = {
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -74,7 +74,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				682 = {
+				665 = {
 					add_resource = {
 						type = steel
 						amount = 16
@@ -95,7 +95,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				688 = {
+				671 = {
 					add_building_construction = {
 						type = arms_factory
 						level = 1
@@ -167,7 +167,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				681 = {
+				664 = {
 					set_state_category = city
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -191,7 +191,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				686 = {
+				669 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
@@ -219,7 +219,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				698 = {
+				681 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
@@ -227,7 +227,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				674 = {
+				657 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
@@ -250,14 +250,24 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				697 = {
+				680 = {
 					add_resource = {
 						type = steel
-						amount = 20
+						amount = 10
 					}
 					add_resource = {
 						type = aluminium
-						amount = 20
+						amount = 10
+					}
+				}
+				355 = {
+					add_resource = {
+						type = steel
+						amount = 10
+					}
+					add_resource = {
+						type = aluminium
+						amount = 10
 					}
 				}
 			}
@@ -275,7 +285,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				685 = {
+				668 = {
 					set_state_category = large_city
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -298,21 +308,21 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				699 = {
+				682 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}
 				}
-				690 = {
+				673 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 						instant_build = yes
 					}
 				}
-				702 = {
+				685 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -334,11 +344,11 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				704 = {
+				687 = {
 					add_extra_state_shared_building_slots = 1
 					set_state_category = town
 				}
-				703 = {
+				686 = {
 					add_extra_state_shared_building_slots = 1
 					set_state_category = town
 				}
@@ -357,33 +367,17 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				703 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
+				690 = {
+					add_extra_state_shared_building_slots = 1
 				}
-				705 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
+				685 = {
+					add_extra_state_shared_building_slots = 1
 				}
-				707 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
+				686 = {
+					add_extra_state_shared_building_slots = 1
 				}
-				708 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
+				463 = {
+					add_extra_state_shared_building_slots = 1
 				}
 				set_country_flag = PLC_electric_grid_FLG
 			}
@@ -400,23 +394,23 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				476 = {
+				692 = {
 					add_extra_state_shared_building_slots = 1
 				}
-				474 = {
+				694 = {
 					add_extra_state_shared_building_slots = 1
 				}
-				711 = {
+				689 = {
 					add_extra_state_shared_building_slots = 1
 					set_state_category = large_town
 				}
-				710 = {
+				700 = {
 					add_extra_state_shared_building_slots = 1
 				}
-				709 = {
+				691 = {
 					add_extra_state_shared_building_slots = 1
 				}
-				708 = {
+				461 = {
 					add_extra_state_shared_building_slots = 1
 					set_state_category = large_town
 				}
@@ -435,7 +429,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				707 = {
+				690 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -443,7 +437,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				702 = {
+				670 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -516,7 +510,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				707 = {
+				690 = {
 					add_resource = {
 						type = aluminium
 						amount = 35
@@ -537,53 +531,32 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				707 = {
+				699 = {
 					add_building_construction = {
 						type = fuel_silo
 						level = 2
 						instant_build = yes
 					}
 				}
-				717 = {
+				687 = {
 					add_building_construction = {
 						type = fuel_silo
 						level = 2
 						instant_build = yes
 					}
 				}
-				718 = {
+				698 = {
 					add_building_construction = {
 						type = fuel_silo
 						level = 2
 						instant_build = yes
 					}
 				}
-				702 = {
+				688 = {
 					add_building_construction = {
 						type = fuel_silo
 						level = 2
 						instant_build = yes
-					}
-				}
-			}
-		}
-
-		expand_kiev_aluminium_mines = {
-			priority = 10
-			days_remove = 40
-			cost = 30
-			fire_only_once = yes
-			available = {
-				PLC = {
-					has_completed_focus = PLC_modern_agriculture
-					has_country_flag = PLC_stage_one_agri_complete_FLG
-				}
-			}
-			remove_effect = {
-				707 = {
-					add_resource = {
-						type = aluminium
-						amount = 35
 					}
 				}
 			}
@@ -601,7 +574,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				476 = {
+				904 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -609,7 +582,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				703 = {
+				673 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -617,7 +590,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				704 = {
+				694 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -625,7 +598,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				706 = {
+				682 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -648,7 +621,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				683 = {
+				670 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -656,7 +629,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				687 = {
+				668 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -664,7 +637,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				685 = {
+				666 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
@@ -687,7 +660,7 @@ economic_modernization = {
 				}
 			}
 			remove_effect = {
-				682 = {
+				665 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
@@ -695,7 +668,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				685 = {
+				690 = {
 					set_state_category = large_city
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -704,7 +677,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				708 = {
+				670 = {
 					set_state_category = city
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -713,7 +686,7 @@ economic_modernization = {
 						instant_build = yes
 					}
 				}
-				707 = {
+				689 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure

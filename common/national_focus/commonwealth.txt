@@ -166,13 +166,13 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
+			has_country_flag = PLC_conservative_path_FLG
 		}
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = PLC_polonisation_act_passes_tt
 		}
 	}
 
@@ -196,7 +196,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = PLC_polonisation_act_fails_tt
 		}
 	}
 
@@ -217,7 +217,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = commonwealth.16
+				id = commonwealth.14
 			}
 			add_political_power = -25
 		}
@@ -236,7 +236,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = commonwealth.17
+				id = commonwealth.15
 			}
 			add_stability = -0.05
 		}
@@ -256,7 +256,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = commonwealth.18
+				id = commonwealth.16
 			}
 		}
 	}
@@ -264,8 +264,8 @@ focus_tree = {
 	##Time to pass some bills!
 
 	focus = {
-		id = PLC_department_of_public_works
-		icon = GFX_focus_generic_treaty
+		id = PLC_the_national_investigation_committee
+		icon = GFX_focus_generic_national_security
 		x = -2
 		y = 1
 		cost = 3
@@ -280,9 +280,154 @@ focus_tree = {
 	}
 
 	focus = {
+		id = PLC_formalize_the_NIC
+		icon = GFX_focus_generic_secret_service_agency
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_national_investigation_committee }
+		relative_position_id = PLC_the_national_investigation_committee
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_deep_rooted_corruption
+		icon = GFX_focus_generic_conspiracy
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_national_investigation_committee }
+		relative_position_id = PLC_the_national_investigation_committee
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_introduce_fresh_advisors
+		icon = GFX_focus_generic_military_academy
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = { focus = PLC_deep_rooted_corruption }
+		relative_position_id = PLC_deep_rooted_corruption
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_rework_the_bureaucracy
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_deep_rooted_corruption }
+		relative_position_id = PLC_deep_rooted_corruption
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_the_crumbling_army
+		icon = GFX_focus_prc_infiltration
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_national_investigation_committee }
+		relative_position_id = PLC_the_national_investigation_committee
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PLC_restructure_the_military
+		icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_crumbling_army }
+		relative_position_id = PLC_the_crumbling_army
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_address_the_lingual_problems
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_restructure_the_military }
+		relative_position_id = PLC_restructure_the_military
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_reach_out_to_academics
+		icon = GFX_goal_generic_scientific_exchange
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_address_the_lingual_problems focus = PLC_recompense_the_polish_domination }
+		relative_position_id = PLC_address_the_lingual_problems
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_a_nation_to_be_proud_of
+		icon = GFX_goal_support_democracy
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_rework_the_bureaucracy }
+		prerequisite = { focus = PLC_address_the_lingual_problems }
+		relative_position_id = PLC_address_the_lingual_problems
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = PLC_decentralization
 		icon = GFX_focus_generic_treaty
-		x = 2
+		x = 3
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_another_sejm }
@@ -291,14 +436,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			create_faction = "Commonwealth of Nations"
 		}
 	}
 
 	focus = {
 		id = PLC_the_grand_principality_of_lithuania
-		icon = GFX_focus_generic_treaty
-		x = 1
+		icon = GFX_focus_LIT_restore_the_grand_duchy
+		x = -1
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_decentralization }
@@ -308,12 +453,12 @@ focus_tree = {
 
 		completion_reward = {
 			LIT = {
-				add_state_core = 695
-				add_state_core = 694
-				add_state_core = 693
+				add_state_core = 678
+				add_state_core = 677
 				add_state_core = 676
-				add_state_core = 70
-				add_state_core = 699
+				add_state_core = 659
+				add_state_core = 69
+				add_state_core = 682
 				set_cosmetic_tag = LIT_plc
 			}
 			release_puppet = LIT
@@ -321,8 +466,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = PLC_recompense_the_polish_domination
+		icon = GFX_focus_generic_polish_deal
+		x = -1
+		y = 2
+		cost = 3
+		prerequisite = { focus = PLC_the_grand_principality_of_lithuania }
+		relative_position_id = PLC_the_grand_principality_of_lithuania
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = PLC_the_principality_of_prussia
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_POL_beck_ribbentrop
 		x = 0
 		y = 1
 		cost = 3
@@ -333,10 +494,10 @@ focus_tree = {
 
 		completion_reward = {
 			PRU = {
-				add_state_core = 698
-				add_state_core = 674
-				add_state_core = 679
-				add_state_core = 680
+				add_state_core = 681
+				add_state_core = 657
+				add_state_core = 662
+				add_state_core = 663
 				set_cosmetic_tag = PRU_plc
 			}
 			release_puppet = PRU
@@ -345,8 +506,8 @@ focus_tree = {
 
 	focus = {
 		id = PLC_expand_the_rus_autonomies
-		icon = GFX_focus_generic_treaty
-		x = -1
+		icon = GFX_goal_anschluss
+		x = 2
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_decentralization }
@@ -356,22 +517,38 @@ focus_tree = {
 
 		completion_reward = {
 			BEL = {
-				add_state_core = 717
-				add_state_core = 688
-				transfer_state = 717
-				transfer_state = 688
+				add_state_core = 671
+				add_state_core = 699
+				transfer_state = 671
+				transfer_state = 699
 			}
 			UKR = {
-				add_state_core = 718
-				transfer_state = 718
+				add_state_core = 700
+				transfer_state = 700
 			}
 		}
 	}
 
 	focus = {
+		id = PLC_promote_the_ruthenian_language
+		icon = GFX_goal_generic_national_unity
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_expand_the_rus_autonomies }
+		relative_position_id = PLC_expand_the_rus_autonomies
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = PLC_the_ashkenazi_autonomy
-		icon = GFX_focus_generic_treaty
-		x = 0
+		icon = GFX_focus_generic_self_management
+		x = 1
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_expand_the_rus_autonomies }
@@ -381,12 +558,139 @@ focus_tree = {
 
 		completion_reward = {
 			ASH = {
-				add_state_core = 687
-				add_state_core = 685
-				add_state_core = 683
+				add_state_core = 670
+				add_state_core = 668
+				add_state_core = 666
 				set_cosmetic_tag = ASH_plc
 			}
 			release_puppet = ASH
+		}
+	}
+
+	focus = {
+		id = PLC_grant_national_personal_autonomy
+		icon = GFX_focus_generic_population_growth
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_ashkenazi_autonomy }
+		relative_position_id = PLC_the_ashkenazi_autonomy
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_the_bialystok_conference
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 1
+		y = 2
+		cost = 3
+		prerequisite = { focus = PLC_grant_national_personal_autonomy }
+		prerequisite = { focus = PLC_the_principality_of_prussia }
+		prerequisite = { focus = PLC_recompense_the_polish_domination }
+		prerequisite = { focus = PLC_promote_the_ruthenian_language }
+		relative_position_id = PLC_the_principality_of_prussia
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_acknowledge_our_past
+		icon = GFX_focus_POL_nationalist_education
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_bialystok_conference }
+		prerequisite = { focus = PLC_a_nation_to_be_proud_of }
+		relative_position_id = PLC_the_bialystok_conference
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_promise_our_future
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = -4
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_bialystok_conference }
+		prerequisite = { focus = PLC_a_nation_to_be_proud_of }
+		relative_position_id = PLC_the_bialystok_conference
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_true_golden_liberty
+		icon = GFX_focus_plc_golden_liberty
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_acknowledge_our_past }
+		prerequisite = { focus = PLC_promise_our_future }
+		relative_position_id = PLC_promise_our_future
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					dismantle_faction = yes
+				}
+				annex_country = {
+					target = LIT
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = PRU
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = BEL
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = ASH
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = UKR
+					transfer_troops = yes
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_core_of = LIT
+							is_core_of = PRU
+							is_core_of = BEL
+							is_core_of = ASH
+							is_core_of = UKR
+						}
+					}
+					add_core_of = PLC
+				}
+			}
+			custom_effect_tooltip = PLC_true_golden_liberty_tt
+			set_cosmetic_tag = UPC
 		}
 	}
 
@@ -666,7 +970,7 @@ focus_tree = {
 					remove_idea = PLC_dead_economy
 				}
 			}
-			691 = {
+			658 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -674,7 +978,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			675 = {
+			665 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -697,42 +1001,21 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			build_railway = {
+				start_province = 3320
+				target_province = 9427
+				level = 4
+			}
 			682 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			684 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			675 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			691 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			689 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			699 = {
+			665 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -754,42 +1037,26 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			build_railway = {
+				start_province = 3544
+				target_province = 525
+				level = 4
+			}
 			690 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			702 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
+			build_railway = {
+				start_province = 3320
+				target_province = 525
+				level = 4
 			}
-			478 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			477 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			476 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			707 = {
+			685 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -903,6 +1170,10 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		available = {
+			has_idea = PLC_modern_economy
+		}
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = PLC_modern_economy
@@ -950,7 +1221,7 @@ focus_tree = {
 					remove_idea = PLC_dead_economy
 				}
 			}
-			699 = {
+			689 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -958,7 +1229,23 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			676 = {
+			688 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			687 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			673 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -981,38 +1268,38 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			690 = {
+			904 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			716 = {
+			698 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			717 = {
+			691 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			718 = {
+			693 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			688 = {
+			699 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1031,14 +1318,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			707 = {
+			685 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
-			702 = {
+			690 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1

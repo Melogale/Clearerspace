@@ -381,7 +381,7 @@ country_event = {
 		name = commonwealth.7.a
 		set_country_flag = PLC_liberal_path_FLG
 		country_event = {
-			id = commonwealth.14
+			id = commonwealth.9
 			days = 3
 		}
 	}
@@ -394,7 +394,7 @@ country_event = {
 		name = commonwealth.7.b
 		set_country_flag = PLC_conservative_path_FLG
 		country_event = {
-			id = commonwealth.13
+			id = commonwealth.8
 			days = 3
 		}
 	}
@@ -403,15 +403,15 @@ country_event = {
 ####### The Act Passes
 
 country_event = {
-	id = commonwealth.13
-	title = commonwealth.13.t
-	desc = commonwealth.13.d
+	id = commonwealth.8
+	title = commonwealth.8.t
+	desc = commonwealth.8.d
 	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 
 	option = {
-		name = commonwealth.13.a
+		name = commonwealth.8.a
 		add_ideas = {
 			PLC_nationwide_strikes
 			PLC_disloyal_army
@@ -422,7 +422,7 @@ country_event = {
 		}
 		country_lock_all_division_template = yes
 		country_event = {
-			id = commonwealth.15
+			id = commonwealth.10
 			days = 3
 		}
 	}
@@ -431,15 +431,15 @@ country_event = {
 ######## The Act Fails
 
 country_event = {
-	id = commonwealth.14
-	title = commonwealth.14.t
-	desc = commonwealth.14.d
+	id = commonwealth.9
+	title = commonwealth.9.t
+	desc = commonwealth.9.d
 	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = commonwealth.14.a
+		name = commonwealth.9.a
 		add_ideas = {
 			PLC_defunct_government
 			PLC_disloyal_generals
@@ -450,7 +450,7 @@ country_event = {
 		}
 		country_lock_all_division_template = yes
 		country_event = {
-			id = commonwealth.15
+			id = commonwealth.10
 			days = 3
 		}
 	}
@@ -459,9 +459,9 @@ country_event = {
 ######### Anarchist revolt event
 
 country_event = {
-	id = commonwealth.15
-	title = commonwealth.15.t
-	desc = commonwealth.15.d
+	id = commonwealth.10
+	title = commonwealth.10.t
+	desc = commonwealth.10.d
 	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
@@ -469,22 +469,22 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			FRE = {
-				add_state_core = 468
-				add_state_core = 469
-				add_state_core = 471
-				add_state_core = 473
-				add_state_core = 474
-				add_state_core = 476
-				add_state_core = 713
-				add_state_core = 712
-				add_state_core = 706
-				add_state_core = 707
-				add_state_core = 708
-				add_state_core = 709
-				add_state_core = 710
-				add_state_core = 711
-				transfer_state = 713
-				transfer_state = 469
+				add_state_core = 689
+				add_state_core = 691
+				add_state_core = 690
+				add_state_core = 463
+				add_state_core = 692
+				add_state_core = 693
+				add_state_core = 694
+				add_state_core = 461
+				add_state_core = 695
+				add_state_core = 455
+				add_state_core = 460
+				add_state_core = 458
+				add_state_core = 696
+				add_state_core = 456
+				transfer_state = 456
+				transfer_state = 696
 				declare_war_on = {
 					target = UKR
 					type = annex_everything
@@ -496,9 +496,9 @@ country_event = {
 	}
 
 	option = {
-		name = commonwealth.15.a
+		name = commonwealth.10.a
 		CRI = {
-			add_state_core = 467
+			add_state_core = 454
 		}
 		release = CRI
 	}
@@ -507,9 +507,9 @@ country_event = {
 ######### Forced surrender to the anarchists :(
 
 country_event = {
-	id = commonwealth.19
-	title = commonwealth.19.t
-	desc = commonwealth.19.d
+	id = commonwealth.11
+	title = commonwealth.11.t
+	desc = commonwealth.11.d
 	picture = GFX_report_event_election_vote
 	
 	fire_only_once = yes
@@ -541,10 +541,10 @@ country_event = {
 	}
 
 	option = {
-		name = commonwealth.19.a
+		name = commonwealth.11.a
 		PLC = {
 			country_event = {
-				id = commonwealth.20
+				id = commonwealth.12
 				days = 0
 			}
 		}
@@ -552,24 +552,24 @@ country_event = {
 }
 
 country_event = {
-	id = commonwealth.20
-	title = commonwealth.20.t
-	desc = commonwealth.20.d
+	id = commonwealth.12
+	title = commonwealth.12.t
+	desc = commonwealth.12.d
 	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 
 	option = {
-		name = commonwealth.20.a
+		name = commonwealth.12.a
 		FRE = {
-			transfer_state = 471
-			transfer_state = 473
-			transfer_state = 468
-			transfer_state = 712
+			transfer_state = 460
+			transfer_state = 458
+			transfer_state = 695
+			transfer_state = 455
 		}
 		PLC = {
 			country_event = {
-				id = commonwealth.21
+				id = commonwealth.13
 				days = 3
 			}
 		}
@@ -577,242 +577,42 @@ country_event = {
 }
 
 news_event = {
-	id = commonwealth.21
-	title = commonwealth.21.t
-	desc = commonwealth.21.d
+	id = commonwealth.13
+	title = commonwealth.13.t
+	desc = commonwealth.13.d
 	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 	major = yes
 
 	option = {
-		name = commonwealth.21.a
-	}
-}
-
-#commonwealth collapse events
-
-country_event = {
-	id = commonwealth.8
-	title = commonwealth.8.t
-	desc = commonwealth.8.d
-	picture = GFX_report_event_election_vote
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		hidden_effect = {
-			RRT = {
-				transfer_state = 478
-				transfer_state = 477
-				transfer_state = 476
-				transfer_state = 474
-				add_state_core = 478
-				add_state_core = 477
-				add_state_core = 476
-				add_state_core = 474
-			}
-			end_puppet = UKR
-			UKR = {
-				transfer_state = 718
-				add_state_core = 718
-				country_event = {
-					id = commonwealth.11
-					days = 10
-				}
-				set_cosmetic_tag = PLC_ukraine
-			}
-			end_puppet = BEL
-			BEL = {
-				transfer_state = 689
-				transfer_state = 688
-				transfer_state = 717
-				add_state_core = 689
-				add_state_core = 688
-				add_state_core = 717
-				set_cosmetic_tag = PLC_belarus
-			}
-			country_event = {
-				id = commonwealth.9
-				days = 5
-			}
-		}
-	}
-
-	option = {
-		name = commonwealth.8.a
-	}
-	option = {
-		name = commonwealth.8.b
-		UKR = {
-			change_tag_from = PLC
-		}
-	}
-	option = {
-		name = commonwealth.8.c
-		BEL = {
-			change_tag_from = PLC
-		}
+		name = commonwealth.13.a
 	}
 }
 
 country_event = {
-	id = commonwealth.9
-	title = commonwealth.9.t
-	desc = commonwealth.9.d
+	id = commonwealth.14
+	title = commonwealth.14.t
+	desc = commonwealth.14.d
 	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 
-	immediate = {
-		hidden_effect = {
-			PRU = {
-				add_state_core = 680
-				add_state_core = 679
-				add_state_core = 674
-				add_state_core = 698
-			}
-			release = PRU
-			LIT = {
-				add_state_core = 1020
-				add_state_core = 693
-				add_state_core = 694
-				add_state_core = 676
-				add_state_core = 699
-			}
-			release = LIT
-			LIV = {
-				add_state_core = 695
-			}
-			release = LIV
-			set_cosmetic_tag = PLC_poland
-			set_capital = {
-				state = 675
-			}
-			country_event = {
-				id = commonwealth.10
-				days = 5
-			}
-			news_event = {
-				id = commonwealth.12
-				days = 0
-			}
-		}
-	}
-
 	option = {
-		name = commonwealth.9.a
-	}
-	option = {
-		name = commonwealth.9.b
-		PRU = {
-			change_tag_from = PLC
-		}
-	}
-	option = {
-		name = commonwealth.9.c
-		LIT = {
-			change_tag_from = PLC
-		}
-	}
-	option = {
-		name = commonwealth.9.e
-		LIV = {
-			change_tag_from = PLC
-		}
+		name = commonwealth.14.a
 	}
 }
 
 country_event = {
-	id = commonwealth.10
-	title = commonwealth.10.t
-	desc = commonwealth.10.d
+	id = commonwealth.15
+	title = commonwealth.15.t
+	desc = commonwealth.15.d
 	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
-	
-	immediate = {
-		hidden_effect = {
-			ASH = {
-				add_state_core = 714
-				add_state_core = 683
-				add_state_core = 685
-				add_state_core = 687
-			}
-			release = ASH
-		}
-	}
 
 	option = {
-		name = commonwealth.10.a
-	}
-	option = {
-		name = commonwealth.10.b
-		ASH = {
-			change_tag_from = PLC
-		}
-	}
-
-}
-
-country_event = {
-	id = commonwealth.11
-	title = commonwealth.11.t
-	desc = commonwealth.11.d
-	picture = GFX_report_event_election_vote
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		hidden_effect = {
-			FRE = {
-				add_state_core = 468
-				add_state_core = 469
-				add_state_core = 471
-				add_state_core = 473
-				add_state_core = 713
-				add_state_core = 712
-				add_state_core = 709
-				add_state_core = 710
-				add_state_core = 711
-			}
-			release = FRE
-			CRI = {
-				add_state_core = 467
-			}
-			release = CRI
-		}
-	}
-
-	option = {
-		name = commonwealth.11.a
-	}
-	option = {
-		name = commonwealth.11.b
-		FRE = {
-			change_tag_from = UKR
-		}
-	}
-	option = {
-		name = commonwealth.11.c
-		CRI = {
-			change_tag_from = UKR
-		}
-	}
-}
-
-news_event = {
-	id = commonwealth.12
-	title = commonwealth.12.t
-	desc = commonwealth.12.d
-	picture = GFX_report_event_election_vote
-	
-	is_triggered_only = yes
-	
-	major = yes
-
-	option = {
-		name = commonwealth.12.a
+		name = commonwealth.15.a
 	}
 }
 
@@ -828,31 +628,3 @@ country_event = {
 		name = commonwealth.16.a
 	}
 }
-
-country_event = {
-	id = commonwealth.17
-	title = commonwealth.17.t
-	desc = commonwealth.17.d
-	picture = GFX_report_event_election_vote
-	
-	is_triggered_only = yes
-
-	option = {
-		name = commonwealth.17.a
-	}
-}
-
-country_event = {
-	id = commonwealth.18
-	title = commonwealth.18.t
-	desc = commonwealth.18.d
-	picture = GFX_report_event_election_vote
-	
-	is_triggered_only = yes
-
-	option = {
-		name = commonwealth.18.a
-	}
-}
-
-## up to 19 events atm

@@ -119,3 +119,7 @@
  GTC_CART:0 "Carthage"
  GTC_CART_DEF:0 "Carthage"
  GTC_CART_ADJ:0 "Carthaginian"
+
+ UPC:0 "United Peoples' Commonwealth"
+ UPC_DEF:0 "the United Peoples' Commonwealth"
+ UPC_ADJ:0 "Commonwealth"

@@ -358,7 +358,7 @@ country_event = {
 		declare_war_on = {
 			target = OTT
 			type = take_core_state
-			generator = { 882 875 883 874 879 870 878 871 868 }
+			generator = { 844 840 845 838 964 839 841 }
 		}
 		declare_war_on = {
 			target = RIY
@@ -384,7 +384,7 @@ country_event = {
 		declare_war_on = {
 			target = OTT
 			type = take_core_state
-			generator = { 882 875 883 874 879 870 878 871 868 }
+			generator = { 844 840 845 838 964 839 841 }
 		}
 		declare_war_on = {
 			target = RIY
@@ -410,7 +410,7 @@ country_event = {
 		declare_war_on = {
 			target = OTT
 			type = take_core_state
-			generator = { 882 875 883 874 879 870 878 871 868 }
+			generator = { 844 840 838 839 841 }
 		}
 		declare_war_on = {
 			target = RIY

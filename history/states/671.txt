@@ -6,6 +6,7 @@ state = {
 	history = {
 		owner = PLC
 		add_core_of = PLC
+		victory_points = { 11528 3 }
 		buildings = {
 			infrastructure = 2
 		}
