@@ -1,12 +1,11 @@
 on_actions = {
 	on_startup = {
-		effect = {
+		effect = { #DONT DO PUPPETING HERE!!!!!!!!!!!!!!!!!!!!! DO PUPPETS IN SAID PUPPET'S HISTORY FILE BEFORE THEIR SET_POLITICS; REFER TO CODE CHANNEL FOR EXAMPLE
 			AUS = {
 				create_faction = "Holy League"
 				add_to_faction = HUN
 				add_to_faction = CRO
 				add_to_faction = VEN
-				puppet = VEN
 			}
 			VIN = {
 				create_faction = "North Atlantic Council"
@@ -16,9 +15,6 @@ on_actions = {
 				add_to_faction = MLC
 			}
 			SCD = {
-				puppet = TYK
-				puppet = EST
-				puppet = MLC
 				give_guarantee = CNU
 			}
 			JAP = {
@@ -29,15 +25,6 @@ on_actions = {
 				add_to_faction = JPH
 				add_to_faction = JEI
 				add_to_faction = BEN
-				puppet = MAN
-				puppet = JRS
-				puppet = JPH
-				puppet = JEI
-			}
-			GCO = {
-				puppet = MEX
-				puppet = AZT
-				puppet = MAY
 			}
 			OTT = {
 				create_faction = "Domain of the Caliph"
@@ -48,30 +35,6 @@ on_actions = {
 				add_to_faction = WAL
 				add_to_faction = MOL
 				add_to_faction = TRA
-				puppet = GRE
-				puppet = RIY
-				puppet = YEM
-				puppet = WAL
-				puppet = MOL
-				puppet = TRA
-			}
-			CNU = {
-				puppet = SCO
-			}
-			PLC = {
-				puppet = BEL
-				puppet = UKR
-			}
-			BUR = {
-				puppet = BEI
-			}
-			SPA = {
-				puppet = SEI
-				puppet = NGA
-			}
-			ENG = {
-				puppet = AST
-				puppet = BOM
 			}
 			QIQ = {
 				give_guarantee = NAV

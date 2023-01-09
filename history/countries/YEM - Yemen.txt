@@ -2,6 +2,10 @@
 
 capital = 964
 
+OTT = {
+	puppet = YEM
+}
+
 set_research_slots = 3
 
 set_technology = {

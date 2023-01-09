@@ -1,5 +1,9 @@
 capital = 285
 
+SPA = {
+	puppet = SEI
+}
+
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1

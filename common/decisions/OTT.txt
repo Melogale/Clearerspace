@@ -1,5 +1,22 @@
 resistance_measures = {
 
+	debug = {
+		priority = 10
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = the_great_revolt
+				days = -370
+			}
+		}
+	}
+
+	debug_tension = {
+		priority = 10
+		complete_effect = {
+			OTT_resistance_increase = yes
+		}
+	}
+
 	the_great_revolt = {
 		activation = {
 			#has_country_flag = OTT_ankara_bombinb_FLG

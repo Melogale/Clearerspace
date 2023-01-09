@@ -80,6 +80,13 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
+		bypass = {
+			AND = {
+				has_global_flag = RUS_civil_war_FLG
+				tag = RUS
+			}
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = tt_RUS_convene_the_nec
 			add_days_mission_timeout = {
@@ -90,7 +97,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_ensure_siberian_loyalty
+		id = RUS_ensure_central_asian_loyalty
 		icon = GFX_goal_demand_sudetenland
 		x = -1
 		y = 1
@@ -101,9 +108,16 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
+		bypass = {
+			AND = {
+				has_global_flag = RUS_civil_war_FLG
+				tag = RUS
+			}
+		}
+
 		completion_reward = {
-			custom_effect_tooltip = tt_RUS_ensure_siberian_loyalty
-			set_country_flag = RUS_siberian_loyalty_FLG
+			custom_effect_tooltip = tt_RUS_ensure_central_asian_loyalty
+			set_country_flag = RUS_central_asian_loyalty_FLG
 			add_days_mission_timeout = {
 				mission = the_inevitable_war
 				days = -21
@@ -119,9 +133,16 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = RUS_convene_the_national_emergency_council }
 		relative_position_id = RUS_convene_the_national_emergency_council
-		mutually_exclusive = { focus = RUS_ensure_siberian_loyalty }
+		mutually_exclusive = { focus = RUS_ensure_central_asian_loyalty }
 		
 		available_if_capitulated = yes
+
+		bypass = {
+			AND = {
+				has_global_flag = RUS_civil_war_FLG
+				tag = RUS
+			}
+		}
 
 		completion_reward = {
 			custom_effect_tooltip = tt_RUS_ensure_southern_loyalty
@@ -139,10 +160,17 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		prerequisite = { focus = RUS_ensure_southern_loyalty focus = RUS_ensure_siberian_loyalty }
+		prerequisite = { focus = RUS_ensure_southern_loyalty focus = RUS_ensure_central_asian_loyalty }
 		relative_position_id = RUS_ensure_southern_loyalty
 		
 		available_if_capitulated = yes
+
+		bypass = {
+			AND = {
+				has_global_flag = RUS_civil_war_FLG
+				tag = RUS
+			}
+		}
 
 		completion_reward = {
 			custom_effect_tooltip = tt_RUS_arm_loyal_militias
@@ -165,6 +193,13 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
+		bypass = {
+			AND = {
+				has_global_flag = RUS_civil_war_FLG
+				tag = RUS
+			}
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = tt_RUS_appeal_to_fellow_monarchies
 			set_country_flag = RUS_appeal_to_monarchies_FLG
@@ -185,6 +220,13 @@ focus_tree = {
 		relative_position_id = RUS_appeal_to_fellow_monarchies
 		
 		available_if_capitulated = yes
+
+		bypass = {
+			AND = {
+				has_global_flag = RUS_civil_war_FLG
+				tag = RUS
+			}
+		}
 
 		completion_reward = {
 			custom_effect_tooltip = tt_RUS_intensified_crackdown
@@ -221,7 +263,7 @@ focus_tree = {
 			OR = {
 				has_country_flag = RUS_popular_revolution_FLG
 				AND = {
-					has_country_flag = RUS_imperial_coalition_FLG
+					has_global_flag = RUS_civil_war_FLG
 					tag = RST
 				}
 			}
@@ -246,7 +288,7 @@ focus_tree = {
 
 		bypass = {
 			AND = {
-				has_country_flag = RUS_imperial_coalition_FLG
+				has_global_flag = RUS_civil_war_FLG
 				tag = RST
 			}
 		}
@@ -276,7 +318,7 @@ focus_tree = {
 		
 		bypass = {
 			AND = {
-				has_country_flag = RUS_imperial_coalition_FLG
+				has_global_flag = RUS_civil_war_FLG
 				tag = RST
 			}
 		}
@@ -305,7 +347,7 @@ focus_tree = {
 
 		bypass = {
 			AND = {
-				has_country_flag = RUS_imperial_coalition_FLG
+				has_global_flag = RUS_civil_war_FLG
 				tag = RST
 			}
 		}
@@ -334,7 +376,7 @@ focus_tree = {
 
 		bypass = {
 			AND = {
-				has_country_flag = RUS_imperial_coalition_FLG
+				has_global_flag = RUS_civil_war_FLG
 				tag = RST
 			}
 		}
@@ -362,7 +404,7 @@ focus_tree = {
 
 		bypass = {
 			AND = {
-				has_country_flag = RUS_imperial_coalition_FLG
+				has_global_flag = RUS_civil_war_FLG
 				tag = RST
 			}
 		}
@@ -390,7 +432,7 @@ focus_tree = {
 
 		bypass = {
 			AND = {
-				has_country_flag = RUS_imperial_coalition_FLG
+				has_global_flag = RUS_civil_war_FLG
 				tag = RST
 			}
 		}

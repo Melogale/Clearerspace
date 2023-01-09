@@ -69,8 +69,8 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="balkan_resistance_header"
-			position = { x = 25 y = 15 }
-			font = "hoi_22typewriter_inverted"
+			position = { x = 27 y = 17 }
+			font = "hoi_16mbs"
 			text = "Balkan Resistance"
 			format = center
 			maxHeight = 24
@@ -91,8 +91,8 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="arabic_resistance_header"
-			position = { x = 270 y = 15 }
-			font = "hoi_22typewriter_inverted"
+			position = { x = 272 y = 17 }
+			font = "hoi_16mbs"
 			text = "Arabic Resistance"
 			format = center
 			maxHeight = 24

@@ -320,6 +320,7 @@ country_event = {
 
 	option = {
 		name = ottoman.19.a
+		leave_faction = yes
 		set_cosmetic_tag = EGY_free
 		declare_war_on = {
 			target = OTT
@@ -397,7 +398,7 @@ country_event = {
 	}
 }
 
-	#the puppet state joins our glorious revolt!
+	#the puppet states join our glorious revolt!
 country_event = {
 	id = ottoman.23
 	title = ottoman.23.t
@@ -411,14 +412,6 @@ country_event = {
 			target = OTT
 			type = take_core_state
 			generator = { 844 840 838 839 841 }
-		}
-		declare_war_on = {
-			target = RIY
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = YEM
-			type = annex_everything
 		}
 		hidden_effect = {
 			OTT = {

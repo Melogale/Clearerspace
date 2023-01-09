@@ -21,23 +21,23 @@ country_event = {
 		set_country_flag = RUS_imperial_coalition_FLG
 		hidden_effect = {
 			set_country_flag = RUS_moscow_hq_FLG
-			390 = {
+			382 = {
 				set_state_flag = RUS_revolution_mark_FLG
 			}
-			390 = {
+			382 = {
 				add_core_of = RST
 			}
 			set_country_flag = RUS_tsaritsyn_hq_2_FLG
-			389 = {
+			381 = {
 				set_state_flag = RUS_revolution_mark_FLG
 			}
-			389 = {
+			381 = {
 				add_core_of = RST
 			}
-			384 = {
+			376 = {
 				set_state_flag = RUS_martial_law_FLG
 			}
-			382 = {
+			374 = {
 				set_state_flag = RUS_martial_law_FLG
 			}
 		}

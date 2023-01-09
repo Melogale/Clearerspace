@@ -39,7 +39,7 @@ bookmarks = {
 		}
 		"PLC"={
 			history = "PLC_GATHERING_STORM_DESC"
-			ideology = social_democracy
+			ideology = conservatism
 			ideas = {
 
 			}
@@ -57,140 +57,17 @@ bookmarks = {
 				
 			}		
 		}
-		"INC"={
-			history = "INC_GATHERING_STORM_DESC"
-			ideology = monolism
-			ideas = {
-				
-			}	
-			focuses = {
-				
-			}			
-		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}	
-		}
-
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
-		"VIN"={
-			minor = yes
-			history = "VIN_GATHERING_STORM_DESC"
-			ideology = autocracy
-			ideas = {
-				
-			}	
-			focuses = {
-				
-			}		
-		}
 		"RUS"={
-			minor = yes
 			history = "RUS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"QIQ"={
-			minor = yes
-			history = "QIQ_GATHERING_STORM_DESC"
-			ideology = liberalism
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"QIN"={
-			minor = yes
-			history = "QIN_GATHERING_STORM_DESC"
 			ideology = autocracy
 			ideas = {
 				
 			}
 			focuses = {
 				
-			}
+			}	
 		}
-		"CNU"={
-			minor = yes
-			history = "CNU_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"GCO"={
-			minor = yes
-			history = "GCO_GATHERING_STORM_DESC"
-			ideology = conservatism
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"SPA"={
-			minor = yes
-			history = "SPA_GATHERING_STORM_DESC"
-			ideology = autocracy
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"OTT"={
-			minor = yes
-			history = "OTT_GATHERING_STORM_DESC"
-			ideology = autocracy
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"ITA"={
-			minor = yes
-			history = "HUN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"EGY"={
-			minor = yes
-			history = "EGY_GATHERING_STORM_DESC"
-			ideology = autocracy
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
+		
 		effect = {
 			randomize_weather = 22345
 		}

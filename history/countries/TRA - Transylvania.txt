@@ -2,6 +2,10 @@
 
 capital = 726
 
+OTT = {
+	puppet = TRA
+}
+
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1

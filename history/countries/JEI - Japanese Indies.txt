@@ -1,5 +1,9 @@
 capital = 261
 
+JAP = {
+	puppet = JEI
+}
+
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1

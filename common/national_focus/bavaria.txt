@@ -1096,6 +1096,7 @@ focus_tree = {
 				remove_idea = BAY_preparing_total_mobilisation
 				add_idea = BAY_totally_mobalized
 			}
+			load_oob = BAY_total_mobilisation_troops #dont remove nerd, i will add oob for this later as with ottoman revolt oobs
 		}
 	}
 
@@ -1883,7 +1884,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_growing_industrial_budget
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_bay_growing_industrial_budget
 		x = -6
 		y = 1
 		cost = 3

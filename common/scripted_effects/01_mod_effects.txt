@@ -500,6 +500,7 @@ strong_bulgar_revolt = {
 weak_greek_revolt = {
 	OTT = {
 		end_puppet = GRE
+		remove_from_faction = GRE
 	}
 	GRE = {
 		set_cosmetic_tag = GRE_FREED
@@ -518,6 +519,7 @@ weak_greek_revolt = {
 romanian_revolt = {
 	OTT = {
 		end_puppet = TRA
+		remove_from_faction = TRA
 	}
 	HUN = {
 		transfer_state = 726
@@ -553,6 +555,7 @@ sicilian_revolt = {
 strong_greek_revolt = {
 	OTT = {
 		end_puppet = GRE
+		remove_from_faction = GRE
 	}
 	GRE = {
 		set_cosmetic_tag = GRE_free
