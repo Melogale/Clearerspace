@@ -162,6 +162,11 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/focus_bay_growing_industrial_budget.dds"			
 	}
 
+	SpriteType = {
+	name = "GFX_focus_bay_proclaim_german_unification"
+	texturefile = "gfx/interface/goals/focus_bay_proclaim_german_unification.dds"			
+	}
+
 	#END OF MODDED MFS
 
 	#### Generic continuous goal icons

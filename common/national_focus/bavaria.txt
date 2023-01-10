@@ -1335,7 +1335,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_revolutionary_fervor
-		icon = GFX_focus_ger_great_red_menace
+		icon = GFX_focus_ETH_callout_to_the_world
 		x = 0
 		y = 1
 		cost = 3
@@ -1352,8 +1352,8 @@ focus_tree = {
 
 	focus = {
 		id = BAY_integrate_alsace
-		icon = GFX_focus_ger_great_red_menace
-		x = -1
+		icon = GFX_goal_generic_demand_territory
+		x = -2
 		y = 1
 		cost = 3
 
@@ -1375,8 +1375,8 @@ focus_tree = {
 
 	focus = {
 		id = BAY_prepare_state_divisions
-		icon = GFX_focus_ger_great_red_menace
-		x = 1
+		icon = GFX_focus_generic_treaty
+		x = 2
 		y = 1
 		cost = 3
 
@@ -1395,10 +1395,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_bring_the_revolution_to_hannover
-		icon = GFX_focus_ger_great_red_menace
+		id = BAY_the_next_step_for_the_revolution
+		icon = GFX_focus_prc_infiltration
 		x = 0
-		y = 2
+		y = 1
 		cost = 3
 
 		prerequisite = { focus = BAY_revolutionary_fervor }
@@ -1412,9 +1412,240 @@ focus_tree = {
 	}
 
 	focus = {
+		id = BAY_march_through_frankfurt
+		icon = GFX_focus_por_workers_of_iberia
+		x = -2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_next_step_for_the_revolution }
+		relative_position_id = BAY_the_next_step_for_the_revolution
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_loosen_the_french_grip
+		icon = GFX_focus_generic_self_management
+		x = 2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_next_step_for_the_revolution }
+		relative_position_id = BAY_the_next_step_for_the_revolution
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_liberate_the_puppet_state
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_next_step_for_the_revolution }
+		relative_position_id = BAY_the_next_step_for_the_revolution
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_the_liberation_of_berlin
+		icon = GFX_goal_support_communism
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_liberate_the_puppet_state }
+		relative_position_id = BAY_liberate_the_puppet_state
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_equal_partners
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_liberate_the_puppet_state }
+		relative_position_id = BAY_liberate_the_puppet_state
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_plan_europes_future
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_equal_partners }
+		relative_position_id = BAY_equal_partners
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_russian_brotherhood
+		icon = GFX_focus_SOV_socialism_in_one_country
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_plan_europes_future }
+		relative_position_id = BAY_plan_europes_future
+
+		mutually_exclusive = { focus = BAY_russian_negotiations }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_russian_negotiations
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_plan_europes_future }
+		relative_position_id = BAY_plan_europes_future
+
+		mutually_exclusive = { focus = BAY_russian_brotherhood }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_negotiate_with_the_holy_league
+		icon = GFX_focus_generic_concessions
+		x = -2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_liberate_the_puppet_state }
+		relative_position_id = BAY_liberate_the_puppet_state
+
+		mutually_exclusive = { focus = BAY_no_negotiations_with_the_oppressors }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_no_negotiations_with_the_oppressors
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = -4
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_liberate_the_puppet_state }
+		relative_position_id = BAY_liberate_the_puppet_state
+
+		mutually_exclusive = { focus = BAY_negotiate_with_the_holy_league }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_against_the_coalition
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = -1
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_liberate_the_puppet_state }
+		relative_position_id = BAY_liberate_the_puppet_state
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_proclaim_german_unification
+		icon = GFX_focus_bay_proclaim_german_unification
+		x = -2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_against_the_coalition }
+		prerequisite = { focus = BAY_negotiate_with_the_holy_league focus = BAY_no_negotiations_with_the_oppressors }
+		relative_position_id = BAY_against_the_coalition
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_the_revolution_secured
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_proclaim_german_unification }
+		prerequisite = { focus = BAY_russian_brotherhood focus = BAY_russian_negotiations }
+		relative_position_id = BAY_proclaim_german_unification
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = BAY_the_nationale_volksarmee
 		icon = GFX_focus_generic_combined_arms
-		x = 9
+		x = 10
 		y = 1
 		cost = 3
 
