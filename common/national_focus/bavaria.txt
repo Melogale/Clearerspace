@@ -1233,7 +1233,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = BAY_french_reliance
+			add_ideas = BAY_reliance_on_the_french
 		}
 	}
 

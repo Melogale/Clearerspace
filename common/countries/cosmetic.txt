@@ -86,3 +86,7 @@ GTC_CART = {
     color = rgb { 155 34 195 }
     color_ui = rgb { 155 34 195 }
 }
+PLC_ROME = {
+    color = rgb { 168 36 89 }
+    color_ui = rgb { 168 36 89 }
+}

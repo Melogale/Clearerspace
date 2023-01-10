@@ -18,7 +18,7 @@ focus_tree = {
 	focus = {
 		id = PLC_national_census
 		icon = GFX_focus_plc_census
-		x = 8
+		x = 10
 		y = 0
 		cost = 5
 		
@@ -155,7 +155,7 @@ focus_tree = {
 	focus = {
 		id = PLC_polonisation_act_passes
 		icon = GFX_focus_plc_polish_domination
-		x = 4
+		x = 6
 		y = 1
 		cost = 5
 		prerequisite = { focus = PLC_the_great_sejm }
@@ -179,7 +179,7 @@ focus_tree = {
 	focus = {
 		id = PLC_polonisation_act_fails
 		icon = GFX_focus_plc_national_equity
-		x = -4
+		x = -6
 		y = 1
 		cost = 5
 		prerequisite = { focus = PLC_the_great_sejm }
@@ -266,7 +266,7 @@ focus_tree = {
 	focus = {
 		id = PLC_the_national_investigation_committee
 		icon = GFX_focus_generic_national_security
-		x = -2
+		x = -3
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_another_sejm }
@@ -427,7 +427,7 @@ focus_tree = {
 	focus = {
 		id = PLC_decentralization
 		icon = GFX_focus_generic_treaty
-		x = 3
+		x = 2
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_another_sejm }
@@ -699,17 +699,13 @@ focus_tree = {
 ##################################
 
 	focus = {
-		id = PLC_a_nation_aflame
+		id = PLC_protests_in_the_streets
 		icon = GFX_focus_plc_polish_domination
 		x = -1
 		y = 1
 		cost = 5
 		prerequisite = { focus = PLC_polonisation_act_passes }
 		relative_position_id = PLC_polonisation_act_passes
-
-		available = {
-			always = no
-		}
 		
 		available_if_capitulated = yes
 
@@ -719,17 +715,191 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PLC_and_a_dissolving_army
+		id = PLC_mass_desertions
 		icon = GFX_focus_plc_polish_domination
 		x = 1
 		y = 1
 		cost = 5
 		prerequisite = { focus = PLC_polonisation_act_passes }
 		relative_position_id = PLC_polonisation_act_passes
+		
+		available_if_capitulated = yes
 
-		available = {
-			always = no
+		completion_reward = {
+			
 		}
+	}
+
+	focus = {
+		id = PLC_the_destruction_of_the_sejm
+		icon = GFX_focus_plc_polish_domination
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_mass_desertions }
+		prerequisite = { focus = PLC_protests_in_the_streets }
+		relative_position_id = PLC_protests_in_the_streets
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_restoring_order
+		icon = GFX_focus_plc_polish_domination
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_the_destruction_of_the_sejm }
+		relative_position_id = PLC_the_destruction_of_the_sejm
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_ending_the_autonomies
+		icon = GFX_focus_plc_polish_domination
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_restoring_order }
+		relative_position_id = PLC_restoring_order
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_expanding_the_military_police
+		icon = GFX_focus_plc_polish_domination
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_restoring_order }
+		relative_position_id = PLC_restoring_order
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_ending_the_protests
+		icon = GFX_focus_plc_polish_domination
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_expanding_the_military_police }
+		prerequisite = { focus = PLC_a_polish_army }
+		relative_position_id = PLC_expanding_the_military_police
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_demotion_of_the_lithuanian_language
+		icon = GFX_focus_plc_polish_domination
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_the_destruction_of_the_sejm }
+		relative_position_id = PLC_the_destruction_of_the_sejm
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_mandatory_polish_education
+		icon = GFX_focus_plc_polish_domination
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_demotion_of_the_lithuanian_language }
+		relative_position_id = PLC_demotion_of_the_lithuanian_language
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_the_latin_compromise
+		icon = GFX_focus_plc_polish_domination
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_mandatory_polish_education }
+		relative_position_id = PLC_mandatory_polish_education
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_state_catholicism
+		icon = GFX_focus_plc_polish_domination
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_mandatory_polish_education }
+		relative_position_id = PLC_mandatory_polish_education
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_
+		icon = GFX_focus_plc_polish_domination
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_state_catholicism }
+		relative_position_id = PLC_state_catholicism
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_a_polish_army
+		icon = GFX_focus_plc_polish_domination
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLC_demotion_of_the_lithuanian_language }
+		relative_position_id = PLC_demotion_of_the_lithuanian_language
 		
 		available_if_capitulated = yes
 
@@ -745,8 +915,8 @@ focus_tree = {
 	focus = {
 		id = PLC_foreign_diplomacy
 		icon = GFX_focus_plc_foreign_diplomacy
-		x = 18
-		y = 0
+		x = 25
+		y = 6
 		cost = 10
 
 		available = {

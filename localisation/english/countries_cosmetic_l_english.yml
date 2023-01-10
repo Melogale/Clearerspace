@@ -123,3 +123,11 @@
  UPC:0 "United Peoples' Commonwealth"
  UPC_DEF:0 "the United Peoples' Commonwealth"
  UPC_ADJ:0 "Commonwealth"
+
+ OTT_ROME:0 "Caliphate of Rome"
+ OTT_ROME_DEF:0 "the Caliphate of Rome"
+ OTT_ROME_ADJ:0 "Ottoman"
+
+ PLC_ROME:0 "Third Roman Empire"
+ PLC_ROME_DEF:0 "the Third Roman Empire"
+ PLC_ROME_ADJ:0 "Polish"

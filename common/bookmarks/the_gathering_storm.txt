@@ -31,10 +31,14 @@ bookmarks = {
 			history = "BAY_GATHERING_STORM_DESC"
 			ideology = authoritarian_socialism
 			ideas = {
-				
+				BAY_rampant_poverty
+				BAY_international_embargo_1
+				BAY_nationalist_fatigue
 			}
 			focuses = {
-				
+				BAY_confederation_du_rhin
+				BAY_war_with_france
+				#whatever focus is the one where you proclaim germany
 			}
 		}
 		"PLC"={
