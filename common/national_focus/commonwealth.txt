@@ -20,7 +20,7 @@ focus_tree = {
 		icon = GFX_focus_plc_census
 		x = 10
 		y = 0
-		cost = 5
+		cost = 3
 		
 		available_if_capitulated = yes
 
@@ -132,7 +132,7 @@ focus_tree = {
 		icon = GFX_focus_plc_convene_senate
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_status_of_the_lithuanians }
 		prerequisite = { focus = PLC_status_of_the_ruthenians }
 		prerequisite = { focus = PLC_status_of_the_jewish }
@@ -157,7 +157,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = 6
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_the_great_sejm }
 		relative_position_id = PLC_the_great_sejm
 
@@ -181,7 +181,7 @@ focus_tree = {
 		icon = GFX_focus_plc_national_equity
 		x = -6
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_the_great_sejm }
 		relative_position_id = PLC_the_great_sejm
 
@@ -703,7 +703,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_polonisation_act_passes }
 		relative_position_id = PLC_polonisation_act_passes
 		
@@ -719,7 +719,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_polonisation_act_passes }
 		relative_position_id = PLC_polonisation_act_passes
 		
@@ -735,7 +735,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_mass_desertions }
 		prerequisite = { focus = PLC_protests_in_the_streets }
 		relative_position_id = PLC_protests_in_the_streets
@@ -752,7 +752,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = -2
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_the_destruction_of_the_sejm }
 		relative_position_id = PLC_the_destruction_of_the_sejm
 		
@@ -768,9 +768,58 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_restoring_order }
 		relative_position_id = PLC_restoring_order
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_relocate_the_academia
+		icon = GFX_focus_plc_polish_domination
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_ending_the_autonomies }
+		relative_position_id = PLC_ending_the_autonomies
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_martial_law_in_rus
+		icon = GFX_focus_plc_polish_domination
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_ending_the_autonomies }
+		prerequisite = { focus = PLC_expanding_the_military_police }
+		relative_position_id = PLC_ending_the_autonomies
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_enforce_polish_rule
+		icon = GFX_focus_plc_polish_domination
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_martial_law_in_rus }
+		relative_position_id = PLC_martial_law_in_rus
 		
 		available_if_capitulated = yes
 
@@ -784,7 +833,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_restoring_order }
 		relative_position_id = PLC_restoring_order
 		
@@ -800,7 +849,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_expanding_the_military_police }
 		prerequisite = { focus = PLC_a_polish_army }
 		relative_position_id = PLC_expanding_the_military_police
@@ -817,7 +866,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = 3
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_the_destruction_of_the_sejm }
 		relative_position_id = PLC_the_destruction_of_the_sejm
 		
@@ -833,7 +882,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_demotion_of_the_lithuanian_language }
 		relative_position_id = PLC_demotion_of_the_lithuanian_language
 		
@@ -849,7 +898,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_mandatory_polish_education }
 		relative_position_id = PLC_mandatory_polish_education
 		
@@ -865,7 +914,7 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_mandatory_polish_education }
 		relative_position_id = PLC_mandatory_polish_education
 		
@@ -877,11 +926,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PLC_
+		id = PLC_the_new_polish_man
 		icon = GFX_focus_plc_polish_domination
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_state_catholicism }
 		relative_position_id = PLC_state_catholicism
 		
@@ -897,9 +946,44 @@ focus_tree = {
 		icon = GFX_focus_plc_polish_domination
 		x = -2
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_demotion_of_the_lithuanian_language }
 		relative_position_id = PLC_demotion_of_the_lithuanian_language
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_the_latest_prussian_militarism
+		icon = GFX_focus_plc_polish_domination
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = { focus = PLC_a_polish_army }
+		relative_position_id = PLC_a_polish_army
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_a_truly_polish_state
+		icon = GFX_focus_plc_polish_domination
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_enforce_polish_rule }
+		prerequisite = { focus = PLC_ending_the_protests }
+		prerequisite = { focus = PLC_the_latest_prussian_militarism }
+		prerequisite = { focus = PLC_the_new_polish_man }
+		relative_position_id = PLC_the_latest_prussian_militarism
 		
 		available_if_capitulated = yes
 
@@ -1069,7 +1153,7 @@ focus_tree = {
 		icon = GFX_focus_plc_outdated_economy
 		x = 27
 		y = 0
-		cost = 5
+		cost = 3
 
 		available = {
 			has_idea = PLC_dead_economy
@@ -1164,7 +1248,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = -2
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_western_industrial_region }
 		relative_position_id = PLC_western_industrial_region
 
@@ -1200,7 +1284,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_the_vilnius_krakow_railway }
 		relative_position_id = PLC_the_vilnius_krakow_railway
 
@@ -1241,7 +1325,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_western_industrial_region }
 		relative_position_id = PLC_western_industrial_region
 
@@ -1257,7 +1341,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_modernizing_the_industries }
 		relative_position_id = PLC_modernizing_the_industries
 
@@ -1277,7 +1361,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_deep_resource_extraction }
 		relative_position_id = PLC_deep_resource_extraction
 
@@ -1297,7 +1381,7 @@ focus_tree = {
 		icon = GFX_focus_generic_tank_production
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_deep_resource_extraction }
 		relative_position_id = PLC_deep_resource_extraction
 
@@ -1315,7 +1399,7 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes
 		x = 2
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_modernizing_the_industries }
 		prerequisite = { focus = PLC_modern_agriculture }
 		relative_position_id = PLC_modernizing_the_industries
@@ -1431,7 +1515,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_eastern_agricultural_region }
 		relative_position_id = PLC_eastern_agricultural_region
 
@@ -1512,7 +1596,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_eastern_agricultural_region }
 		relative_position_id = PLC_eastern_agricultural_region
 
@@ -1528,7 +1612,7 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		prerequisite = { focus = PLC_modern_agriculture focus = PLC_massive_infrastructure_investments }
 		relative_position_id = PLC_modern_agriculture
 

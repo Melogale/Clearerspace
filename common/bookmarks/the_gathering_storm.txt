@@ -38,7 +38,7 @@ bookmarks = {
 			focuses = {
 				BAY_confederation_du_rhin
 				BAY_war_with_france
-				#whatever focus is the one where you proclaim germany
+				BAY_proclaim_german_unification
 			}
 		}
 		"PLC"={

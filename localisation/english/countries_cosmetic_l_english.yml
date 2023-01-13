@@ -124,10 +124,26 @@
  UPC_DEF:0 "the United Peoples' Commonwealth"
  UPC_ADJ:0 "Commonwealth"
 
+ KGP:0 "Kingdom of Greater Poland"
+ KGP_DEF:0 "the Kingdom of Greater Poland"
+ KGP_ADJ:0 "Polish"
+
  OTT_ROME:0 "Caliphate of Rome"
  OTT_ROME_DEF:0 "the Caliphate of Rome"
  OTT_ROME_ADJ:0 "Ottoman"
 
- PLC_ROME:0 "Third Roman Empire"
- PLC_ROME_DEF:0 "the Third Roman Empire"
- PLC_ROME_ADJ:0 "Polish"
+ KGP_ROME:0 "Third Roman Empire"
+ KGP_ROME_DEF:0 "the Third Roman Empire"
+ KGP_ROME_ADJ:0 "Polish"
+
+ KGP_SLAV:0 "Corona Regni Poloniae"
+ KGP_SLAV_DEF:0 "Corona Regni Poloniae"
+ KGP_SLAV_ADJ:0 "Poloniae"
+
+ UPC_GRND:0 "Grand Commonwealth"
+ UPC_GRND_DEF:0 "the Grand Commonwealth"
+ UPC_GRND_ADJ:0 "Commonwealth"
+
+ UPC_SLAV:0 "Slaviya"
+ UPC_SLAV_DEF:0 "Slaviya"
+ UPC_SLAV_ADJ:0 "Slavic"

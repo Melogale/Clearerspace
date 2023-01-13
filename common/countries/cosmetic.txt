@@ -42,6 +42,10 @@ UPC = {
     color = rgb { 168 36 89 }
     color_ui = rgb { 168 36 89 }
 }
+KGP = {
+    color = rgb { 168 36 89 }
+    color_ui = rgb { 168 36 89 }
+}
 GRE_free = {
     color = rgb { 0 153 204 }
     color_ui = rgb { 0 153 204 }
@@ -86,7 +90,19 @@ GTC_CART = {
     color = rgb { 155 34 195 }
     color_ui = rgb { 155 34 195 }
 }
-PLC_ROME = {
+KGP_ROME = {
+    color = rgb { 168 36 89 }
+    color_ui = rgb { 168 36 89 }
+}
+KGP_SLAV = {
+    color = rgb { 168 36 89 }
+    color_ui = rgb { 168 36 89 }
+}
+UPC_GRND = {
+    color = rgb { 168 36 89 }
+    color_ui = rgb { 168 36 89 }
+}
+UPC_SLAV = {
     color = rgb { 168 36 89 }
     color_ui = rgb { 168 36 89 }
 }

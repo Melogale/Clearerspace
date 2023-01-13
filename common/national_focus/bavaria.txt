@@ -2114,9 +2114,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_growing_industrial_budget
-		icon = GFX_focus_bay_growing_industrial_budget
-		x = -6
+		id = BAY_the_first_industrial_escalation
+		icon = GFX_focus_generic_industry_1
+		x = -8
 		y = 1
 		cost = 3
 
@@ -2131,14 +2131,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_the_first_industrial_escalation
-		icon = GFX_focus_generic_industry_1
-		x = -3
+		id = BAY_subsume_the_rheinwerke
+		icon = GFX_focus_SOV_merge_plants
+		x = -2
 		y = 1
 		cost = 3
 
-		prerequisite = { focus = BAY_growing_industrial_budget }
-		relative_position_id = BAY_growing_industrial_budget
+		mutually_exclusive = { focus = BAY_pursue_deep_resource_extraction }
+		prerequisite = { focus = BAY_the_first_industrial_escalation }
+		relative_position_id = BAY_the_first_industrial_escalation
 		
 		available_if_capitulated = yes
 
@@ -2148,15 +2149,48 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_subsume_the_rheinwerke
+		id = BAY_recouping_the_losses
 		icon = GFX_focus_SOV_merge_plants
-		x = -1
+		x = 0
 		y = 1
 		cost = 3
 
-		mutually_exclusive = { focus = BAY_pursue_deep_resource_extraction }
-		prerequisite = { focus = BAY_the_first_industrial_escalation }
-		relative_position_id = BAY_the_first_industrial_escalation
+		prerequisite = { focus = BAY_subsume_the_rheinwerke }
+		relative_position_id = BAY_subsume_the_rheinwerke
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_prepare_for_future_expansion
+		icon = GFX_focus_SOV_merge_plants
+		x = 1
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_recouping_the_losses }
+		relative_position_id = BAY_recouping_the_losses
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_the_new_industrial_heart
+		icon = GFX_focus_SOV_merge_plants
+		x = -1
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_recouping_the_losses }
+		relative_position_id = BAY_recouping_the_losses
 		
 		available_if_capitulated = yes
 
@@ -2184,14 +2218,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_central_expansion
-		icon = GFX_goal_generic_position_armies
-		x = 0
-		y = 2
+		id = BAY_reducing_poverty
+		icon = GFX_goal_generic_construction2
+		x = -1
+		y = 1
 		cost = 3
 
-		prerequisite = { focus = BAY_growing_industrial_budget }
-		relative_position_id = BAY_growing_industrial_budget
+		prerequisite = { focus = BAY_pursue_deep_resource_extraction focus = BAY_subsume_the_rheinwerke }
+		relative_position_id = BAY_pursue_deep_resource_extraction
 		
 		available_if_capitulated = yes
 
@@ -2201,14 +2235,100 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_eastern_expansion
-		icon = GFX_goal_generic_position_armies
+		id = BAY_establish_permanent_trade_routes
+		icon = GFX_goal_generic_construction2
 		x = 1
 		y = 1
 		cost = 3
 
-		prerequisite = { focus = BAY_growing_industrial_budget }
-		relative_position_id = BAY_growing_industrial_budget
+		prerequisite = { focus = BAY_pursue_deep_resource_extraction }
+		relative_position_id = BAY_pursue_deep_resource_extraction
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_when_not_natural_artificial
+		icon = GFX_goal_generic_construction2
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_establish_permanent_trade_routes }
+		relative_position_id = BAY_establish_permanent_trade_routes
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_export_processed_materials
+		icon = GFX_goal_generic_construction2
+		x = 0
+		y = 2
+		cost = 3
+
+		prerequisite = { focus = BAY_establish_permanent_trade_routes }
+		relative_position_id = BAY_establish_permanent_trade_routes
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_the_second_industrial_escalation
+		icon = GFX_focus_generic_industry_2
+		x = -2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_export_processed_materials focus = BAY_prepare_for_future_expansion }
+		prerequisite = { focus = BAY_export_processed_materials focus = BAY_the_new_industrial_heart }
+		relative_position_id = BAY_export_processed_materials
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_access_to_the_seas
+		icon = GFX_focus_generic_industry_2
+		x = -2
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_second_industrial_escalation }
+		relative_position_id = BAY_the_second_industrial_escalation
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_another_volkerwerke_expansion
+		icon = GFX_focus_generic_industry_2
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_second_industrial_escalation }
+		relative_position_id = BAY_the_second_industrial_escalation
 		
 		available_if_capitulated = yes
 
