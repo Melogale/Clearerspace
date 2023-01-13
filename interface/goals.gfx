@@ -133,6 +133,26 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_focus_plc_declare_greater_poland"
+	texturefile = "gfx/interface/goals/focus_plc_declare_greater_poland.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_focus_plc_destruction_of_the_sejm"
+	texturefile = "gfx/interface/goals/focus_plc_destruction_of_the_sejm.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_focus_plc_mass_desertions"
+	texturefile = "gfx/interface/goals/focus_plc_mass_desertions.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_focus_plc_protests_in_the_streets"
+	texturefile = "gfx/interface/goals/focus_plc_protests_in_the_streets.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_focus_qiq_oceangoing"
 	texturefile = "gfx/interface/goals/focus_qiq_oceangoing.dds"			
 	}

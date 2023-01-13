@@ -155,7 +155,7 @@ focus_tree = {
 	focus = {
 		id = PLC_polonisation_act_passes
 		icon = GFX_focus_plc_polish_domination
-		x = 6
+		x = 7
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_the_great_sejm }
@@ -179,7 +179,7 @@ focus_tree = {
 	focus = {
 		id = PLC_polonisation_act_fails
 		icon = GFX_focus_plc_national_equity
-		x = -6
+		x = -7
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_the_great_sejm }
@@ -700,7 +700,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_protests_in_the_streets
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_plc_protests_in_the_streets
 		x = -1
 		y = 1
 		cost = 3
@@ -716,7 +716,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_mass_desertions
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_plc_mass_desertions
 		x = 1
 		y = 1
 		cost = 3
@@ -732,7 +732,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_the_destruction_of_the_sejm
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_plc_destruction_of_the_sejm
 		x = 1
 		y = 1
 		cost = 3
@@ -749,7 +749,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_restoring_order
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_generic_support_the_left_right
 		x = -2
 		y = 1
 		cost = 3
@@ -765,7 +765,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_ending_the_autonomies
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_generic_strike_at_democracy2
 		x = -1
 		y = 1
 		cost = 3
@@ -781,7 +781,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_relocate_the_academia
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_research2
 		x = -1
 		y = 1
 		cost = 3
@@ -797,7 +797,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_martial_law_in_rus
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_goal_demand_sudetenland
 		x = 1
 		y = 1
 		cost = 3
@@ -814,7 +814,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_enforce_polish_rule
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_goal_generic_more_territorial_claims
 		x = 0
 		y = 1
 		cost = 3
@@ -830,7 +830,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_expanding_the_military_police
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_generic_manpower
 		x = 1
 		y = 1
 		cost = 3
@@ -846,7 +846,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_ending_the_protests
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_hol_war_on_pacifism
 		x = 1
 		y = 1
 		cost = 3
@@ -863,7 +863,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_demotion_of_the_lithuanian_language
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		x = 3
 		y = 1
 		cost = 3
@@ -879,7 +879,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_mandatory_polish_education
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_POL_nationalist_education
 		x = 1
 		y = 1
 		cost = 3
@@ -895,7 +895,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_the_latin_compromise
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_goal_generic_improve_relations
 		x = -1
 		y = 1
 		cost = 3
@@ -911,7 +911,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_state_catholicism
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_generic_catholic_dominion
 		x = 1
 		y = 1
 		cost = 3
@@ -927,7 +927,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_the_new_polish_man
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_goal_support_democracy
 		x = 0
 		y = 1
 		cost = 3
@@ -943,7 +943,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_a_polish_army
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_generic_little_entente
 		x = -2
 		y = 1
 		cost = 3
@@ -959,7 +959,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_the_latest_prussian_militarism
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_ger_oppose_hitler
 		x = 0
 		y = 2
 		cost = 3
@@ -975,7 +975,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_a_truly_polish_state
-		icon = GFX_focus_plc_polish_domination
+		icon = GFX_focus_generic_the_giant_wakes
 		x = -1
 		y = 1
 		cost = 3
@@ -992,6 +992,72 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = PLC_relocate_the_capital
+		icon = GFX_goal_generic_position_armies
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_a_truly_polish_state }
+		relative_position_id = PLC_a_truly_polish_state
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_dismantle_resistance_from_within
+		icon = GFX_focus_POL_expand_polish_intelligence
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_a_truly_polish_state }
+		relative_position_id = PLC_a_truly_polish_state
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_a_polish_sejm
+		icon = GFX_focus_POL_complete_april_constitution
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_a_truly_polish_state }
+		relative_position_id = PLC_a_truly_polish_state
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_declare_the_kingdom_of_greater_poland
+		icon = GFX_focus_plc_declare_greater_poland
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_a_polish_sejm }
+		prerequisite = { focus = PLC_dismantle_resistance_from_within }
+		prerequisite = { focus = PLC_relocate_the_capital }
+		relative_position_id = PLC_a_polish_sejm
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
 ##################################
 ## Foreign Diplomacy #############
 ##################################
@@ -999,9 +1065,12 @@ focus_tree = {
 	focus = {
 		id = PLC_foreign_diplomacy
 		icon = GFX_focus_plc_foreign_diplomacy
-		x = 25
-		y = 6
-		cost = 10
+		x = 0
+		y = 1
+		cost = 5
+
+		prerequisite = { focus = PLC_the_great_sejm }
+		relative_position_id = PLC_the_great_sejm
 
 		available = {
 			has_idea = PLC_modern_economy
@@ -1065,8 +1134,8 @@ focus_tree = {
 	focus = {
 		id = PLC_greater_ruthenian_claims
 		icon = GFX_goal_generic_forceful_treaty
-		x = -1
-		y = 2
+		x = -2
+		y = 1
 		cost = 10
 		prerequisite = { focus = PLC_eastern_stance }
 		relative_position_id = PLC_eastern_stance
@@ -1081,7 +1150,7 @@ focus_tree = {
 	focus = {
 		id = PLC_the_grand_commonwealth
 		icon = GFX_focus_plc_grand_commonwealth
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 		prerequisite = { focus = PLC_greater_ruthenian_claims }
@@ -1114,8 +1183,8 @@ focus_tree = {
 	focus = {
 		id = PLC_dismantle_ruthenian_pretenders
 		icon = GFX_goal_generic_major_war
-		x = 1
-		y = 2
+		x = 2
+		y = 1
 		cost = 10
 		prerequisite = { focus = PLC_eastern_stance }
 		relative_position_id = PLC_eastern_stance
@@ -1130,7 +1199,7 @@ focus_tree = {
 	focus = {
 		id = PLC_proclaim_slavya
 		icon = GFX_focus_plc_proclaim_slavya
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		prerequisite = { focus = PLC_dismantle_ruthenian_pretenders }
