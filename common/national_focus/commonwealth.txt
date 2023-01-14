@@ -1079,12 +1079,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = PLC_foreign_diplomacy_tt
 		}
 	}
 
 	focus = {
-		id = PLC_western_ties
+		id = PLC_reconcile_with_the_west
 		icon = GFX_focus_spa_supremacy_of_the_communion
 		x = -2
 		y = 1
@@ -1095,7 +1095,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = PLC_reconcile_with_the_west_tt
 		}
 	}
 
@@ -1111,7 +1111,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = PLC_eastern_stance_tt
 		}
 	}
 
@@ -1127,7 +1127,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = PLC_southern_threats_tt
 		}
 	}
 
@@ -1143,7 +1143,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = PLC_greater_ruthenian_claims_tt
 		}
 	}
 
@@ -1155,7 +1155,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = PLC_greater_ruthenian_claims }
 		relative_position_id = PLC_greater_ruthenian_claims
-		mutually_exclusive = { focus = PLC_proclaim_slavya }
+		mutually_exclusive = { focus = PLC_assume_the_slavic_mantle }
 
 		available_if_capitulated = yes
 
@@ -1176,7 +1176,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = PLC_ruthenian_collaborators_tt
 		}
 	}
 
@@ -1192,12 +1192,29 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					country_exists = RUS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = RUS
+				}
+			}
+			if = {
+				limit = {
+					country_exists = RST
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = RST
+				}
+			}
 		}
 	}
 
 	focus = {
-		id = PLC_proclaim_slavya
+		id = PLC_assume_the_slavic_mantle
 		icon = GFX_focus_plc_proclaim_slavya
 		x = -1
 		y = 1

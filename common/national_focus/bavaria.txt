@@ -881,7 +881,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_restructuring_the_railways
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_generic_railroad
 		x = -1
 		y = 2
 		cost = 3
@@ -2150,7 +2150,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_recouping_the_losses
-		icon = GFX_focus_SOV_merge_plants
+		icon = GFX_focus_mex_privatisation
 		x = 0
 		y = 1
 		cost = 3
@@ -2167,7 +2167,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_prepare_for_future_expansion
-		icon = GFX_focus_SOV_merge_plants
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
 		y = 2
 		cost = 3
@@ -2184,7 +2184,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_the_new_industrial_heart
-		icon = GFX_focus_SOV_merge_plants
+		icon = GFX_focus_bay_new_industrial_heart
 		x = -1
 		y = 2
 		cost = 3
@@ -2201,7 +2201,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_pursue_deep_resource_extraction
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_generic_land_reclamation
 		x = 1
 		y = 1
 		cost = 3
@@ -2219,7 +2219,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_reducing_poverty
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_SOV_breadbasket_of_the_union
 		x = -1
 		y = 1
 		cost = 3
@@ -2236,7 +2236,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_establish_permanent_trade_routes
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_generic_truck
 		x = 1
 		y = 1
 		cost = 3
@@ -2253,7 +2253,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_when_not_natural_artificial
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_generic_oil_refinery
 		x = -1
 		y = 1
 		cost = 3
@@ -2270,7 +2270,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_export_processed_materials
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_generic_army_motorized
 		x = 0
 		y = 2
 		cost = 3
@@ -2304,8 +2304,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_access_to_the_seas
-		icon = GFX_focus_generic_industry_2
+		id = BAY_access_to_the_sea
+		icon = GFX_focus_generic_refit_civilian_ships
 		x = -2
 		y = 1
 		cost = 3
@@ -2321,14 +2321,118 @@ focus_tree = {
 	}
 
 	focus = {
+		id = BAY_establish_a_merchant_fleet
+		icon = GFX_goal_generic_trade
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_access_to_the_sea }
+		relative_position_id = BAY_access_to_the_sea
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_open_our_ports_for_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_access_to_the_sea }
+		relative_position_id = BAY_access_to_the_sea
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = BAY_another_volkerwerke_expansion
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 1
 		y = 1
 		cost = 3
 
 		prerequisite = { focus = BAY_the_second_industrial_escalation }
 		relative_position_id = BAY_the_second_industrial_escalation
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_deepen_the_military_industrial_complex
+		icon = GFX_focus_generic_stockpile_fuel
+		x = 0
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_another_volkerwerke_expansion }
+		relative_position_id = BAY_another_volkerwerke_expansion
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_the_third_industrial_escalation
+		icon = GFX_focus_generic_industry_3
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_deepen_the_military_industrial_complex }
+		prerequisite = { focus = BAY_establish_a_merchant_fleet }
+		prerequisite = { focus = BAY_open_our_ports_for_trade }
+		relative_position_id = BAY_deepen_the_military_industrial_complex
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_europes_industrial_superpower
+		icon = GFX_focus_bay_europes_industrial_superpower
+		x = -1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_third_industrial_escalation }
+		relative_position_id = BAY_the_third_industrial_escalation
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_import_socialist_workers
+		icon = GFX_focus_ITA_workers_unions
+		x = 1
+		y = 1
+		cost = 3
+
+		prerequisite = { focus = BAY_the_third_industrial_escalation }
+		relative_position_id = BAY_the_third_industrial_escalation
 		
 		available_if_capitulated = yes
 
