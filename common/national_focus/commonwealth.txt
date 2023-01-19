@@ -1189,6 +1189,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_cosmetic_tag = KGP
 			country_event = {
 				id = commonwealth.39
 			}
