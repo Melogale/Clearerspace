@@ -1,5 +1,6 @@
 add_namespace = commonwealth
 
+#1936 census
 country_event = {
 	id = commonwealth.1
 	title = commonwealth.1.t
@@ -13,6 +14,7 @@ country_event = {
 	}
 }
 
+#prussians
 country_event = {
 	id = commonwealth.2
 	title = commonwealth.2.t
@@ -25,7 +27,7 @@ country_event = {
 		name = commonwealth.2.a
 		add_popularity = {
 			ideology = liberalism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_liberal_push
 		hidden_effect = {
@@ -56,7 +58,7 @@ country_event = {
 		name = commonwealth.2.b
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_conser_push
 		hidden_effect = {
@@ -84,6 +86,7 @@ country_event = {
 	}
 }
 
+#lithuanians
 country_event = {
 	id = commonwealth.3
 	title = commonwealth.3.t
@@ -96,7 +99,7 @@ country_event = {
 		name = commonwealth.3.a
 		add_popularity = {
 			ideology = liberalism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_liberal_push
 		hidden_effect = {
@@ -126,7 +129,7 @@ country_event = {
 		name = commonwealth.3.b
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_conser_push
 		hidden_effect = {
@@ -154,6 +157,7 @@ country_event = {
 	}
 }
 
+#livonians
 country_event = {
 	id = commonwealth.4
 	title = commonwealth.4.t
@@ -166,7 +170,7 @@ country_event = {
 		name = commonwealth.4.a
 		add_popularity = {
 			ideology = liberalism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_liberal_push
 		hidden_effect = {
@@ -196,7 +200,7 @@ country_event = {
 		name = commonwealth.4.b
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_conser_push
 		hidden_effect = {
@@ -224,6 +228,7 @@ country_event = {
 	}
 }
 
+#ruthenians
 country_event = {
 	id = commonwealth.5
 	title = commonwealth.5.t
@@ -236,7 +241,7 @@ country_event = {
 		name = commonwealth.5.a
 		add_popularity = {
 			ideology = liberalism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_liberal_push
 		hidden_effect = {
@@ -266,7 +271,7 @@ country_event = {
 		name = commonwealth.5.b
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_conser_push
 		hidden_effect = {
@@ -294,6 +299,7 @@ country_event = {
 	}
 }
 
+#jewish
 country_event = {
 	id = commonwealth.6
 	title = commonwealth.6.t
@@ -306,7 +312,7 @@ country_event = {
 		name = commonwealth.6.a
 		add_popularity = {
 			ideology = liberalism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_liberal_push
 		hidden_effect = {
@@ -336,7 +342,7 @@ country_event = {
 		name = commonwealth.6.b
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.025
+			popularity = 0.015
 		}
 		custom_effect_tooltip = tt_plc_conser_push
 		hidden_effect = {
@@ -364,6 +370,7 @@ country_event = {
 	}
 }
 
+#great sejm
 country_event = {
 	id = commonwealth.7
 	title = commonwealth.7.t
@@ -551,6 +558,7 @@ country_event = {
 	}
 }
 
+#anarchist peace deal after forced surrender
 country_event = {
 	id = commonwealth.12
 	title = commonwealth.12.t
@@ -576,6 +584,7 @@ country_event = {
 	}
 }
 
+#plc lost LMFAO L
 news_event = {
 	id = commonwealth.13
 	title = commonwealth.13.t
@@ -590,6 +599,12 @@ news_event = {
 	}
 }
 
+
+
+############## Liberal Path Events
+
+
+#silent afternoon (An Empty Cabinet)
 country_event = {
 	id = commonwealth.14
 	title = commonwealth.14.t
@@ -603,6 +618,7 @@ country_event = {
 	}
 }
 
+#march of the weary (A Broken Command Chain)
 country_event = {
 	id = commonwealth.15
 	title = commonwealth.15.t
@@ -616,6 +632,7 @@ country_event = {
 	}
 }
 
+#filling the gaps (Another Sejm Session)
 country_event = {
 	id = commonwealth.16
 	title = commonwealth.16.t
@@ -626,5 +643,327 @@ country_event = {
 
 	option = {
 		name = commonwealth.16.a
+	}
+}
+
+#National Investigation Committee
+country_event = {
+	id = commonwealth.17
+	title = commonwealth.17.t
+	desc = commonwealth.17.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.17.a
+	}
+}
+
+#Address the Lingual Problems
+country_event = {
+	id = commonwealth.18
+	title = commonwealth.18.t
+	desc = commonwealth.18.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.18.a
+	}
+}
+
+#Decentralisation
+country_event = {
+	id = commonwealth.19
+	title = commonwealth.19.t
+	desc = commonwealth.19.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.19.a
+	}
+}
+
+#National Personal Autonomy
+country_event = {
+	id = commonwealth.20
+	title = commonwealth.20.t
+	desc = commonwealth.20.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.20.a
+	}
+}
+
+#Bialystok Conference
+country_event = {
+	id = commonwealth.21
+	title = commonwealth.21.t
+	desc = commonwealth.21.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.21.a
+	}
+}
+
+#Promise Our Future
+country_event = {
+	id = commonwealth.22
+	title = commonwealth.22.t
+	desc = commonwealth.22.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.22.a
+	}
+}
+
+#Acknowledge Our Past
+country_event = {
+	id = commonwealth.23
+	title = commonwealth.23.t
+	desc = commonwealth.23.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.23.a
+	}
+}
+
+#True Golden Liberty!
+country_event = {
+	id = commonwealth.24
+	title = commonwealth.24.t
+	desc = commonwealth.24.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.24.a
+	}
+}
+
+#Protests in the Streets
+country_event = {
+	id = commonwealth.25
+	title = commonwealth.25.t
+	desc = commonwealth.25.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.25.a
+	}
+}
+
+#Mass Desertions
+country_event = {
+	id = commonwealth.26
+	title = commonwealth.26.t
+	desc = commonwealth.26.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.26.a
+	}
+}
+
+#Destruction of the Sejm
+country_event = {
+	id = commonwealth.27
+	title = commonwealth.27.t
+	desc = commonwealth.27.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.27.a
+	}
+}
+
+#Restoring Order
+country_event = {
+	id = commonwealth.28
+	title = commonwealth.28.t
+	desc = commonwealth.28.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.28.a
+	}
+}
+
+#Ending the Protests
+country_event = {
+	id = commonwealth.29
+	title = commonwealth.29.t
+	desc = commonwealth.29.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.29.a
+	}
+}
+
+#Demote the Lithuanian Language
+country_event = {
+	id = commonwealth.30
+	title = commonwealth.30.t
+	desc = commonwealth.30.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.30.a
+	}
+}
+
+#Reorganize Lithuania
+country_event = {
+	id = commonwealth.31
+	title = commonwealth.31.t
+	desc = commonwealth.31.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.31.a
+	}
+}
+
+#Mandatory Polish Education
+country_event = {
+	id = commonwealth.32
+	title = commonwealth.32.t
+	desc = commonwealth.32.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.32.a
+	}
+}
+
+#The Latin Compromise
+country_event = {
+	id = commonwealth.33
+	title = commonwealth.33.t
+	desc = commonwealth.33.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.33.a
+	}
+}
+
+#State Catholicism
+country_event = {
+	id = commonwealth.34
+	title = commonwealth.34.t
+	desc = commonwealth.34.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.34.a
+	}
+}
+
+#A Truly Polish State
+country_event = {
+	id = commonwealth.35
+	title = commonwealth.35.t
+	desc = commonwealth.35.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.35.a
+	}
+}
+
+#A Polish Sejm
+country_event = {
+	id = commonwealth.36
+	title = commonwealth.36.t
+	desc = commonwealth.36.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.36.a
+	}
+}
+
+#Relocate the Capital
+country_event = {
+	id = commonwealth.37
+	title = commonwealth.37.t
+	desc = commonwealth.37.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.37.a
+	}
+}
+
+#Dismantle Resistance from Within
+country_event = {
+	id = commonwealth.38
+	title = commonwealth.38.t
+	desc = commonwealth.38.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.38.a
+	}
+}
+
+#Declare the Kingdom of Greater Poland
+country_event = {
+	id = commonwealth.39
+	title = commonwealth.39.t
+	desc = commonwealth.39.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	option = {
+		name = commonwealth.39.a
 	}
 }

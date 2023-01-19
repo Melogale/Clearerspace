@@ -6,12 +6,91 @@ set_research_slots = 3
 
 add_ideas = {
 	PLC_backwater_economy
+	PLC_rooted_corruption
+	PLC_bloated_bureaucracy
+	PLC_lingual_friction
+	PLC_freedom_of_religion
 }
 
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
 	tech_recon = 1
+}
+
+recruit_character = PLC_friedrich_christian_cons
+promote_character = PLC_friedrich_christian_cons
+recruit_character = PLC_friedrich_christian_libr
+promote_character = PLC_friedrich_christian_libr
+recruit_character = PLC_friedrich_christian_socd
+promote_character = PLC_friedrich_christian_socd
+recruit_character = PLC_friedrich_christian_audm
+promote_character = PLC_friedrich_christian_audm
+
+set_party_name = {
+	ideology = monolism
+	long_name = "-"
+	name = "-"
+}
+
+set_party_name = {
+	ideology = vanguard_socialism
+	long_name = PLC_SDPIL_LONG
+	name = PLC_SDPIL_SHORT
+}
+
+set_party_name = {
+	ideology = authoritarian_socialism
+	long_name = PLC_SDPIL_LONG
+	name = PLC_SDPIL_SHORT
+}
+
+set_party_name = {
+	ideology = libertarian_socialism
+	long_name = PLC_LPR_LONG
+	name = PLC_LPR_SHORT
+}
+
+set_party_name = {
+	ideology = social_democracy
+	long_name = PLC_LK_LONG
+	name = PLC_LK_SHORT
+}
+
+set_party_name = {
+	ideology = liberalism
+	long_name = PLC_LK_LONG
+	name = PLC_LK_SHORT
+}
+
+set_party_name = {
+	ideology = conservatism
+	long_name = PLC_ND_LONG
+	name = PLC_ND_SHORT
+}
+
+set_party_name = {
+	ideology = authoritarian_democracy
+	long_name = PLC_ND_LONG
+	name = PLC_ND_SHORT
+}
+
+set_party_name = {
+	ideology = autocracy
+	long_name = "-"
+	name = "-"
+}
+
+set_party_name = {
+	ideology = fascism
+	long_name = PLC_ONR_LONG
+	name = PLC_ONR_SHORT
+}
+
+set_party_name = {
+	ideology = egoism
+	long_name = "-"
+	name = "-"
 }
 
 set_politics = {
@@ -23,15 +102,15 @@ set_politics = {
 
 set_popularities = {
 	monolism = 0
-	vanguard_socialism = 0
-	authoritarian_socialism = 1
-	libertarian_socialism = 6
-	social_democracy = 16
-	liberalism = 32
-	conservatism = 34
-	authoritarian_democracy = 10
+	vanguard_socialism = 2
+	authoritarian_socialism = 4
+	libertarian_socialism = 10
+	social_democracy = 13
+	liberalism = 26
+	conservatism = 28
+	authoritarian_democracy = 12
 	autocracy = 0
-	fascism = 1
+	fascism = 5
 	egoism = 0
 }
 

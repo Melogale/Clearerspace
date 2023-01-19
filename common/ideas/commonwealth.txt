@@ -1,104 +1,7 @@
 ideas = {
-
-	country = {
-		PLC_nationwide_strikes = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = chi_war_of_resistance3
-			
-			modifier = {
-				
-			}
-		}
-	}
-
-	country = {
-		PLC_disloyal_army = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = chi_war_of_resistance3
-			
-			modifier = {
-				custom_modifier_tooltip = tt_PLC_no_army_training_loser
-			}
-		}
-	}
-
-	country = {
-		PLC_defunct_government = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = chi_war_of_resistance3
-			
-			modifier = {
-				
-			}
-		}
-	}
-
-	country = {
-		PLC_disloyal_generals = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = chi_war_of_resistance3
-			
-			modifier = {
-				custom_modifier_tooltip = tt_PLC_no_army_training_loser
-			}
-		}
-	}
-
 	country = {
 		PLC_dead_economy = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = SPA_recovering_from_the_civil_war
-			
+			picture = POL_disjointed_industry
 			modifier = {
 				consumer_goods_factor = 0.35
 				industrial_capacity_dockyard = -0.7
@@ -107,23 +10,8 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.25
 			}
 		}
-	}
-
-	country = {
 		PLC_backwater_economy = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			picture = usa_great_depression_3
-			
 			modifier = {
 				consumer_goods_factor = 0.25
 				industrial_capacity_dockyard = -0.55
@@ -132,23 +20,8 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.20
 			}
 		}
-	}
-
-	country = {
 		PLC_backwards_economy = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			picture = usa_great_depression_2
-			
 			modifier = {
 				consumer_goods_factor = 0.2
 				industrial_capacity_dockyard = -0.35
@@ -157,23 +30,8 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.15
 			}
 		}
-	}
-
-	country = {
 		PLC_modernizing_economy = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			picture = great_depression
-			
 			modifier = {
 				consumer_goods_factor = 0.1
 				industrial_capacity_dockyard = -0.2
@@ -182,46 +40,16 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.05
 			}
 		}
-	}
-
-	country = {
 		PLC_modern_economy = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			picture = man_five_year_plan_industry
-			
 			modifier = {
 				industrial_capacity_dockyard = 0.05
 				industrial_capacity_factory = 0.05
 				production_speed_buildings_factor = 0.05
 			}
 		}
-	}
-
-	country = {
 		PLC_an_economic_miracle = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			picture = generic_economic_increase
-			
 			modifier = {
 				consumer_goods_factor = -0.05
 				industrial_capacity_dockyard = 0.1
@@ -229,89 +57,29 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
-	}
-
-	country = {
 		PLC_emergency_economic_relief = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			picture = generic_goods_red_bonus
-			
 			modifier = {
 				consumer_goods_factor = 0.1
 			}
 		}
-	}
-
-	country = {
 		PLC_the_dual_economy = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			picture = generic_flexible_foreign_policy
-			
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_start_efficiency_factor = 0.1
 			}
 		}
-	}
-
-	country = {
 		PLC_profit_reinvestment = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			picture = generic_foreign_capital
-			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
 				global_building_slots_factor = 0.1
 			}
 		}
-	}
-
-	country = {
 		PLC_near_autarky = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			picture = generic_exploit_mines
-			
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
 				production_oil_factor = 0.25
@@ -319,6 +87,155 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.2
 			}
 		}
-	}
+		PLC_nationwide_strikes = {
+			picture = citizen_militia_2
+			modifier = {
+				
+			}
+		}
+		PLC_strikes_to_riots = {
+			picture = POL_the_peasants_strike
+			modifier = {
+				
+			}
+		}
+		PLC_the_violence_contained = {
+			picture = citizen_militia_1
+			modifier = {
+				
+			}
+		}
+		PLC_revoke_the_right_to_protest = {
+			picture = generic_democracy_banned
+			modifier = {
+				
+			}
+		}
+		PLC_disloyal_army = {
+			picture = generic_army_problems
+			modifier = {
+				custom_modifier_tooltip = tt_PLC_no_army_training_loser
+			}
+		}
+		PLC_polish_army = {
+			picture = SPA_la_division_azul
+			modifier = {
+				
+			}
+		}
+		PLC_prusso_polish_militarism = {
+			picture = german_advisors
+			modifier = {
+				
+			}
+		}
+		PLC_eastern_conscription = {
+			picture = generic_manpower_bonus
+			modifier = {
 
+			}
+		}
+		PLC_defunct_government = {
+			picture = SOV_organize_wreckers
+			modifier = {
+				
+			}
+		}
+		PLC_disloyal_generals = {
+			picture = chi_incompetent_officers
+			modifier = {
+				custom_modifier_tooltip = tt_PLC_no_army_training_loser
+			}
+		}
+		PLC_rooted_corruption = {
+			picture = ROM_king_carol_emptied_accounts
+			modifier = {
+
+			}
+		}
+		PLC_bloated_bureaucracy = {
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				
+			}
+		}
+		PLC_efficient_bureaucracy = {
+			picture = generic_political_support
+			modifier = {
+				
+			}
+		}
+		PLC_autonomies_annexed = {
+			picture = generic_deal_with_the_devil
+			modifier = {
+				
+			}
+		}
+		PLC_martial_law_rus = {
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				
+			}
+		}
+		PLC_polish_rule = {
+			picture = generic_morale_bonus
+			modifier = {
+				
+			}
+		}
+		PLC_lingual_friction = {
+			picture = generic_disjointed_gov
+			modifier = {
+				
+			}
+		}
+		PLC_language_of_the_rus = {
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				
+			}
+		}
+		PLC_one_nation_many_tongues = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				
+			}
+		}
+		PLC_primacy_of_the_polish_tongue = {
+			picture = generic_intel_bonus
+			modifier = {
+				
+			}
+		}
+		PLC_latin_compromise = {
+			picture = ITA_new_roman_empire_ns
+			modifier = {
+				
+			}
+		}
+		PLC_freedom_of_religion = {
+			picture = SPR_torchbearers_of_tomorrow
+			modifier = {
+				
+			}
+		}
+		PLC_national_personal_autonomy = {
+			picture = ITA_battaglie_per_la_nascite
+			modifier = {
+				
+			}
+		}
+		PLC_catholicism_enforced = {
+			picture = MEX_church_power_5
+			modifier = {
+				
+			}
+		}
+		PLC_new_polish_man = {
+			picture = triumphant_will
+			modifier = {
+				
+			}
+		}
+	}
 }

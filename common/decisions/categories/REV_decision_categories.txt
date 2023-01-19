@@ -1,0 +1,12 @@
+
+revolutionary_fervor = {
+    visible = {
+        has_country_flag = REV_joined_the_revolution
+    }
+    allowed = {
+        has_country_flag = REV_joined_the_revolution
+    }
+    priority = 10
+    visible_when_empty = yes
+    scripted_gui = REV_fervor_menu
+}

@@ -1,0 +1,7 @@
+revolutionary_fervor = {
+	debug_small_increase = {
+		complete_effect = {
+			BAY_low_influence_increase = yes
+		}
+	}
+}

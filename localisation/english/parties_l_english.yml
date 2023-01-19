@@ -87,3 +87,17 @@
  corporatism_desc:0 "Egoism gets its name from the latin word for "I", or "self," and accordingly, proponents of the ideology pride themselves on its emphasis on the individual.  Through laissez-faire capitalism and as small a state as possible, individuals, typically hindered by little more law than a bare bones non aggression principle, are free to partake in voluntary exchange as they see fit."
  anarchocapitalism:0 "Anarchocapitalism"
  anarchocapitalism_desc:0 "Egoism gets its name from the latin word for I, or self, and accordingly, proponents of the ideology pride themselves on its emphasis on the individual.  Through laissez-faire capitalism and as small a state as possible, individuals, typically hindered by little more law than a bare bones non aggression principle, are free to partake in voluntary exchange as they see fit."
+
+
+ #PLC POLITICAL PARTIES
+
+ PLC_SDPIL_LONG:0 "Socjaldemokracja Polskiego i Litwy"
+ PLC_SDPIL_SHORT:0 "SDPiL"
+ PLC_LPR_LONG:0 "Ludowa Partia Rzeczpospolita"
+ PLC_LPR_SHORT:0 "LPR"
+ PLC_LK_LONG:0 "Lewicowa Koalicja"
+ PLC_LK_SHORT:0 "LK"
+ PLC_ND_LONG:0 "Narodowa Demokracja"
+ PLC_ND_SHORT:0 "ND"
+ PLC_ONR_LONG:0 "Obóz Narodowo-Radykalny"
+ PLC_ONR_SHORT:0 "ONR"

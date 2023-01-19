@@ -1,0 +1,50 @@
+characters = {
+    PLC_friedrich_christian_cons = {
+        name = PLC_friedrich_christian
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_friedrich"
+            }
+        }
+        country_leader = {
+            ideology = conservatism_sub
+            traits = {}
+        }
+    }
+    PLC_friedrich_christian_libr = {
+        name = PLC_friedrich_christian
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_friedrich"
+            }
+        }
+        country_leader = {
+            ideology = liberalism_sub
+            traits = {}
+        }
+    }
+    PLC_friedrich_christian_socd = {
+        name = PLC_friedrich_christian
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_friedrich"
+            }
+        }
+        country_leader = {
+            ideology = social_democracy_sub
+            traits = {}
+        }
+    }
+    PLC_friedrich_christian_audm = {
+        name = PLC_friedrich_christian
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_friedrich"
+            }
+        }
+        country_leader = {
+            ideology = constitutional_monarchism
+            traits = {}
+        }
+    }
+}

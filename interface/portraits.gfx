@@ -1,0 +1,17 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_portrait_friedrich"
+	texturefile = "gfx/leaders/friedrich.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_portrait_sunyatsen"
+	texturefile = "gfx/leaders/sunyatsen.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_portrait_jung"
+	texturefile = "gfx/leaders/jung.dds"			
+	}
+}

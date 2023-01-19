@@ -566,7 +566,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_the_true_tsars
 		x = 0
 		y = 1
-		cost = 0
+		cost = 3
 		prerequisite = { focus = RUS_intensified_crackdown }
 		relative_position_id = RUS_intensified_crackdown
 
@@ -590,7 +590,7 @@ focus_tree = {
 		icon = GFX_focus_generic_court
 		x = -3
 		y = 1
-		cost = -3
+		cost = 3
 		prerequisite = { focus = RUS_intensified_crackdown }
 		relative_position_id = RUS_intensified_crackdown
 

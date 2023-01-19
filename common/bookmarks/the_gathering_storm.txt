@@ -45,10 +45,14 @@ bookmarks = {
 			history = "PLC_GATHERING_STORM_DESC"
 			ideology = conservatism
 			ideas = {
-
+				PLC_freedom_of_religion
+				PLC_backwater_economy
+				PLC_lingual_friction
 			}
 			focuses = {
-
+				PLC_true_golden_liberty
+				PLC_declare_the_kingdom_of_greater_poland
+				PLC_the_state_of_afryka
 			}
 		}
 		"ENG"={

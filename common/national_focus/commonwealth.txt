@@ -155,7 +155,7 @@ focus_tree = {
 	focus = {
 		id = PLC_polonisation_act_passes
 		icon = GFX_focus_plc_polish_domination
-		x = 7
+		x = 6
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_the_great_sejm }
@@ -179,7 +179,7 @@ focus_tree = {
 	focus = {
 		id = PLC_polonisation_act_fails
 		icon = GFX_focus_plc_national_equity
-		x = -7
+		x = -6
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_the_great_sejm }
@@ -275,7 +275,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.17
+			}
 		}
 	}
 
@@ -387,7 +389,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.18
+			}
 		}
 	}
 
@@ -437,6 +441,9 @@ focus_tree = {
 
 		completion_reward = {
 			create_faction = "Commonwealth of Nations"
+			country_event = {
+				id = commonwealth.19
+			}
 		}
 	}
 
@@ -507,7 +514,7 @@ focus_tree = {
 	focus = {
 		id = PLC_expand_the_rus_autonomies
 		icon = GFX_goal_anschluss
-		x = 2
+		x = 1
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_decentralization }
@@ -532,8 +539,8 @@ focus_tree = {
 	focus = {
 		id = PLC_promote_the_ruthenian_language
 		icon = GFX_goal_generic_national_unity
-		x = -1
-		y = 1
+		x = 0
+		y = 2
 		cost = 3
 		prerequisite = { focus = PLC_expand_the_rus_autonomies }
 		relative_position_id = PLC_expand_the_rus_autonomies
@@ -570,7 +577,7 @@ focus_tree = {
 	focus = {
 		id = PLC_grant_national_personal_autonomy
 		icon = GFX_focus_generic_population_growth
-		x = 0
+		x = 1
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_the_ashkenazi_autonomy }
@@ -579,7 +586,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.20
+			}
 		}
 	}
 
@@ -598,7 +607,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.21
+			}
 		}
 	}
 
@@ -615,7 +626,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.23
+			}
 		}
 	}
 
@@ -632,7 +645,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.22
+			}
 		}
 	}
 
@@ -691,6 +706,9 @@ focus_tree = {
 			}
 			custom_effect_tooltip = PLC_true_golden_liberty_tt
 			set_cosmetic_tag = UPC
+			country_event = {
+				id = commonwealth.24
+			}
 		}
 	}
 
@@ -710,7 +728,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.25
+			}
 		}
 	}
 
@@ -726,7 +746,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.26
+			}
 		}
 	}
 
@@ -743,7 +765,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.27
+			}
 		}
 	}
 
@@ -759,7 +783,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			#event that increases strikes to riots
+			country_event = {
+				id = commonwealth.28
+			}
 		}
 	}
 
@@ -775,18 +802,48 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = PLC_autonomies_annexed
+				remove_idea = PLC_bloated_bureaucracy
+			}
+			custom_effect_tooltip = PLC_ending_the_autonomies_tt
+			hidden_effect = {
+				annex_country = {
+					target = BEL
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = UKR
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PLC_eliminate_corrupt_officials
+		icon = GFX_focus_generic_conspiracy
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_ending_the_autonomies }
+		relative_position_id = PLC_ending_the_autonomies
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = PLC_rooted_corruption
 		}
 	}
 
 	focus = {
 		id = PLC_relocate_the_academia
 		icon = GFX_focus_research2
-		x = -1
+		x = 0
 		y = 1
 		cost = 3
-		prerequisite = { focus = PLC_ending_the_autonomies }
-		relative_position_id = PLC_ending_the_autonomies
+		prerequisite = { focus = PLC_eliminate_corrupt_officials }
+		relative_position_id = PLC_eliminate_corrupt_officials
 		
 		available_if_capitulated = yes
 
@@ -808,7 +865,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = PLC_martial_law_rus
+				remove_idea = PLC_autonomies_annexed
+			}
 		}
 	}
 
@@ -819,12 +879,16 @@ focus_tree = {
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_martial_law_in_rus }
+		prerequisite = { focus = PLC_eliminate_corrupt_officials }
 		relative_position_id = PLC_martial_law_in_rus
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = PLC_polish_rule
+				remove_idea = PLC_martial_law_rus
+			}
 		}
 	}
 
@@ -840,7 +904,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = PLC_strikes_to_riots
+				add_idea = PLC_the_violence_contained
+			}
 		}
 	}
 
@@ -857,7 +924,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			#event that swaps violence contained w/ revoke right to protest
+			country_event = {
+				id = commonwealth.29
+			}
 		}
 	}
 
@@ -873,14 +943,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = PLC_lingual_friction
+				add_idea = PLC_primacy_of_the_polish_tongue
+			}
+			country_event = {
+				id = commonwealth.30
+			}
 		}
 	}
 
 	focus = {
-		id = PLC_mandatory_polish_education
-		icon = GFX_focus_POL_nationalist_education
-		x = 1
+		id = PLC_reorganize_lithuania
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
 		y = 1
 		cost = 3
 		prerequisite = { focus = PLC_demotion_of_the_lithuanian_language }
@@ -889,7 +965,27 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.31
+			}
+		}
+	}
+
+	focus = {
+		id = PLC_mandatory_polish_education
+		icon = GFX_focus_POL_nationalist_education
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_demotion_of_the_lithuanian_language }
+		relative_position_id = PLC_demotion_of_the_lithuanian_language
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = commonwealth.32
+			}
 		}
 	}
 
@@ -905,7 +1001,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			#event that swaps polish lang. for latin compromise
+			country_event = {
+				id = commonwealth.33
+			}
 		}
 	}
 
@@ -921,7 +1020,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = PLC_catholicism_enforced
+				remove_idea = PLC_freedom_of_religion
+			}
+			country_event = {
+				id = commonwealth.34
+			}
 		}
 	}
 
@@ -937,7 +1042,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = PLC_new_polish_man
 		}
 	}
 
@@ -953,7 +1058,26 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = PLC_polish_army
+				remove_idea = PLC_disloyal_army
+			}
+		}
+	}
+
+	focus = {
+		id = PLC_eastern_polish_conscription
+		icon = GFX_focus_POL_belarus_army
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_a_polish_army }
+		relative_position_id = PLC_a_polish_army
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = PLC_eastern_conscription
 		}
 	}
 
@@ -969,7 +1093,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = PLC_polish_army
+				add_idea = PLC_prusso_polish_militarism
+			}
 		}
 	}
 
@@ -988,7 +1115,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.35
+			}
 		}
 	}
 
@@ -1004,7 +1133,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.37
+			}
 		}
 	}
 
@@ -1020,7 +1151,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.38
+			}
 		}
 	}
 
@@ -1036,7 +1169,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.36
+			}
 		}
 	}
 
@@ -1054,7 +1189,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = commonwealth.39
+			}
 		}
 	}
 
@@ -1088,7 +1225,7 @@ focus_tree = {
 		icon = GFX_focus_spa_supremacy_of_the_communion
 		x = -2
 		y = 1
-		cost = 10
+		cost = 3
 		prerequisite = { focus = PLC_foreign_diplomacy }
 		relative_position_id = PLC_foreign_diplomacy
 
@@ -1104,7 +1241,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 0
 		y = 1
-		cost = 10
+		cost = 3
 		prerequisite = { focus = PLC_foreign_diplomacy }
 		relative_position_id = PLC_foreign_diplomacy
 
@@ -1120,7 +1257,7 @@ focus_tree = {
 		icon = GFX_focus_TUR_pivot_to_the_past
 		x = 2
 		y = 1
-		cost = 10
+		cost = 3
 		prerequisite = { focus = PLC_foreign_diplomacy }
 		relative_position_id = PLC_foreign_diplomacy
 
@@ -1136,7 +1273,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		x = -2
 		y = 1
-		cost = 10
+		cost = 3
 		prerequisite = { focus = PLC_eastern_stance }
 		relative_position_id = PLC_eastern_stance
 
@@ -1152,7 +1289,7 @@ focus_tree = {
 		icon = GFX_focus_plc_grand_commonwealth
 		x = 1
 		y = 1
-		cost = 10
+		cost = 3
 		prerequisite = { focus = PLC_greater_ruthenian_claims }
 		relative_position_id = PLC_greater_ruthenian_claims
 		mutually_exclusive = { focus = PLC_assume_the_slavic_mantle }
@@ -1169,7 +1306,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		x = 0
 		y = 1
-		cost = 10
+		cost = 3
 		prerequisite = { focus = PLC_eastern_stance }
 		relative_position_id = PLC_eastern_stance
 
@@ -1185,7 +1322,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		x = 2
 		y = 1
-		cost = 10
+		cost = 3
 		prerequisite = { focus = PLC_eastern_stance }
 		relative_position_id = PLC_eastern_stance
 
@@ -1218,7 +1355,7 @@ focus_tree = {
 		icon = GFX_focus_plc_proclaim_slavya
 		x = -1
 		y = 1
-		cost = 10
+		cost = 3
 		prerequisite = { focus = PLC_dismantle_ruthenian_pretenders }
 		relative_position_id = PLC_dismantle_ruthenian_pretenders
 		mutually_exclusive = { focus = PLC_the_grand_commonwealth }
@@ -1239,7 +1376,7 @@ focus_tree = {
 		icon = GFX_focus_plc_outdated_economy
 		x = 27
 		y = 0
-		cost = 3
+		cost = 5
 
 		available = {
 			has_idea = PLC_dead_economy
@@ -1260,7 +1397,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = PLC_an_outdated_economy }
 		relative_position_id = PLC_an_outdated_economy
 
@@ -1276,7 +1413,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_1
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = PLC_an_outdated_economy }
 		relative_position_id = PLC_an_outdated_economy
 
@@ -1334,7 +1471,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = -2
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_western_industrial_region }
 		relative_position_id = PLC_western_industrial_region
 
@@ -1370,7 +1507,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_the_vilnius_krakow_railway }
 		relative_position_id = PLC_the_vilnius_krakow_railway
 
@@ -1411,7 +1548,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		x = 1
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_western_industrial_region }
 		relative_position_id = PLC_western_industrial_region
 
@@ -1427,7 +1564,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		x = -1
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_modernizing_the_industries }
 		relative_position_id = PLC_modernizing_the_industries
 
@@ -1447,7 +1584,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		x = -1
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_deep_resource_extraction }
 		relative_position_id = PLC_deep_resource_extraction
 
@@ -1467,7 +1604,7 @@ focus_tree = {
 		icon = GFX_focus_generic_tank_production
 		x = 1
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_deep_resource_extraction }
 		relative_position_id = PLC_deep_resource_extraction
 
@@ -1485,7 +1622,7 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes
 		x = 2
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_modernizing_the_industries }
 		prerequisite = { focus = PLC_modern_agriculture }
 		relative_position_id = PLC_modernizing_the_industries
@@ -1504,7 +1641,7 @@ focus_tree = {
 		icon = GFX_focus_plc_economic_miracle
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = PLC_a_dual_economy }
 		relative_position_id = PLC_a_dual_economy
 
@@ -1527,7 +1664,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = PLC_an_outdated_economy }
 		relative_position_id = PLC_an_outdated_economy
 
@@ -1601,7 +1738,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		x = 1
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_eastern_agricultural_region }
 		relative_position_id = PLC_eastern_agricultural_region
 
@@ -1651,7 +1788,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_3
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = PLC_massive_infrastructure_investments }
 		relative_position_id = PLC_massive_infrastructure_investments
 
@@ -1682,7 +1819,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		x = -1
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_eastern_agricultural_region }
 		relative_position_id = PLC_eastern_agricultural_region
 
@@ -1698,7 +1835,7 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 1
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = PLC_modern_agriculture focus = PLC_massive_infrastructure_investments }
 		relative_position_id = PLC_modern_agriculture
 
@@ -1717,7 +1854,7 @@ focus_tree = {
 		icon = GFX_focus_mex_privatisation
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = PLC_net_exporter }
 		relative_position_id = PLC_net_exporter
 
@@ -1735,7 +1872,7 @@ focus_tree = {
 		icon = GFX_focus_research2
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = PLC_net_exporter }
 		relative_position_id = PLC_net_exporter
 
@@ -1743,6 +1880,191 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+
+#########################################
+############ COLONIAL TREE ##############
+#########################################
+
+	focus = {
+		id = PLC_the_state_of_afryka
+		icon = GFX_focus_POL_colonial_league
+		x = 1
+		y = 1
+		cost = 3
+		relative_position_id = PLC_economic_miracle
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_the_horn_of_afryka
+		icon = GFX_focus_ETH_compensation
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_state_of_afryka }
+		relative_position_id = PLC_the_state_of_afryka
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_invest_in_new_rail_networks
+		icon = GFX_focus_generic_railroad
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_horn_of_afryka }
+		relative_position_id = PLC_the_horn_of_afryka
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_electrify_the_horn
+		icon = GFX_focus_generic_energy
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_invest_in_new_rail_networks }
+		relative_position_id = PLC_invest_in_new_rail_networks
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_introduce_modern_infrastructure
+		icon = GFX_focus_ETH_develop_the_horn_of_africa
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_invest_in_new_rail_networks }
+		relative_position_id = PLC_invest_in_new_rail_networks
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_enforce_the_east_afryka_plan
+		icon = GFX_goal_generic_secret_weapon
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_introduce_modern_infrastructure }
+		prerequisite = { focus = PLC_state_catholicism }
+		relative_position_id = PLC_introduce_modern_infrastructure
+
+		mutually_exclusive = { focus = PLC_enforce_the_madagaskar_plan }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = PLC_invest_in_madagaskar
+		icon = GFX_focus_generic_africa_infrastructure
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_horn_of_afryka }
+		relative_position_id = PLC_the_horn_of_afryka
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_modernize_the_dockyards
+		icon = GFX_focus_generic_africa_naval
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_invest_in_madagaskar }
+		relative_position_id = PLC_invest_in_madagaskar
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_enforce_the_madagaskar_plan
+		icon = GFX_goal_generic_attack_allies
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_modernize_the_dockyards }
+		prerequisite = { focus = PLC_state_catholicism }
+		relative_position_id = PLC_modernize_the_dockyards
+
+		mutually_exclusive = { focus = PLC_enforce_the_east_afryka_plan }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_invest_in_the_common_colony
+		icon = GFX_focus_mex_privatisation
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_state_of_afryka }
+		relative_position_id = PLC_the_state_of_afryka
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_the_need_for_a_polish_suez
+		icon = GFX_focus_generic_the_suez
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_invest_in_the_common_colony }
+		relative_position_id = PLC_invest_in_the_common_colony
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
 		}
 	}
 

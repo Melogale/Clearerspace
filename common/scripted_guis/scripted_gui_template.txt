@@ -85,3 +85,24 @@ scripted_gui = {
         }
     }
 }
+
+scripted_gui = {
+    REV_fervor_menu = {
+        window_name = "REV_fervor_menu"
+        context_type = decision_category
+
+        visible = {
+            has_country_flag = REV_joined_the_revolution
+        }
+
+        ai_enabled = {
+            always = no
+        }
+
+        properties = {
+            fervor_ticker_meter_icon = {
+                frame = REV_global_fervor
+            }
+        }
+    }
+}
