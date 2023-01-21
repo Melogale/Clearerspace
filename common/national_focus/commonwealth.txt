@@ -1067,7 +1067,7 @@ focus_tree = {
 
 	focus = {
 		id = PLC_eastern_polish_conscription
-		icon = GFX_focus_POL_belarus_army
+		icon = GFX_focus_POL_ukrainian_army
 		x = 1
 		y = 1
 		cost = 3
@@ -1196,9 +1196,9 @@ focus_tree = {
 		}
 	}
 
-##################################
-## Foreign Diplomacy #############
-##################################
+#######################################
+####### Foreign Diplomacy #############
+#######################################
 
 	focus = {
 		id = PLC_foreign_diplomacy
@@ -1375,7 +1375,7 @@ focus_tree = {
 	focus = {
 		id = PLC_an_outdated_economy
 		icon = GFX_focus_plc_outdated_economy
-		x = 27
+		x = 26
 		y = 0
 		cost = 5
 
@@ -2061,6 +2061,333 @@ focus_tree = {
 		cost = 3
 		prerequisite = { focus = PLC_invest_in_the_common_colony }
 		relative_position_id = PLC_invest_in_the_common_colony
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+#########################################
+############ MILITARY TREE ##############
+#########################################
+
+	focus = {
+		id = PLC_plans_for_all_scenarios
+		icon = GFX_focus_generic_military_academy
+		x = -3
+		y = 2
+		cost = 3
+		relative_position_id = PLC_enforce_the_east_afryka_plan
+
+		mutually_exclusive = { focus = PLC_world_class_weaponry }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_plan_zachod
+		icon = GFX_focus_POL_plan_east
+		x = -3
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_plans_for_all_scenarios }
+		relative_position_id = PLC_plans_for_all_scenarios
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_bite_and_hold_tactics
+		icon = GFX_focus_SWI_spirit_of_saint_bernard
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_plan_zachod }
+		relative_position_id = PLC_plan_zachod
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_plan_wschod
+		icon = GFX_focus_POL_plan_west
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_plans_for_all_scenarios }
+		relative_position_id = PLC_plans_for_all_scenarios
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_the_friedrich_line
+		icon = GFX_goal_generic_construct_military
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_plan_wschod }
+		relative_position_id = PLC_plan_wschod
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_defense_in_depth
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_plan_wschod focus = PLC_plan_zachod }
+		relative_position_id = PLC_plan_wschod
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_renew_trench_warfare
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_defense_in_depth }
+		relative_position_id = PLC_defense_in_depth
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_expand_the_engineer_corps
+		icon = GFX_goal_generic_construction2
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_defense_in_depth }
+		relative_position_id = PLC_defense_in_depth
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_war_in_defense_of_the_commonwealth
+		icon = GFX_focus_POL_resistance
+		x = 2
+		y = 3
+		cost = 3
+		prerequisite = { focus = PLC_plans_for_all_scenarios focus = PLC_world_class_weaponry }
+		relative_position_id = PLC_plans_for_all_scenarios
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_we_do_not_beg_for_freedom
+		icon = GFX_focus_POL_reach_out_to_underground_state
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_war_in_defense_of_the_commonwealth }
+		relative_position_id = PLC_war_in_defense_of_the_commonwealth
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_we_fight_for_it
+		icon = GFX_focus_POL_ban_nazi_party
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_war_in_defense_of_the_commonwealth }
+		relative_position_id = PLC_war_in_defense_of_the_commonwealth
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_poland_is_not_yet_lost
+		icon = GFX_focus_POL_prepare_for_the_inevitable
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_we_do_not_beg_for_freedom }
+		prerequisite = { focus = PLC_we_fight_for_it }
+		relative_position_id = PLC_we_fight_for_it
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_world_class_weaponry
+		icon = GFX_focus_generic_army_tanks2
+		x = 1
+		y = 2
+		cost = 3
+		relative_position_id = PLC_enforce_the_east_afryka_plan
+
+		mutually_exclusive = { focus = PLC_plans_for_all_scenarios }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_roving_infantry
+		icon = GFX_goal_generic_army_motorized
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_world_class_weaponry }
+		relative_position_id = PLC_world_class_weaponry
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_modernize_the_winged_hussars
+		icon = GFX_goal_generic_production2
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_roving_infantry }
+		relative_position_id = PLC_roving_infantry
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_rolling_armor
+		icon = GFX_goal_generic_army_tanks
+		x = 3
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_world_class_weaponry }
+		relative_position_id = PLC_world_class_weaponry
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_pincer_tactics
+		icon = GFX_focus_generic_license_production
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_rolling_armor }
+		relative_position_id = PLC_rolling_armor
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_the_best_defense
+		icon = GFX_focus_prc_infiltration
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_rolling_armor focus = PLC_roving_infantry }
+		relative_position_id = PLC_roving_infantry
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_utilize_the_marshes
+		icon = GFX_focus_generic_land_reclamation
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_best_defense }
+		relative_position_id = PLC_the_best_defense
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PLC_maneuver_warfare
+		icon = GFX_focus_generic_truck
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = PLC_the_best_defense }
+		relative_position_id = PLC_the_best_defense
 
 		available_if_capitulated = yes
 
