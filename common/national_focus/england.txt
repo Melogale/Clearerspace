@@ -446,6 +446,84 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ENG_fortify_bombay
+		icon = GFX_goal_generic_dangerous_deal
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_looking_outwards }
+
+		relative_position_id = ENG_looking_outwards
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_fortify_bombay
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_fortify_bombay }
+
+		relative_position_id = ENG_fortify_bombay
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_organize_nigerian_
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = { focus = ENG_looking_outwards }
+
+		relative_position_id = ENG_looking_outwards
+		
+		available = {
+
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
 
 	focus = {
 		id = ENG_subsidize_small_business
