@@ -5,6 +5,7 @@ default_unit_production = { #If adding country-unique ones, bear in mind that th
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
@@ -129,6 +130,7 @@ default_role_ratios = {
 			has_dlc = "Man the Guns"
 		}
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
@@ -158,8 +160,8 @@ default_role_ratios = {
 default_role_ratios = {
 	enable = {
 		has_dlc = "Man the Guns"
-
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
@@ -223,11 +225,8 @@ default_role_ratios = {
 }
 
 bba_air_prod_1 = {
-
-
 	enable = {
 		always = yes
-
 	}
 
 	abort_when_not_enabled = yes
@@ -325,6 +324,8 @@ bba_support_boosts = {
 		is_historical_focus_on = yes
 		date < 1939.1.1
 	}
+
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = equipment_variant_production_factor
@@ -439,6 +440,8 @@ default_pp_spend_amount = {
 		always = yes
 	}
 
+	abort_when_not_enabled = yes
+
 	ai_strategy = {
 		type = pp_spend_amount
 		id = idea
@@ -475,6 +478,8 @@ build_patrol_bombers = {
 			size > 1
 		}
 	}
+
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = unit_ratio
@@ -663,6 +668,7 @@ DEFAULT_midlate_template_design = {
 	enable = {
 		date > 1940.1.1
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -769,6 +775,8 @@ build_intelligence_agency_as_major = {
 		}
 	}
 
+	abort_when_not_enabled = yes
+
 	ai_strategy = {
 		type = intelligence_agency_usable_factories
 		value = 5
@@ -836,6 +844,8 @@ addintelligence_agency_normal_upgrade_prio = {
 	enable = {
 		always = yes
 	}
+
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = intelligence_agency_branch_desire_factor
@@ -907,6 +917,8 @@ put_garrisons_on_high_prio = {
 	enable = {
 		always = yes
 	}
+
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = garrison_reinforcement_priority

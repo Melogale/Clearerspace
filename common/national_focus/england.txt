@@ -473,7 +473,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_fortify_bombay
+		id = ENG_fortify_bombay_FUCK_OFF
 		icon = GFX_goal_generic_dangerous_deal
 		x = 1
 		y = 1

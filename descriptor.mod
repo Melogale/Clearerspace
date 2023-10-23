@@ -3,8 +3,7 @@ tags={
 	"Alternative History"
 }
 name="Clearerspace"
-supported_version="1.12.*"
-
+supported_version="1.13.*"
 replace_path="common/abilities"
 replace_path="common/ai_equipment"
 replace_path="common/ai_focuses"
@@ -40,6 +39,7 @@ replace_path="common/units/names"
 replace_path="common/units/names_divisions"
 replace_path="common/units/names_railway_guns"
 replace_path="common/units/names_ships"
+replace_path="common/military_industrial_organization/organizations"
 replace_path="events"
 replace_path="gfx/flags"
 replace_path="gfx/flags/medium"
